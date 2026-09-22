@@ -11,7 +11,7 @@ const config: Config = {
       colors: {
         pageBg: "#E7E8EA",
         ink: "#15171A",
-        muted: "#4B4E55",
+        muted: "#31333A",
         brand: "#4C6FFF",
         chromeText: "#23252A",
         chromeBorder: "rgba(21,23,26,0.16)",
