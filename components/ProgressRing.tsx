@@ -16,7 +16,7 @@ export function ProgressRing({ progress, size = 34, strokeWidth = 3 }: ProgressR
         cy={size / 2}
         r={radius}
         fill="none"
-        stroke="rgba(255,255,255,0.12)"
+        stroke="#CFD0D3"
         strokeWidth={strokeWidth}
       />
       <circle

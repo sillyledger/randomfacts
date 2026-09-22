@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        pageBg: "#101113",
+        pageBg: "#E7E8EA",
         ink: "#15171A",
         muted: "#4B4E55",
         brand: "#4C6FFF",
+        chromeText: "#23252A",
+        chromeBorder: "rgba(21,23,26,0.16)",
+        ghostFar: "rgba(21,23,26,0.05)",
+        ghostNear: "rgba(21,23,26,0.09)",
+        ringTrack: "#CFD0D3",
         category: {
           science: { bg: "#DDD6FE", accent: "#8B5CF6" },
           nature: { bg: "#BBF7D0", accent: "#22C55E" },

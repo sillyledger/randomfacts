@@ -8,11 +8,11 @@ export function FactCard({ fact }: { fact: Fact }) {
   return (
     <div className="relative">
       <div
-        className="absolute inset-x-4 -top-4 h-full rounded-[28px] border border-white/10 bg-white/5"
+        className="absolute inset-x-4 -top-4 h-full rounded-[28px] bg-ghostFar"
         aria-hidden
       />
       <div
-        className="absolute inset-x-2 -top-2 h-full rounded-[28px] border border-white/10 bg-white/[0.07]"
+        className="absolute inset-x-2 -top-2 h-full rounded-[28px] bg-ghostNear"
         aria-hidden
       />
 
