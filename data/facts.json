@@ -58,5 +58,305 @@
     "category": "Science",
     "title": "Your stomach relines itself every few days.",
     "explain": "Stomach acid is strong enough to dissolve metal over time, so your stomach replaces its protective mucus lining roughly every 3 to 5 days to avoid digesting itself."
+  },
+  {
+    "id": "octopus",
+    "category": "Nature",
+    "title": "Octopuses have three hearts.",
+    "explain": "Two pump blood to the gills, one to the rest of the body — and that third heart stops beating when the octopus swims."
+  },
+  {
+    "id": "wombat",
+    "category": "Nature",
+    "title": "Wombats poop in cubes.",
+    "explain": "The unusual shape keeps the droppings from rolling away once stacked up to mark territory."
+  },
+  {
+    "id": "sharks",
+    "category": "Nature",
+    "title": "Sharks are older than trees.",
+    "explain": "Sharks have existed for over 400 million years — roughly 50 million years before the first trees appeared."
+  },
+  {
+    "id": "sea-otters",
+    "category": "Nature",
+    "title": "Sea otters hold hands while they sleep.",
+    "explain": "They link paws in groups called 'rafts' so the ocean current doesn't drift them apart while they doze."
+  },
+  {
+    "id": "tardigrades",
+    "category": "Nature",
+    "title": "Tardigrades can survive the vacuum of space.",
+    "explain": "These microscopic animals have been exposed directly to open space and radiation in orbit and revived afterward, unharmed."
+  },
+  {
+    "id": "flamingos",
+    "category": "Nature",
+    "title": "Flamingos are born gray, not pink.",
+    "explain": "Their signature color comes from pigments in the shrimp and algae they eat — without that diet, they'd stay a dull gray-white."
+  },
+  {
+    "id": "bees-faces",
+    "category": "Nature",
+    "title": "Bees can recognize individual human faces.",
+    "explain": "Despite having a brain smaller than a grain of rice, honeybees can learn to tell different human faces apart in photos."
+  },
+  {
+    "id": "elephants-jump",
+    "category": "Nature",
+    "title": "Elephants are the only mammal that can't jump.",
+    "explain": "Their sheer weight and leg-bone structure mean all four feet can never leave the ground at once, unlike almost every other mammal."
+  },
+  {
+    "id": "snail-sleep",
+    "category": "Nature",
+    "title": "A snail can sleep for up to three years.",
+    "explain": "When conditions turn too hot, cold, or dry, snails seal themselves into their shells and enter a dormant state to wait it out."
+  },
+  {
+    "id": "cow-friends",
+    "category": "Nature",
+    "title": "Cows form close friendships.",
+    "explain": "Studies have found cows kept with a preferred companion show measurably lower stress levels than when separated from them."
+  },
+  {
+    "id": "lightning",
+    "category": "Space",
+    "title": "Lightning is hotter than the surface of the sun.",
+    "explain": "A single bolt reaches roughly 30,000 Kelvin — about five times hotter than the sun's surface temperature."
+  },
+  {
+    "id": "venus-spin",
+    "category": "Space",
+    "title": "Venus is the only planet that spins clockwise.",
+    "explain": "Every other planet in the solar system rotates counter-clockwise, seen from above the sun's north pole."
+  },
+  {
+    "id": "venus-day",
+    "category": "Space",
+    "title": "A day on Venus is longer than its year.",
+    "explain": "Venus takes 243 Earth days to rotate once, but only 225 Earth days to orbit the sun."
+  },
+  {
+    "id": "stars-sand",
+    "category": "Space",
+    "title": "There are more stars than grains of sand on Earth.",
+    "explain": "Astronomers estimate roughly a septillion stars in the observable universe — far more than the sand on every beach and desert combined."
+  },
+  {
+    "id": "pulsar-spin",
+    "category": "Space",
+    "title": "Some dead stars spin 600 times a second.",
+    "explain": "The fastest known pulsars — collapsed cores of exploded stars — rotate several hundred times per second, fast enough to blur past comprehension."
+  },
+  {
+    "id": "saturn-float",
+    "category": "Space",
+    "title": "Saturn would float in water.",
+    "explain": "It's the only planet in the solar system less dense than water — with a bathtub big enough, the whole planet would float."
+  },
+  {
+    "id": "moon-footprints",
+    "category": "Space",
+    "title": "The footprints on the Moon will last millions of years.",
+    "explain": "With no wind, water, or atmosphere to erode them, the boot prints left by Apollo astronauts are expected to stay visible for millions of years."
+  },
+  {
+    "id": "sun-earths",
+    "category": "Space",
+    "title": "Over a million Earths could fit inside the sun.",
+    "explain": "The sun's diameter is about 109 times that of Earth, giving it enough volume to contain roughly 1.3 million Earth-sized planets."
+  },
+  {
+    "id": "mercury-year",
+    "category": "Space",
+    "title": "A year on Mercury is just 88 Earth days.",
+    "explain": "Mercury's tight, fast orbit around the sun means it completes a full year in less time than it takes Earth to finish three months."
+  },
+  {
+    "id": "uranus-tilt",
+    "category": "Space",
+    "title": "Uranus rotates on its side.",
+    "explain": "Its axis is tilted about 98 degrees, likely from an ancient collision — so unlike every other planet, it essentially rolls around the sun."
+  },
+  {
+    "id": "shortest-war",
+    "category": "History",
+    "title": "The shortest war on record lasted 38 minutes.",
+    "explain": "Britain defeated Zanzibar on 27 August 1896, in what's recognised as history's briefest declared war."
+  },
+  {
+    "id": "great-wall",
+    "category": "History",
+    "title": "The Great Wall of China isn't visible from space.",
+    "explain": "Despite the popular myth, astronauts have confirmed it's not distinguishable with the naked eye from orbit."
+  },
+  {
+    "id": "cleopatra-pyramids",
+    "category": "History",
+    "title": "Cleopatra lived closer to the Moon landing than to the pyramids.",
+    "explain": "The Great Pyramid was built around 2560 BC; Cleopatra ruled around 30 BC — closer in time to Apollo 11 in 1969 than to the pyramid's construction."
+  },
+  {
+    "id": "oxford-aztec",
+    "category": "History",
+    "title": "Oxford University is older than the Aztec Empire.",
+    "explain": "Teaching at Oxford began around 1096, while the Aztec civilization wasn't founded until 1325 — over two centuries later."
+  },
+  {
+    "id": "last-mammoths",
+    "category": "History",
+    "title": "Woolly mammoths were still alive when the pyramids were built.",
+    "explain": "A small population survived on Wrangel Island until about 1650 BC, overlapping with the early dynasties of ancient Egypt."
+  },
+  {
+    "id": "guillotine-starwars",
+    "category": "History",
+    "title": "France used the guillotine the same year Star Wars came out.",
+    "explain": "France's last execution by guillotine took place in 1977 — the same year the original 'Star Wars' premiered in theaters."
+  },
+  {
+    "id": "oldest-recipe",
+    "category": "History",
+    "title": "The first known recipe is nearly 4,000 years old.",
+    "explain": "Clay tablets from ancient Mesopotamia, dated to around 1730 BC, record cooking instructions for stews — the oldest written recipes known."
+  },
+  {
+    "id": "napoleon-rabbits",
+    "category": "History",
+    "title": "Napoleon was once attacked by a horde of rabbits.",
+    "explain": "During a staged hunting event in 1807, thousands of released rabbits swarmed his party instead of fleeing, forcing a retreat to his carriage."
+  },
+  {
+    "id": "eiffel-temporary",
+    "category": "History",
+    "title": "The Eiffel Tower was almost torn down after 20 years.",
+    "explain": "It was built in 1889 as a temporary exhibit with a 20-year permit, and was saved from demolition only because it proved useful for radio transmission."
+  },
+  {
+    "id": "viking-helmets",
+    "category": "History",
+    "title": "Vikings never actually wore horned helmets.",
+    "explain": "No genuine Viking-era helmet with horns has ever been found — the image comes from 19th-century opera costumes, centuries after the Viking age ended."
+  },
+  {
+    "id": "banana-berry",
+    "category": "Food",
+    "title": "Bananas are berries. Strawberries aren't.",
+    "explain": "Botanically, a berry develops from one ovary with seeds inside the flesh — bananas qualify, strawberries don't."
+  },
+  {
+    "id": "purple-carrots",
+    "category": "Food",
+    "title": "Carrots were originally purple, not orange.",
+    "explain": "The now-familiar orange carrot was bred in the Netherlands around the 17th century; earlier carrots were typically purple, white, or yellow."
+  },
+  {
+    "id": "chocolate-currency",
+    "category": "Food",
+    "title": "Chocolate was once used as currency.",
+    "explain": "The Aztecs and Maya valued cacao beans highly enough to use them as money, sometimes trading a single bean for a small tamale."
+  },
+  {
+    "id": "peanuts-legume",
+    "category": "Food",
+    "title": "Peanuts aren't actually nuts.",
+    "explain": "They're legumes that grow underground, more closely related to beans and lentils than to tree nuts like almonds or walnuts."
+  },
+  {
+    "id": "white-chocolate",
+    "category": "Food",
+    "title": "White chocolate isn't technically chocolate.",
+    "explain": "It contains cocoa butter but no cocoa solids — the part that gives chocolate its color and much of its flavor — so many definitions exclude it."
+  },
+  {
+    "id": "apples-float",
+    "category": "Food",
+    "title": "Apples float because they're 25% air.",
+    "explain": "Roughly a quarter of an apple's volume is air pockets between its cells, which is enough to make it less dense than water."
+  },
+  {
+    "id": "ketchup-medicine",
+    "category": "Food",
+    "title": "Ketchup was sold as medicine in the 1830s.",
+    "explain": "A doctor marketed tomato-based ketchup pills as a cure for indigestion and other ailments before it became a condiment."
+  },
+  {
+    "id": "almonds-seed",
+    "category": "Food",
+    "title": "Almonds are technically a seed, not a nut.",
+    "explain": "An almond is the seed found inside the pit of a fruit closely related to peaches and plums — botanically closer to a stone fruit seed than a true nut."
+  },
+  {
+    "id": "fake-wasabi",
+    "category": "Food",
+    "title": "Most restaurant wasabi isn't real wasabi.",
+    "explain": "Genuine wasabi root is rare and expensive, so most sushi restaurants outside Japan serve dyed horseradish and mustard instead."
+  },
+  {
+    "id": "vanilla-expensive",
+    "category": "Food",
+    "title": "Vanilla is the second most expensive spice in the world.",
+    "explain": "Because the vanilla orchid must be hand-pollinated and each pod cured for months, real vanilla is extraordinarily labor-intensive to produce."
+  },
+  {
+    "id": "scotland-unicorn",
+    "category": "Culture",
+    "title": "Scotland's national animal is the unicorn.",
+    "explain": "It's appeared on Scottish royal symbols since the 1300s, chosen for its associations with purity and strength."
+  },
+  {
+    "id": "finland-saunas",
+    "category": "Culture",
+    "title": "Finland has more saunas than cars.",
+    "explain": "With roughly 2 million saunas for a population of about 5.5 million, saunas are deeply embedded in daily Finnish life."
+  },
+  {
+    "id": "denmark-hygge",
+    "category": "Culture",
+    "title": "Denmark has a word for cozy contentment.",
+    "explain": "'Hygge' describes a feeling of warm, comfortable togetherness — there's no direct English translation, and the concept has become a lifestyle export."
+  },
+  {
+    "id": "japan-vending",
+    "category": "Culture",
+    "title": "Japan has more vending machines per person than anywhere else.",
+    "explain": "There's roughly one vending machine for every 23 people in Japan, selling everything from hot coffee to fresh eggs and umbrellas."
+  },
+  {
+    "id": "bhutan-happiness",
+    "category": "Culture",
+    "title": "Bhutan measures progress using happiness, not just GDP.",
+    "explain": "Since the 1970s, Bhutan has used a 'Gross National Happiness' index alongside economic measures to guide national policy."
+  },
+  {
+    "id": "shortest-placename",
+    "category": "Culture",
+    "title": "The shortest place name in the world is one letter.",
+    "explain": "Several villages — including ones in Norway and Sweden — are officially named just 'Å,' a single Scandinavian letter."
+  },
+  {
+    "id": "handshake-origin",
+    "category": "Culture",
+    "title": "The handshake may have started as a weapons check.",
+    "explain": "One popular historical theory holds that gripping and shaking an open right hand showed you weren't concealing a weapon."
+  },
+  {
+    "id": "bowing-japan",
+    "category": "Culture",
+    "title": "The depth of a bow changes its meaning in Japan.",
+    "explain": "A quick nod signals something very different from a deep, held bow — the angle and duration communicate the level of respect or apology intended."
+  },
+  {
+    "id": "vatican-smallest",
+    "category": "Culture",
+    "title": "Vatican City is the smallest country in the world.",
+    "explain": "At about 0.44 square kilometers, it's smaller than most golf courses, with a resident population of only a few hundred people."
+  },
+  {
+    "id": "iceland-mosquitoes",
+    "category": "Culture",
+    "title": "Iceland has no mosquitoes.",
+    "explain": "It's one of the only inhabited places on Earth where the insect can't establish itself, thanks to its particular climate and volcanic soil chemistry."
   }
 ]
