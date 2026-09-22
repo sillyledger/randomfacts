@@ -1,0 +1,62 @@
+[
+  {
+    "id": "honey",
+    "category": "Science",
+    "title": "Honey never spoils.",
+    "explain": "Sealed jars found in 3,000-year-old Egyptian tombs were still perfectly edible — its low moisture and acidity keep bacteria from surviving."
+  },
+  {
+    "id": "cards",
+    "category": "Science",
+    "title": "A shuffled deck is one of a kind.",
+    "explain": "Fifty-two cards can be arranged in 52 factorial ways — a number vastly larger than the atoms estimated on Earth."
+  },
+  {
+    "id": "water-triple-point",
+    "category": "Science",
+    "title": "Water can be boiling and freezing at once.",
+    "explain": "At its exact 'triple point' — one specific temperature and pressure — water exists as solid ice, liquid, and vapor all at the same time."
+  },
+  {
+    "id": "gallium",
+    "category": "Science",
+    "title": "A metal exists that melts in your hand.",
+    "explain": "Gallium has a melting point of about 29.8°C, just above body temperature, so a solid gallium spoon starts turning liquid the moment you hold it."
+  },
+  {
+    "id": "mpemba",
+    "category": "Science",
+    "title": "Hot water can freeze faster than cold water.",
+    "explain": "Known as the Mpemba effect, it's been observed for centuries under the right conditions — and scientists still don't fully agree on why it happens."
+  },
+  {
+    "id": "body-glow",
+    "category": "Science",
+    "title": "The human body gives off a faint glow.",
+    "explain": "Chemical reactions inside your cells produce a small amount of visible light, far too dim to see, but detectable with sensitive enough cameras."
+  },
+  {
+    "id": "diamond-rain",
+    "category": "Science",
+    "title": "Diamonds may rain from the sky — on other planets.",
+    "explain": "Scientists believe the extreme pressure inside Neptune and Uranus can crush carbon into diamonds, which then sink slowly through the planets' interiors."
+  },
+  {
+    "id": "neutron-star",
+    "category": "Science",
+    "title": "A neutron star is unimaginably dense.",
+    "explain": "A sugar-cube-sized piece would weigh about as much as a small mountain — the result of a collapsed star crushed under its own gravity."
+  },
+  {
+    "id": "sound-vacuum",
+    "category": "Science",
+    "title": "Sound can't travel through space.",
+    "explain": "Space is a near-total vacuum, and sound needs molecules to vibrate through — without air, dust, or gas nearby, there's nothing for it to move across."
+  },
+  {
+    "id": "stomach-lining",
+    "category": "Science",
+    "title": "Your stomach relines itself every few days.",
+    "explain": "Stomach acid is strong enough to dissolve metal over time, so your stomach replaces its protective mucus lining roughly every 3 to 5 days to avoid digesting itself."
+  }
+]
