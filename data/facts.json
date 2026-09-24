@@ -30,12 +30,6 @@
     "explain": "Known as the Mpemba effect, it's been observed for centuries under the right conditions — and scientists still don't fully agree on why it happens."
   },
   {
-    "id": "body-glow",
-    "category": "Science",
-    "title": "The human body gives off a faint glow.",
-    "explain": "Chemical reactions inside your cells produce a small amount of visible light, far too dim to see, but detectable with sensitive enough cameras."
-  },
-  {
     "id": "diamond-rain",
     "category": "Science",
     "title": "Diamonds may rain from the sky — on other planets.",
@@ -54,12 +48,6 @@
     "explain": "Space is a near-total vacuum, and sound needs molecules to vibrate through — without air, dust, or gas nearby, there's nothing for it to move across."
   },
   {
-    "id": "stomach-lining",
-    "category": "Science",
-    "title": "Your stomach relines itself every few days.",
-    "explain": "Stomach acid is strong enough to dissolve metal over time, so your stomach replaces its protective mucus lining roughly every 3 to 5 days to avoid digesting itself."
-  },
-  {
     "id": "bananas-radioactive",
     "category": "Science",
     "title": "Bananas are slightly radioactive.",
@@ -76,12 +64,6 @@
     "category": "Science",
     "title": "Atoms are almost entirely empty space.",
     "explain": "If an atom were the size of a stadium, its nucleus would be about the size of a pea sitting in the middle."
-  },
-  {
-    "id": "dna-length",
-    "category": "Science",
-    "title": "The DNA in one cell stretches about 2 meters.",
-    "explain": "It's packed into a nucleus far too small to see, coiled tightly around proteins so the whole strand fits."
   },
   {
     "id": "ice-floats",
@@ -114,128 +96,122 @@
     "explain": "In 1928, Alexander Fleming returned from holiday to find mold had killed the bacteria in a petri dish he'd left out."
   },
   {
-    "id": "brain-energy",
-    "category": "Science",
-    "title": "Your brain uses about 20% of your body's energy.",
-    "explain": "It makes up only around 2% of your body weight, yet it burns roughly a fifth of the calories you use at rest."
-  },
-  {
     "id": "octopus",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Octopuses have three hearts.",
     "explain": "Two pump blood to the gills, one to the rest of the body — and that third heart stops beating when the octopus swims."
   },
   {
     "id": "wombat",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Wombats poop in cubes.",
     "explain": "The unusual shape keeps the droppings from rolling away once stacked up to mark territory."
   },
   {
     "id": "sharks",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Sharks are older than trees.",
     "explain": "Sharks have existed for over 400 million years — roughly 50 million years before the first trees appeared."
   },
   {
     "id": "sea-otters",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Sea otters hold hands while they sleep.",
     "explain": "They link paws in groups called 'rafts' so the ocean current doesn't drift them apart while they doze."
   },
   {
     "id": "tardigrades",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Tardigrades can survive the vacuum of space.",
     "explain": "These microscopic animals have been exposed directly to open space and radiation in orbit and revived afterward, unharmed."
   },
   {
     "id": "flamingos",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Flamingos are born gray, not pink.",
     "explain": "Their signature color comes from pigments in the shrimp and algae they eat — without that diet, they'd stay a dull gray-white."
   },
   {
     "id": "bees-faces",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Bees can recognize individual human faces.",
     "explain": "Despite having a brain smaller than a grain of rice, honeybees can learn to tell different human faces apart in photos."
   },
   {
     "id": "elephants-jump",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Elephants are the only mammal that can't jump.",
     "explain": "Their sheer weight and leg-bone structure mean all four feet can never leave the ground at once, unlike almost every other mammal."
   },
   {
     "id": "snail-sleep",
-    "category": "Nature",
+    "category": "Animals",
     "title": "A snail can sleep for up to three years.",
     "explain": "When conditions turn too hot, cold, or dry, snails seal themselves into their shells and enter a dormant state to wait it out."
   },
   {
     "id": "cow-friends",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Cows form close friendships.",
     "explain": "Studies have found cows kept with a preferred companion show measurably lower stress levels than when separated from them."
   },
   {
     "id": "blue-whale-heart",
-    "category": "Nature",
+    "category": "Animals",
     "title": "A blue whale's heart can weigh 180 kg.",
     "explain": "It's the largest heart of any animal on Earth, and its beat can be detected from kilometers away underwater."
   },
   {
     "id": "koala-prints",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Koalas have fingerprints almost like ours.",
     "explain": "They're so similar to human prints that even under a microscope they can be hard to tell apart."
   },
   {
     "id": "hummingbird-backwards",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Hummingbirds can fly backwards.",
     "explain": "Their wings rotate in a figure-eight motion, letting them hover, fly in reverse, and even briefly fly upside down."
   },
   {
     "id": "axolotl",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Axolotls can regrow entire limbs.",
     "explain": "These salamanders can regenerate legs, parts of their heart, and even sections of their brain without scarring."
   },
   {
     "id": "crows-faces",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Crows remember human faces for years.",
     "explain": "Researchers found crows recognized people who'd threatened them, scolded them on sight, and taught other crows to do the same."
   },
   {
     "id": "giraffe-neck",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Giraffes have the same number of neck bones as you.",
     "explain": "Both have seven neck vertebrae. A giraffe's are just much longer, each up to about 25 cm."
   },
   {
     "id": "starfish-blood",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Starfish have no blood.",
     "explain": "Instead of blood, they pump filtered seawater through their bodies to carry nutrients around."
   },
   {
     "id": "owl-eyes",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Owls can't move their eyes.",
     "explain": "Their eyes are fixed in their sockets, so owls rotate their heads up to about 270 degrees to look around."
   },
   {
     "id": "pistol-shrimp",
-    "category": "Nature",
+    "category": "Animals",
     "title": "A shrimp's snap can briefly be hotter than the sun's surface.",
     "explain": "The pistol shrimp snaps its claw so fast it creates a collapsing bubble that reaches thousands of degrees for an instant."
   },
   {
     "id": "dolphin-sleep",
-    "category": "Nature",
+    "category": "Animals",
     "title": "Dolphins sleep with half their brain at a time.",
     "explain": "One half rests while the other stays alert, letting them keep breathing and watch for danger."
   },
@@ -718,5 +694,29 @@
     "category": "Culture",
     "title": "The Netherlands has more bikes than people.",
     "explain": "There are an estimated 23 million bicycles for a population of about 18 million."
+  },
+  {
+    "id": "body-glow",
+    "category": "Human Body",
+    "title": "The human body gives off a faint glow.",
+    "explain": "Chemical reactions inside your cells produce a small amount of visible light, far too dim to see, but detectable with sensitive enough cameras."
+  },
+  {
+    "id": "stomach-lining",
+    "category": "Human Body",
+    "title": "Your stomach relines itself every few days.",
+    "explain": "Stomach acid is strong enough to dissolve metal over time, so your stomach replaces its protective mucus lining roughly every 3 to 5 days to avoid digesting itself."
+  },
+  {
+    "id": "dna-length",
+    "category": "Human Body",
+    "title": "The DNA in one cell stretches about 2 meters.",
+    "explain": "It's packed into a nucleus far too small to see, coiled tightly around proteins so the whole strand fits."
+  },
+  {
+    "id": "brain-energy",
+    "category": "Human Body",
+    "title": "Your brain uses about 20% of your body's energy.",
+    "explain": "It makes up only around 2% of your body weight, yet it burns roughly a fifth of the calories you use at rest."
   }
 ]
