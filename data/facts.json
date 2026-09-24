@@ -60,6 +60,66 @@
     "explain": "Stomach acid is strong enough to dissolve metal over time, so your stomach replaces its protective mucus lining roughly every 3 to 5 days to avoid digesting itself."
   },
   {
+    "id": "bananas-radioactive",
+    "category": "Science",
+    "title": "Bananas are slightly radioactive.",
+    "explain": "They contain potassium-40, a naturally radioactive isotope. The dose is tiny: you'd need to eat millions at once for it to matter."
+  },
+  {
+    "id": "helium-voice",
+    "category": "Science",
+    "title": "Helium doesn't actually raise your voice's pitch.",
+    "explain": "Your vocal cords vibrate the same. Sound travels faster through helium, which shifts the resonance of your throat and makes you sound squeaky."
+  },
+  {
+    "id": "atoms-empty",
+    "category": "Science",
+    "title": "Atoms are almost entirely empty space.",
+    "explain": "If an atom were the size of a stadium, its nucleus would be about the size of a pea sitting in the middle."
+  },
+  {
+    "id": "dna-length",
+    "category": "Science",
+    "title": "The DNA in one cell stretches about 2 meters.",
+    "explain": "It's packed into a nucleus far too small to see, coiled tightly around proteins so the whole strand fits."
+  },
+  {
+    "id": "ice-floats",
+    "category": "Science",
+    "title": "Water expands when it freezes.",
+    "explain": "Unlike most substances, water gets less dense as a solid. That's why ice floats and lakes freeze from the top down, protecting life below."
+  },
+  {
+    "id": "earth-core",
+    "category": "Science",
+    "title": "Earth's core is about as hot as the sun's surface.",
+    "explain": "The inner core is estimated at roughly 5,200°C, close to the sun's surface temperature of about 5,500°C."
+  },
+  {
+    "id": "stardust",
+    "category": "Science",
+    "title": "You are partly made of stardust.",
+    "explain": "Many elements in your body, like the calcium in your bones and the iron in your blood, were forged inside stars that exploded long ago."
+  },
+  {
+    "id": "microwave-accident",
+    "category": "Science",
+    "title": "The microwave oven was invented by accident.",
+    "explain": "In 1945, engineer Percy Spencer noticed a candy bar melting in his pocket while working near radar equipment, and followed the clue."
+  },
+  {
+    "id": "penicillin",
+    "category": "Science",
+    "title": "Penicillin was discovered on a forgotten dish.",
+    "explain": "In 1928, Alexander Fleming returned from holiday to find mold had killed the bacteria in a petri dish he'd left out."
+  },
+  {
+    "id": "brain-energy",
+    "category": "Science",
+    "title": "Your brain uses about 20% of your body's energy.",
+    "explain": "It makes up only around 2% of your body weight, yet it burns roughly a fifth of the calories you use at rest."
+  },
+  {
     "id": "octopus",
     "category": "Nature",
     "title": "Octopuses have three hearts.",
@@ -118,6 +178,66 @@
     "category": "Nature",
     "title": "Cows form close friendships.",
     "explain": "Studies have found cows kept with a preferred companion show measurably lower stress levels than when separated from them."
+  },
+  {
+    "id": "blue-whale-heart",
+    "category": "Nature",
+    "title": "A blue whale's heart can weigh 180 kg.",
+    "explain": "It's the largest heart of any animal on Earth, and its beat can be detected from kilometers away underwater."
+  },
+  {
+    "id": "koala-prints",
+    "category": "Nature",
+    "title": "Koalas have fingerprints almost like ours.",
+    "explain": "They're so similar to human prints that even under a microscope they can be hard to tell apart."
+  },
+  {
+    "id": "hummingbird-backwards",
+    "category": "Nature",
+    "title": "Hummingbirds can fly backwards.",
+    "explain": "Their wings rotate in a figure-eight motion, letting them hover, fly in reverse, and even briefly fly upside down."
+  },
+  {
+    "id": "axolotl",
+    "category": "Nature",
+    "title": "Axolotls can regrow entire limbs.",
+    "explain": "These salamanders can regenerate legs, parts of their heart, and even sections of their brain without scarring."
+  },
+  {
+    "id": "crows-faces",
+    "category": "Nature",
+    "title": "Crows remember human faces for years.",
+    "explain": "Researchers found crows recognized people who'd threatened them, scolded them on sight, and taught other crows to do the same."
+  },
+  {
+    "id": "giraffe-neck",
+    "category": "Nature",
+    "title": "Giraffes have the same number of neck bones as you.",
+    "explain": "Both have seven neck vertebrae. A giraffe's are just much longer, each up to about 25 cm."
+  },
+  {
+    "id": "starfish-blood",
+    "category": "Nature",
+    "title": "Starfish have no blood.",
+    "explain": "Instead of blood, they pump filtered seawater through their bodies to carry nutrients around."
+  },
+  {
+    "id": "owl-eyes",
+    "category": "Nature",
+    "title": "Owls can't move their eyes.",
+    "explain": "Their eyes are fixed in their sockets, so owls rotate their heads up to about 270 degrees to look around."
+  },
+  {
+    "id": "pistol-shrimp",
+    "category": "Nature",
+    "title": "A shrimp's snap can briefly be hotter than the sun's surface.",
+    "explain": "The pistol shrimp snaps its claw so fast it creates a collapsing bubble that reaches thousands of degrees for an instant."
+  },
+  {
+    "id": "dolphin-sleep",
+    "category": "Nature",
+    "title": "Dolphins sleep with half their brain at a time.",
+    "explain": "One half rests while the other stays alert, letting them keep breathing and watch for danger."
   },
   {
     "id": "lightning",
@@ -180,6 +300,66 @@
     "explain": "Its axis is tilted about 98 degrees, likely from an ancient collision — so unlike every other planet, it essentially rolls around the sun."
   },
   {
+    "id": "iss-sunrises",
+    "category": "Space",
+    "title": "Astronauts on the ISS see about 16 sunrises a day.",
+    "explain": "The station orbits Earth roughly every 90 minutes, passing from day to night and back again 16 times in 24 hours."
+  },
+  {
+    "id": "olympus-mons",
+    "category": "Space",
+    "title": "Mars has a volcano nearly 3 times taller than Everest.",
+    "explain": "Olympus Mons rises about 22 km high and is roughly as wide as France."
+  },
+  {
+    "id": "red-spot",
+    "category": "Space",
+    "title": "Jupiter has a storm bigger than Earth.",
+    "explain": "The Great Red Spot is wider than our planet and has been raging for at least 150 years, possibly much longer."
+  },
+  {
+    "id": "moon-drift",
+    "category": "Space",
+    "title": "The Moon is slowly drifting away from Earth.",
+    "explain": "It moves about 3.8 cm farther away each year, roughly the rate your fingernails grow."
+  },
+  {
+    "id": "light-8min",
+    "category": "Space",
+    "title": "Sunlight is about 8 minutes old when it reaches you.",
+    "explain": "Light takes roughly 8 minutes and 20 seconds to travel the 150 million km from the sun to Earth."
+  },
+  {
+    "id": "mars-blue-sunset",
+    "category": "Space",
+    "title": "Sunsets on Mars are blue.",
+    "explain": "Fine Martian dust scatters light differently than Earth's air, giving the sky around the setting sun a blue glow."
+  },
+  {
+    "id": "astronauts-taller",
+    "category": "Space",
+    "title": "Astronauts grow taller in space.",
+    "explain": "Without gravity compressing the spine, astronauts can gain up to about 3% in height, which shrinks back on return."
+  },
+  {
+    "id": "andromeda",
+    "category": "Space",
+    "title": "Our galaxy is on a collision course.",
+    "explain": "The Milky Way and Andromeda are expected to merge in around 4 to 5 billion years."
+  },
+  {
+    "id": "neptune-orbit",
+    "category": "Space",
+    "title": "Neptune completed its first orbit since discovery in 2011.",
+    "explain": "A year on Neptune lasts about 165 Earth years, and it was only discovered in 1846."
+  },
+  {
+    "id": "space-smell",
+    "category": "Space",
+    "title": "Astronauts say space smells like seared steak.",
+    "explain": "After spacewalks, astronauts report a metallic, burnt smell clinging to their suits, often compared to hot metal or grilled meat."
+  },
+  {
     "id": "shortest-war",
     "category": "History",
     "title": "The shortest war on record lasted 38 minutes.",
@@ -238,6 +418,66 @@
     "category": "History",
     "title": "Vikings never actually wore horned helmets.",
     "explain": "No genuine Viking-era helmet with horns has ever been found — the image comes from 19th-century opera costumes, centuries after the Viking age ended."
+  },
+  {
+    "id": "roman-urine",
+    "category": "History",
+    "title": "Ancient Romans whitened their teeth with urine.",
+    "explain": "The ammonia in urine acts as a cleaning agent, and Roman writers mention it being used as a mouthwash."
+  },
+  {
+    "id": "sumerian-joke",
+    "category": "History",
+    "title": "The oldest recorded joke is about a fart.",
+    "explain": "A Sumerian joke from around 1900 BC is widely cited as the oldest one on record, and it's toilet humor."
+  },
+  {
+    "id": "tug-of-war",
+    "category": "History",
+    "title": "Tug of war used to be an Olympic sport.",
+    "explain": "It was part of the Summer Olympics from 1900 to 1920, with teams from several countries competing for medals."
+  },
+  {
+    "id": "frank-mlk",
+    "category": "History",
+    "title": "Anne Frank and Martin Luther King Jr. were born the same year.",
+    "explain": "Both were born in 1929, which shows how recent these seemingly distant chapters of history are."
+  },
+  {
+    "id": "nintendo",
+    "category": "History",
+    "title": "Nintendo was founded in 1889.",
+    "explain": "Long before video games, it started as a company making hand-made playing cards in Kyoto."
+  },
+  {
+    "id": "pyramid-workers",
+    "category": "History",
+    "title": "The pyramids were likely built by paid workers.",
+    "explain": "Tombs of laborers found near Giza suggest the builders were skilled, fed, and honored, not slaves as long believed."
+  },
+  {
+    "id": "lincoln-wrestling",
+    "category": "History",
+    "title": "Abraham Lincoln is in the Wrestling Hall of Fame.",
+    "explain": "He wrestled as a young man and reportedly lost only one of around 300 matches, earning an honorary induction."
+  },
+  {
+    "id": "fax-telephone",
+    "category": "History",
+    "title": "The fax machine was invented before the telephone.",
+    "explain": "Alexander Bain patented an early fax device in 1843, over 30 years before the telephone was patented in 1876."
+  },
+  {
+    "id": "elizabeth-mechanic",
+    "category": "History",
+    "title": "Queen Elizabeth II trained as a mechanic.",
+    "explain": "During World War II, she joined the women's auxiliary army and learned to drive and repair military vehicles."
+  },
+  {
+    "id": "mecca-coffee",
+    "category": "History",
+    "title": "Coffee was once banned in Mecca.",
+    "explain": "In 1511, authorities outlawed coffee because coffeehouses were seen as hotbeds of dissent. The ban didn't last."
   },
   {
     "id": "banana-berry",
@@ -300,6 +540,66 @@
     "explain": "Because the vanilla orchid must be hand-pollinated and each pod cured for months, real vanilla is extraordinarily labor-intensive to produce."
   },
   {
+    "id": "pineapple-growth",
+    "category": "Food",
+    "title": "A pineapple takes about two years to grow.",
+    "explain": "Each plant typically produces just one pineapple at a time, after around 18 to 24 months."
+  },
+  {
+    "id": "cashew-shell",
+    "category": "Food",
+    "title": "Cashews grow outside a fruit.",
+    "explain": "Each nut hangs from the bottom of a 'cashew apple', and its shell contains an irritating oil related to poison ivy."
+  },
+  {
+    "id": "sliced-bread",
+    "category": "Food",
+    "title": "Sliced bread wasn't sold until 1928.",
+    "explain": "It was first sold pre-sliced in Chillicothe, Missouri, which is where the phrase 'the best thing since sliced bread' comes from."
+  },
+  {
+    "id": "coca-cola",
+    "category": "Food",
+    "title": "Coca-Cola once contained cocaine.",
+    "explain": "Early versions used coca leaf extract, and the cocaine was removed from the recipe in the early 1900s."
+  },
+  {
+    "id": "figs-wasps",
+    "category": "Food",
+    "title": "Many figs are pollinated by wasps.",
+    "explain": "Tiny female wasps crawl inside to lay eggs and often die there. The fig breaks them down, so you don't eat a whole wasp."
+  },
+  {
+    "id": "potato-space",
+    "category": "Food",
+    "title": "The potato was the first vegetable grown in space.",
+    "explain": "In 1995, potato plants were grown aboard the Space Shuttle Columbia as part of an experiment."
+  },
+  {
+    "id": "popsicle",
+    "category": "Food",
+    "title": "The popsicle was invented by an 11-year-old.",
+    "explain": "In 1905, Frank Epperson left a cup of soda with a stirring stick outside overnight. It froze, and he later patented the idea."
+  },
+  {
+    "id": "birds-chili",
+    "category": "Food",
+    "title": "Birds can't feel the heat of chili peppers.",
+    "explain": "They lack the receptor that reacts to capsaicin, which helps them spread chili seeds that mammals would avoid."
+  },
+  {
+    "id": "tomato-fear",
+    "category": "Food",
+    "title": "Europeans once feared tomatoes were poisonous.",
+    "explain": "The tomato belongs to the nightshade family, and many Europeans viewed it with suspicion for centuries."
+  },
+  {
+    "id": "worcestershire",
+    "category": "Food",
+    "title": "Worcestershire sauce is made with fermented fish.",
+    "explain": "Anchovies are a key ingredient, fermented for months to give the sauce its deep, savory flavor."
+  },
+  {
     "id": "scotland-unicorn",
     "category": "Culture",
     "title": "Scotland's national animal is the unicorn.",
@@ -358,5 +658,65 @@
     "category": "Culture",
     "title": "Iceland has no mosquitoes.",
     "explain": "It's one of the only inhabited places on Earth where the insect can't establish itself, thanks to its particular climate and volcanic soil chemistry."
+  },
+  {
+    "id": "penguin-knight",
+    "category": "Culture",
+    "title": "Norway's army has a knighted penguin.",
+    "explain": "Sir Nils Olav, a king penguin at Edinburgh Zoo, holds an honorary rank in the Norwegian King's Guard."
+  },
+  {
+    "id": "wife-carrying",
+    "category": "Culture",
+    "title": "Finland hosts a wife-carrying championship.",
+    "explain": "Competitors race through an obstacle course carrying a partner, and the prize has traditionally included the partner's weight in beer."
+  },
+  {
+    "id": "hawaiian-pizza",
+    "category": "Culture",
+    "title": "Hawaiian pizza was invented in Canada.",
+    "explain": "Greek-Canadian restaurant owner Sam Panopoulos first put pineapple on pizza in Ontario in 1962."
+  },
+  {
+    "id": "korea-age",
+    "category": "Culture",
+    "title": "South Koreans used to be one year old at birth.",
+    "explain": "The traditional counting age added a year at birth and every New Year, until the country officially switched in 2023."
+  },
+  {
+    "id": "dannebrog",
+    "category": "Culture",
+    "title": "Denmark has the oldest national flag still in use.",
+    "explain": "The red and white Dannebrog dates back centuries, with legend placing its origin in 1219."
+  },
+  {
+    "id": "nepal-flag",
+    "category": "Culture",
+    "title": "Nepal's flag is the only non-rectangular national flag.",
+    "explain": "It's made of two stacked triangles, representing the Himalayas and two major religions."
+  },
+  {
+    "id": "guinea-pig",
+    "category": "Culture",
+    "title": "In Switzerland, you can't own just one guinea pig.",
+    "explain": "Animal welfare law requires social animals like guinea pigs to be kept with at least one companion."
+  },
+  {
+    "id": "iceland-names",
+    "category": "Culture",
+    "title": "Iceland has a committee that approves baby names.",
+    "explain": "New names must fit Icelandic grammar and spelling, or parents need approval from the official naming committee."
+  },
+  {
+    "id": "ireland-harp",
+    "category": "Culture",
+    "title": "Ireland's national symbol is the harp, not the shamrock.",
+    "explain": "The harp appears on Irish coins, passports, and the presidential seal, and is the official state emblem."
+  },
+  {
+    "id": "dutch-bikes",
+    "category": "Culture",
+    "title": "The Netherlands has more bikes than people.",
+    "explain": "There are an estimated 23 million bicycles for a population of about 18 million."
   }
 ]
