@@ -5,7 +5,7 @@ import { NavLink } from '@/components/NavLink';
 // lucide "arrow-up-right"
 function ArrowUpRightIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-3.5 w-3.5 shrink-0" aria-hidden>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="ml-1 inline-block h-3.5 w-3.5 align-[-2px]" aria-hidden>
       <path d="M7 7h10v10" />
       <path d="M7 17 17 7" />
     </svg>
@@ -32,10 +32,14 @@ export function SiteFooter() {
             href="https://www.onpointvc.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1 tracking-wide transition hover:text-[#31333A]"
+            className="tracking-wide transition hover:text-[#31333A]"
           >
-            An Absurdity Index project by OnPoint VC
-            <ArrowUpRightIcon />
+            {/* Keep the arrow on the same line as the last word when the text wraps. */}
+            An Absurdity Index project by OnPoint{' '}
+            <span className="whitespace-nowrap">
+              VC
+              <ArrowUpRightIcon />
+            </span>
           </a>
         </div>
       </div>

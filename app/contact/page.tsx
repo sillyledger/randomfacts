@@ -25,7 +25,7 @@ export default function ContactPage() {
       <section className="mx-auto w-full max-w-[640px] rounded-[28px] bg-white p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] max-[359px]:p-5">
         <div className="flex items-start justify-between">
           <Image src="/logo.svg" alt="" width={34} height={34} className="h-[34px] w-[34px]" />
-          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[#5270F0] text-white">
+          <div className="flex h-14 w-14 items-center justify-center rounded-full bg-brand text-white">
             <MailIcon className="h-6 w-6" />
           </div>
         </div>

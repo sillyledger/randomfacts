@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { NavLink } from '@/components/NavLink';
 
 const links = [
@@ -26,6 +27,7 @@ function MenuIcon({ open }: { open: boolean }) {
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const containerRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
 
@@ -86,7 +88,8 @@ export function SiteNav() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="block rounded-xl px-4 py-3 text-[15px] font-semibold text-ink transition hover:bg-black/5"
+                aria-current={pathname === link.href ? 'page' : undefined}
+                className={`block rounded-xl px-4 py-3 text-[15px] font-semibold transition hover:bg-black/5 ${pathname === link.href ? 'text-brand' : 'text-ink'}`}
               >
                 {link.label}
               </Link>
