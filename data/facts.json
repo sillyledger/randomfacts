@@ -838,5 +838,2133 @@
     "category": "Human Body",
     "title": "Your brain uses about 20% of your body's energy.",
     "explain": "It makes up only around 2% of your body weight, yet it burns roughly a fifth of the calories you use at rest."
+  },
+  {
+    "id": "old-windows-arent-thicker-at",
+    "num": 121,
+    "category": "Science",
+    "title": "Old windows aren't thicker at the bottom because glass flows.",
+    "explain": "Glass is a solid. Old panes are uneven because of how they were made, and glaziers often put the thick edge at the bottom."
+  },
+  {
+    "id": "diamonds-and-pencil-lead-are",
+    "num": 122,
+    "category": "Science",
+    "title": "Diamonds and pencil lead are the same element.",
+    "explain": "Both are pure carbon. The only difference is how the atoms are arranged."
+  },
+  {
+    "id": "sound-travels-about-four-times",
+    "num": 123,
+    "category": "Science",
+    "title": "Sound travels about four times faster in water.",
+    "explain": "Around 1,480 m/s in water versus about 343 m/s in air, because water molecules are packed closer together."
+  },
+  {
+    "id": "liquid-oxygen-is-pale-blue",
+    "num": 124,
+    "category": "Science",
+    "title": "Liquid oxygen is pale blue and magnetic.",
+    "explain": "Pour it between the poles of a strong magnet and it sticks there."
+  },
+  {
+    "id": "a-fluffy-cloud-can-weigh",
+    "num": 125,
+    "category": "Science",
+    "title": "A fluffy cloud can weigh around 500 tonnes.",
+    "explain": "A typical cumulus cloud holds that much water, spread as tiny droplets over a huge volume of air."
+  },
+  {
+    "id": "light-slows-down-in-glass",
+    "num": 126,
+    "category": "Science",
+    "title": "Light slows down in glass.",
+    "explain": "In glass, light travels at roughly two-thirds of its speed in a vacuum. That slowdown is what makes lenses bend it."
+  },
+  {
+    "id": "mirrors-dont-flip-left-and",
+    "num": 127,
+    "category": "Science",
+    "title": "Mirrors don't flip left and right.",
+    "explain": "They flip front to back. Your left hand stays on the left side of the mirror; it's depth that gets reversed."
+  },
+  {
+    "id": "the-eiffel-tower-grows-in",
+    "num": 128,
+    "category": "Science",
+    "title": "The Eiffel Tower grows in summer.",
+    "explain": "Heat makes its iron expand, so the tower can be about 15 cm taller on a hot day."
+  },
+  {
+    "id": "you-can-never-quite-reach",
+    "num": 129,
+    "category": "Science",
+    "title": "You can never quite reach absolute zero.",
+    "explain": "At −273.15°C, particles would have the least possible energy. Labs get within billionths of a degree, but never all the way."
+  },
+  {
+    "id": "the-coldest-known-places-in",
+    "num": 130,
+    "category": "Science",
+    "title": "The coldest known places in the universe are in labs.",
+    "explain": "Physicists cool atoms to billionths of a degree above absolute zero, far colder than anywhere in deep space."
+  },
+  {
+    "id": "popcorn-pops-because-of-steam",
+    "num": 131,
+    "category": "Science",
+    "title": "Popcorn pops because of steam.",
+    "explain": "Water inside the kernel turns to steam, pressure builds until the hull bursts, and the starch puffs out."
+  },
+  {
+    "id": "snow-is-actually-clear",
+    "num": 132,
+    "category": "Science",
+    "title": "Snow is actually clear.",
+    "explain": "Each ice crystal is transparent. Snow looks white because its many surfaces scatter all colors of light."
+  },
+  {
+    "id": "a-rubber-band-heats-up",
+    "num": 133,
+    "category": "Science",
+    "title": "A rubber band heats up when you stretch it.",
+    "explain": "Stretching lines up its long molecules and releases heat. Let it relax and it cools down. You can feel it against your lip."
+  },
+  {
+    "id": "some-metals-burst-into-flame",
+    "num": 134,
+    "category": "Science",
+    "title": "Some metals burst into flame in water.",
+    "explain": "Sodium and potassium react so violently with water that the hydrogen they release can ignite."
+  },
+  {
+    "id": "sand-can-scratch-your-phone",
+    "num": 135,
+    "category": "Science",
+    "title": "Sand can scratch your phone screen.",
+    "explain": "Most sand is quartz, which is harder than the glass on many phones. That's where a lot of scratches come from."
+  },
+  {
+    "id": "trees-are-mostly-made-of",
+    "num": 136,
+    "category": "Science",
+    "title": "Trees are mostly made of air.",
+    "explain": "Most of a tree's mass comes from carbon dioxide pulled out of the air, not from the soil."
+  },
+  {
+    "id": "pure-water-barely-conducts-electricity",
+    "num": 137,
+    "category": "Science",
+    "title": "Pure water barely conducts electricity.",
+    "explain": "It's the dissolved salts and minerals in everyday water that let current flow."
+  },
+  {
+    "id": "the-smell-of-rain-has",
+    "num": 138,
+    "category": "Science",
+    "title": "The smell of rain has a name: petrichor.",
+    "explain": "Much of it comes from geosmin, made by soil bacteria. Human noses can detect it at a few parts per trillion."
+  },
+  {
+    "id": "chalk-is-made-of-tiny",
+    "num": 139,
+    "category": "Science",
+    "title": "Chalk is made of tiny fossils.",
+    "explain": "Natural chalk is built from the shells of microscopic ocean algae that piled up on ancient seafloors."
+  },
+  {
+    "id": "einsteins-nobel-prize-wasnt-for",
+    "num": 140,
+    "category": "Science",
+    "title": "Einstein's Nobel Prize wasn't for relativity.",
+    "explain": "He won the 1921 Nobel Prize in Physics for explaining the photoelectric effect."
+  },
+  {
+    "id": "atomic-clocks-barely-ever-drift",
+    "num": 141,
+    "category": "Science",
+    "title": "Atomic clocks barely ever drift.",
+    "explain": "The best cesium clocks would lose about one second in 100 million years, and newer optical clocks are even better."
+  },
+  {
+    "id": "superfluid-helium-can-climb-walls",
+    "num": 142,
+    "category": "Science",
+    "title": "Superfluid helium can climb walls.",
+    "explain": "Cooled close to absolute zero, liquid helium loses all friction and creeps up and over the sides of its container."
+  },
+  {
+    "id": "your-microwave-and-your-wifi",
+    "num": 143,
+    "category": "Science",
+    "title": "Your microwave and your Wi-Fi share a frequency.",
+    "explain": "Both commonly use around 2.4 GHz, which is why an old microwave can make Wi-Fi drop out."
+  },
+  {
+    "id": "there-are-118-confirmed-elements",
+    "num": 144,
+    "category": "Science",
+    "title": "There are 118 confirmed elements.",
+    "explain": "The last four were officially named in 2016: nihonium, moscovium, tennessine and oganesson."
+  },
+  {
+    "id": "aerogel-is-about-998-air",
+    "num": 145,
+    "category": "Science",
+    "title": "Aerogel is about 99.8% air.",
+    "explain": "It's one of the lightest solids ever made and an extremely good insulator."
+  },
+  {
+    "id": "a-group-of-flamingos-is",
+    "num": 146,
+    "category": "Animals",
+    "title": "A group of flamingos is called a flamboyance.",
+    "explain": "Fitting for a bird that stands out that much."
+  },
+  {
+    "id": "one-jellyfish-can-age-in",
+    "num": 147,
+    "category": "Animals",
+    "title": "One jellyfish can age in reverse.",
+    "explain": "Turritopsis dohrnii can turn back into its juvenile polyp stage when stressed, starting its life cycle again."
+  },
+  {
+    "id": "pigeons-can-tell-picasso-from",
+    "num": 148,
+    "category": "Animals",
+    "title": "Pigeons can tell Picasso from Monet.",
+    "explain": "In a 1995 study, trained pigeons learned to tell paintings by the two artists apart."
+  },
+  {
+    "id": "male-seahorses-give-birth",
+    "num": 149,
+    "category": "Animals",
+    "title": "Male seahorses give birth.",
+    "explain": "The female puts her eggs into the male's pouch, and he carries them until they hatch."
+  },
+  {
+    "id": "zebra-stripes-may-keep-flies",
+    "num": 150,
+    "category": "Animals",
+    "title": "Zebra stripes may keep flies away.",
+    "explain": "Studies found biting flies struggle to land on striped surfaces, which may be why zebras have them."
+  },
+  {
+    "id": "polar-bears-have-black-skin",
+    "num": 151,
+    "category": "Animals",
+    "title": "Polar bears have black skin.",
+    "explain": "Their fur isn't white either: each hair is translucent and scatters light, which makes it look white."
+  },
+  {
+    "id": "dolphins-have-names",
+    "num": 152,
+    "category": "Animals",
+    "title": "Dolphins have names.",
+    "explain": "Each dolphin develops a signature whistle, and others use it to call that specific individual."
+  },
+  {
+    "id": "sloths-can-hold-their-breath",
+    "num": 153,
+    "category": "Animals",
+    "title": "Sloths can hold their breath for 40 minutes.",
+    "explain": "They can slow their heart rate way down, which helps them stay underwater far longer than most mammals."
+  },
+  {
+    "id": "honeybees-dance-to-give-directions",
+    "num": 154,
+    "category": "Animals",
+    "title": "Honeybees dance to give directions.",
+    "explain": "The waggle dance tells other bees the direction and distance to a food source."
+  },
+  {
+    "id": "mantis-shrimp-can-break-aquarium",
+    "num": 155,
+    "category": "Animals",
+    "title": "Mantis shrimp can break aquarium glass.",
+    "explain": "Their club-like arms strike with the acceleration of a bullet, fast enough to boil the water around them."
+  },
+  {
+    "id": "platypuses-glow-under-uv-light",
+    "num": 156,
+    "category": "Animals",
+    "title": "Platypuses glow under UV light.",
+    "explain": "Their fur fluoresces blue-green. Males also have venomous spurs on their back legs."
+  },
+  {
+    "id": "rats-laugh-when-tickled",
+    "num": 157,
+    "category": "Animals",
+    "title": "Rats laugh when tickled.",
+    "explain": "They make ultrasonic chirps too high for us to hear, and they come back for more."
+  },
+  {
+    "id": "ants-dont-have-lungs",
+    "num": 158,
+    "category": "Animals",
+    "title": "Ants don't have lungs.",
+    "explain": "Air enters through tiny holes along their bodies called spiracles and moves through a network of tubes."
+  },
+  {
+    "id": "arctic-terns-fly-the-longest",
+    "num": 159,
+    "category": "Animals",
+    "title": "Arctic terns fly the longest migration of any animal.",
+    "explain": "They travel from the Arctic to Antarctica and back each year, often more than 70,000 km."
+  },
+  {
+    "id": "butterflies-taste-with-their-feet",
+    "num": 160,
+    "category": "Animals",
+    "title": "Butterflies taste with their feet.",
+    "explain": "Sensors on their feet tell them whether a leaf is the right plant to lay eggs on."
+  },
+  {
+    "id": "goats-have-rectangular-pupils",
+    "num": 161,
+    "category": "Animals",
+    "title": "Goats have rectangular pupils.",
+    "explain": "The wide shape gives them a panoramic view to spot predators while grazing."
+  },
+  {
+    "id": "a-day-on-mercury-lasts",
+    "num": 162,
+    "category": "Space",
+    "title": "A day on Mercury lasts two of its years.",
+    "explain": "From sunrise to sunrise takes 176 Earth days, while one orbit around the Sun takes 88."
+  },
+  {
+    "id": "theres-a-water-cloud-in",
+    "num": 163,
+    "category": "Space",
+    "title": "There's a water cloud in space bigger than all Earth's oceans.",
+    "explain": "Around a distant quasar, astronomers found water vapor equal to about 140 trillion times Earth's oceans."
+  },
+  {
+    "id": "the-sun-holds-998-of",
+    "num": 164,
+    "category": "Space",
+    "title": "The Sun holds 99.8% of the solar system's mass.",
+    "explain": "All the planets, moons, asteroids and comets together make up the tiny remainder."
+  },
+  {
+    "id": "pluto-hasnt-finished-one-orbit",
+    "num": 165,
+    "category": "Space",
+    "title": "Pluto hasn't finished one orbit since it was discovered.",
+    "explain": "It was found in 1930, and one trip around the Sun takes about 248 years."
+  },
+  {
+    "id": "voyager-1-is-the-farthest",
+    "num": 166,
+    "category": "Space",
+    "title": "Voyager 1 is the farthest human-made object.",
+    "explain": "Launched in 1977, it's now more than 24 billion km away and still sending signals."
+  },
+  {
+    "id": "venus-is-hotter-than-mercury",
+    "num": 167,
+    "category": "Space",
+    "title": "Venus is hotter than Mercury.",
+    "explain": "Even though it's farther from the Sun, its thick carbon dioxide atmosphere traps heat at about 465°C."
+  },
+  {
+    "id": "mars-has-a-canyon-as",
+    "num": 168,
+    "category": "Space",
+    "title": "Mars has a canyon as long as the United States is wide.",
+    "explain": "Valles Marineris stretches about 4,000 km and is up to 7 km deep."
+  },
+  {
+    "id": "the-moon-has-earthquakes",
+    "num": 169,
+    "category": "Space",
+    "title": "The Moon has earthquakes.",
+    "explain": "Moonquakes happen, and some last much longer than earthquakes because the Moon is so dry and rigid."
+  },
+  {
+    "id": "theres-no-dark-side-of",
+    "num": 170,
+    "category": "Space",
+    "title": "There's no 'dark side' of the Moon.",
+    "explain": "The far side gets just as much sunlight. We just never see it from Earth, because the Moon always shows us the same face."
+  },
+  {
+    "id": "some-stars-are-colder-than",
+    "num": 171,
+    "category": "Space",
+    "title": "Some 'stars' are colder than the North Pole.",
+    "explain": "Brown dwarfs are failed stars, and the coldest known one is below freezing."
+  },
+  {
+    "id": "space-starts-about-100-km",
+    "num": 172,
+    "category": "Space",
+    "title": "Space starts about 100 km up.",
+    "explain": "That's the Kármán line, roughly an hour's drive away if you could drive straight up."
+  },
+  {
+    "id": "one-of-marss-moons-is",
+    "num": 173,
+    "category": "Space",
+    "title": "One of Mars's moons is doomed.",
+    "explain": "Phobos is slowly spiraling inward and will likely break apart or crash into Mars in about 50 million years."
+  },
+  {
+    "id": "the-voyager-probes-carry-a",
+    "num": 174,
+    "category": "Space",
+    "title": "The Voyager probes carry a golden record.",
+    "explain": "It holds sounds, music and images from Earth, just in case anyone ever finds it."
+  },
+  {
+    "id": "napoleon-wasnt-actually-short",
+    "num": 175,
+    "category": "History",
+    "title": "Napoleon wasn't actually short.",
+    "explain": "He was about 1.69 m, average for a Frenchman of his time. Confusion between French and English inches helped the myth."
+  },
+  {
+    "id": "the-great-fire-of-london",
+    "num": 176,
+    "category": "History",
+    "title": "The Great Fire of London had few recorded deaths.",
+    "explain": "The 1666 fire destroyed much of the city, but only six deaths were officially recorded. The real number was likely higher."
+  },
+  {
+    "id": "ancient-romans-used-urine-to",
+    "num": 177,
+    "category": "History",
+    "title": "Ancient Romans used urine to wash clothes.",
+    "explain": "Its ammonia helped clean fabric, and urine was collected from public pots for laundries."
+  },
+  {
+    "id": "einstein-was-offered-the-presidency",
+    "num": 178,
+    "category": "History",
+    "title": "Einstein was offered the presidency of Israel.",
+    "explain": "In 1952 he was asked to become president. He politely declined."
+  },
+  {
+    "id": "the-first-known-author-was",
+    "num": 179,
+    "category": "History",
+    "title": "The first known author was a woman.",
+    "explain": "Enheduanna, a Mesopotamian priestess around 2300 BC, is the earliest author known by name."
+  },
+  {
+    "id": "ten-days-vanished-in-1582",
+    "num": 180,
+    "category": "History",
+    "title": "Ten days vanished in 1582.",
+    "explain": "To fix the calendar, the Gregorian switch jumped straight from October 4 to October 15 in several countries."
+  },
+  {
+    "id": "russias-october-revolution-happened-in",
+    "num": 181,
+    "category": "History",
+    "title": "Russia's October Revolution happened in November.",
+    "explain": "Russia still used the old Julian calendar in 1917. By today's calendar, the revolution was in November."
+  },
+  {
+    "id": "the-colosseum-may-have-hosted",
+    "num": 182,
+    "category": "History",
+    "title": "The Colosseum may have hosted mock sea battles.",
+    "explain": "Ancient writers describe it being flooded for naval shows in its early years."
+  },
+  {
+    "id": "harvard-is-older-than-calculus",
+    "num": 183,
+    "category": "History",
+    "title": "Harvard is older than calculus.",
+    "explain": "Harvard was founded in 1636. Newton and Leibniz developed calculus decades later."
+  },
+  {
+    "id": "ancient-egyptians-slept-on-stone",
+    "num": 184,
+    "category": "History",
+    "title": "Ancient Egyptians slept on stone headrests.",
+    "explain": "Instead of soft pillows, many used curved headrests made of wood or stone."
+  },
+  {
+    "id": "the-first-recorded-olympic-champion",
+    "num": 185,
+    "category": "History",
+    "title": "The first recorded Olympic champion was a cook.",
+    "explain": "Coroebus of Elis won the footrace in 776 BC."
+  },
+  {
+    "id": "roman-concrete-gets-stronger-in",
+    "num": 186,
+    "category": "History",
+    "title": "Roman concrete gets stronger in seawater.",
+    "explain": "Harbor walls built 2,000 years ago are still standing because seawater helps grow new minerals inside them."
+  },
+  {
+    "id": "china-used-paper-money-a",
+    "num": 187,
+    "category": "History",
+    "title": "China used paper money a thousand years ago.",
+    "explain": "Paper currency spread in China during the Song dynasty, centuries before Europe."
+  },
+  {
+    "id": "australia-lost-a-war-against",
+    "num": 188,
+    "category": "History",
+    "title": "Australia lost a war against emus.",
+    "explain": "In 1932, soldiers with machine guns failed to cull the emus damaging crops in Western Australia."
+  },
+  {
+    "id": "the-chess-queen-used-to",
+    "num": 189,
+    "category": "History",
+    "title": "The chess queen used to be one of the weakest pieces.",
+    "explain": "It could only move one square diagonally until a rule change in 15th-century Europe made it the strongest."
+  },
+  {
+    "id": "einsteins-brain-was-taken-after",
+    "num": 190,
+    "category": "History",
+    "title": "Einstein's brain was taken after he died.",
+    "explain": "The pathologist who did the autopsy in 1955 kept it, without clear permission, for decades."
+  },
+  {
+    "id": "the-hundred-years-war-lasted",
+    "num": 191,
+    "category": "History",
+    "title": "The Hundred Years' War lasted 116 years.",
+    "explain": "It ran from 1337 to 1453, with long breaks in between."
+  },
+  {
+    "id": "ancient-romans-had-fast-food",
+    "num": 192,
+    "category": "History",
+    "title": "Ancient Romans had fast food.",
+    "explain": "Street counters called thermopolia sold hot food and drinks, and some have been found in Pompeii."
+  },
+  {
+    "id": "a-1904-olympic-marathon-runner",
+    "num": 193,
+    "category": "History",
+    "title": "A 1904 Olympic marathon runner rode in a car.",
+    "explain": "Fred Lorz hitched a ride for part of the course and crossed the line first before being caught."
+  },
+  {
+    "id": "the-lighter-was-invented-before",
+    "num": 194,
+    "category": "History",
+    "title": "The lighter was invented before the match.",
+    "explain": "Döbereiner's lamp, an early lighter, dates from 1823. Friction matches came a few years later."
+  },
+  {
+    "id": "the-statue-of-liberty-used",
+    "num": 195,
+    "category": "History",
+    "title": "The Statue of Liberty used to be copper-colored.",
+    "explain": "It was shiny brown copper at first and turned green over about 30 years as the metal oxidized."
+  },
+  {
+    "id": "pistachios-can-catch-fire-on",
+    "num": 196,
+    "category": "Food",
+    "title": "Pistachios can catch fire on their own.",
+    "explain": "Stored in large piles, they can heat up and spontaneously combust, so shipping rules cover them."
+  },
+  {
+    "id": "sliced-bread-was-banned-in",
+    "num": 197,
+    "category": "Food",
+    "title": "Sliced bread was banned in the US.",
+    "explain": "In 1943, the government briefly banned it to save resources during the war. It lasted about two months."
+  },
+  {
+    "id": "ripe-cranberries-bounce",
+    "num": 198,
+    "category": "Food",
+    "title": "Ripe cranberries bounce.",
+    "explain": "Growers have used bounce tests to sort good cranberries from bad ones."
+  },
+  {
+    "id": "fortune-cookies-arent-from-china",
+    "num": 199,
+    "category": "Food",
+    "title": "Fortune cookies aren't from China.",
+    "explain": "They trace back to Japan and were popularized in California in the early 1900s."
+  },
+  {
+    "id": "caesar-salad-was-invented-in",
+    "num": 200,
+    "category": "Food",
+    "title": "Caesar salad was invented in Mexico.",
+    "explain": "Restaurateur Caesar Cardini is credited with creating it in Tijuana in the 1920s."
+  },
+  {
+    "id": "broccoli-kale-and-cabbage-are",
+    "num": 201,
+    "category": "Food",
+    "title": "Broccoli, kale and cabbage are the same species.",
+    "explain": "They, along with cauliflower and Brussels sprouts, were all bred from one wild mustard plant."
+  },
+  {
+    "id": "coffee-beans-are-seeds-from",
+    "num": 202,
+    "category": "Food",
+    "title": "Coffee beans are seeds from a fruit.",
+    "explain": "They grow inside a red fruit called a coffee cherry."
+  },
+  {
+    "id": "avocados-are-berries",
+    "num": 203,
+    "category": "Food",
+    "title": "Avocados are berries.",
+    "explain": "Botanically, an avocado is a large berry with a single seed."
+  },
+  {
+    "id": "croissants-have-austrian-roots",
+    "num": 204,
+    "category": "Food",
+    "title": "Croissants have Austrian roots.",
+    "explain": "They grew out of the Austrian kipferl, adapted by bakers in Paris."
+  },
+  {
+    "id": "rice-feeds-more-than-half",
+    "num": 205,
+    "category": "Food",
+    "title": "Rice feeds more than half the world.",
+    "explain": "It's a staple food for more than half of the global population."
+  },
+  {
+    "id": "the-holes-in-swiss-cheese",
+    "num": 206,
+    "category": "Food",
+    "title": "The holes in Swiss cheese come from bacteria.",
+    "explain": "Bacteria release carbon dioxide bubbles as the cheese ages, and tiny hay particles help the holes form."
+  },
+  {
+    "id": "green-bell-peppers-are-unripe",
+    "num": 207,
+    "category": "Food",
+    "title": "Green bell peppers are unripe.",
+    "explain": "Left on the plant, most green peppers turn yellow, orange or red and get sweeter."
+  },
+  {
+    "id": "nachos-are-named-after-a",
+    "num": 208,
+    "category": "Food",
+    "title": "Nachos are named after a man called Nacho.",
+    "explain": "Ignacio 'Nacho' Anaya created them in Mexico in 1943 for some visiting guests."
+  },
+  {
+    "id": "traditional-parmesan-isnt-vegetarian",
+    "num": 209,
+    "category": "Food",
+    "title": "Traditional Parmesan isn't vegetarian.",
+    "explain": "Parmigiano Reggiano is made with animal rennet from calves."
+  },
+  {
+    "id": "kiwifruit-was-renamed-for-marketing",
+    "num": 210,
+    "category": "Food",
+    "title": "Kiwifruit was renamed for marketing.",
+    "explain": "It used to be called the Chinese gooseberry. New Zealand exporters renamed it after their national bird."
+  },
+  {
+    "id": "canned-food-came-before-the",
+    "num": 211,
+    "category": "Food",
+    "title": "Canned food came before the can opener.",
+    "explain": "Early cans were opened with hammers and chisels for decades before a proper opener was invented."
+  },
+  {
+    "id": "kfc-is-a-christmas-tradition",
+    "num": 212,
+    "category": "Culture",
+    "title": "KFC is a Christmas tradition in Japan.",
+    "explain": "Thanks to a 1970s ad campaign, millions of Japanese families order fried chicken for Christmas."
+  },
+  {
+    "id": "the-mona-lisa-has-no",
+    "num": 213,
+    "category": "Culture",
+    "title": "The Mona Lisa has no eyebrows.",
+    "explain": "They may have faded over time or been removed by cleaning. High-res scans suggest there were once faint ones."
+  },
+  {
+    "id": "the-mona-lisa-became-famous",
+    "num": 214,
+    "category": "Culture",
+    "title": "The Mona Lisa became famous after it was stolen.",
+    "explain": "Its theft from the Louvre in 1911 made headlines worldwide and turned it into a global icon."
+  },
+  {
+    "id": "van-gogh-sold-very-few",
+    "num": 215,
+    "category": "Culture",
+    "title": "Van Gogh sold very few paintings while alive.",
+    "explain": "He's known to have sold very little, and he died with almost no commercial success."
+  },
+  {
+    "id": "monopoly-was-meant-as-a",
+    "num": 216,
+    "category": "Culture",
+    "title": "Monopoly was meant as a warning.",
+    "explain": "It began as The Landlord's Game, designed by Lizzie Magie to show the problems with land monopolies."
+  },
+  {
+    "id": "iceland-celebrates-christmas-with-a",
+    "num": 217,
+    "category": "Culture",
+    "title": "Iceland celebrates Christmas with a book flood.",
+    "explain": "Called Jólabókaflóð, it's a tradition of giving books on Christmas Eve and reading them that night."
+  },
+  {
+    "id": "norway-gives-london-a-christmas",
+    "num": 218,
+    "category": "Culture",
+    "title": "Norway gives London a Christmas tree every year.",
+    "explain": "Since 1947, Oslo has sent a tree to Trafalgar Square to thank Britain for its help in World War II."
+  },
+  {
+    "id": "happy-birthday-was-under-copyright",
+    "num": 219,
+    "category": "Culture",
+    "title": "'Happy Birthday' was under copyright until 2016.",
+    "explain": "A court ruling ended the claim, and the song is now in the public domain."
+  },
+  {
+    "id": "scrabbles-letter-values-came-from",
+    "num": 220,
+    "category": "Culture",
+    "title": "Scrabble's letter values came from a newspaper.",
+    "explain": "Its inventor counted letter frequency on New York Times front pages to set the points."
+  },
+  {
+    "id": "a-rubiks-cube-has-43",
+    "num": 221,
+    "category": "Culture",
+    "title": "A Rubik's Cube has 43 quintillion combinations.",
+    "explain": "Yet any position can be solved in 20 moves or fewer."
+  },
+  {
+    "id": "barbie-has-a-full-name",
+    "num": 222,
+    "category": "Culture",
+    "title": "Barbie has a full name.",
+    "explain": "She's Barbara Millicent Roberts, from the fictional town of Willows, Wisconsin."
+  },
+  {
+    "id": "lego-makes-more-tires-than",
+    "num": 223,
+    "category": "Culture",
+    "title": "Lego makes more tires than any tire company.",
+    "explain": "By count, it produces hundreds of millions of tiny tires every year."
+  },
+  {
+    "id": "tetris-was-created-in-the",
+    "num": 224,
+    "category": "Culture",
+    "title": "Tetris was created in the Soviet Union.",
+    "explain": "Alexey Pajitnov developed it in 1984 at a computer center in Moscow."
+  },
+  {
+    "id": "the-oldest-known-instruments-are",
+    "num": 225,
+    "category": "Culture",
+    "title": "The oldest known instruments are about 40,000 years old.",
+    "explain": "Flutes made from bird bone and mammoth ivory have been found in caves in Germany."
+  },
+  {
+    "id": "the-hollywood-sign-used-to",
+    "num": 226,
+    "category": "Culture",
+    "title": "The Hollywood sign used to say 'Hollywoodland'.",
+    "explain": "It was an ad for a housing development in 1923. The 'land' was removed in 1949."
+  },
+  {
+    "id": "every-flag-has-at-least",
+    "num": 227,
+    "category": "Culture",
+    "title": "Every flag has at least one Olympic ring color.",
+    "explain": "The designer chose blue, yellow, black, green and red on white so every nation's flag was represented."
+  },
+  {
+    "id": "japan-has-more-pets-than",
+    "num": 228,
+    "category": "Culture",
+    "title": "Japan has more pets than children.",
+    "explain": "There are more pet cats and dogs in Japan than children under 15."
+  },
+  {
+    "id": "the-phantom-of-the-opera",
+    "num": 229,
+    "category": "Culture",
+    "title": "The Phantom of the Opera is Broadway's longest-running show.",
+    "explain": "It ran for 35 years before closing in 2023."
+  },
+  {
+    "id": "sherlock-holmes-never-says-elementary",
+    "num": 230,
+    "category": "Culture",
+    "title": "Sherlock Holmes never says 'Elementary, my dear Watson' in the books.",
+    "explain": "The famous line comes from later films and adaptations."
+  },
+  {
+    "id": "nobody-says-play-it-again",
+    "num": 231,
+    "category": "Culture",
+    "title": "Nobody says 'Play it again, Sam' in Casablanca.",
+    "explain": "The actual line is closer to 'Play it, Sam.'"
+  },
+  {
+    "id": "a-spanish-town-holds-a",
+    "num": 232,
+    "category": "Culture",
+    "title": "A Spanish town holds a giant tomato fight.",
+    "explain": "Every August, thousands throw tomatoes at each other during La Tomatina in Buñol."
+  },
+  {
+    "id": "russian-nesting-dolls-are-only",
+    "num": 233,
+    "category": "Culture",
+    "title": "Russian nesting dolls are only about 130 years old.",
+    "explain": "The first set was made in the 1890s, inspired by a Japanese doll."
+  },
+  {
+    "id": "one-company-lasted-over-1400",
+    "num": 234,
+    "category": "Culture",
+    "title": "One company lasted over 1,400 years.",
+    "explain": "Kongō Gumi, a Japanese temple builder, was founded in 578 and ran independently until 2006."
+  },
+  {
+    "id": "nigeria-makes-more-films-than",
+    "num": 235,
+    "category": "Culture",
+    "title": "Nigeria makes more films than Hollywood.",
+    "explain": "Nollywood produces more movies per year than the US film industry, second only to India."
+  },
+  {
+    "id": "youre-taller-in-the-morning",
+    "num": 236,
+    "category": "Human Body",
+    "title": "You're taller in the morning.",
+    "explain": "The discs in your spine compress during the day, so you can be about 1 cm shorter by evening."
+  },
+  {
+    "id": "your-nose-may-detect-a",
+    "num": 237,
+    "category": "Human Body",
+    "title": "Your nose may detect a trillion smells.",
+    "explain": "A 2014 study estimated humans can tell apart over a trillion scents, though scientists still debate the number."
+  },
+  {
+    "id": "babies-have-more-bones-than",
+    "num": 238,
+    "category": "Human Body",
+    "title": "Babies have more bones than adults.",
+    "explain": "Newborns have around 300 bones, and many fuse together until adults have 206."
+  },
+  {
+    "id": "your-smallest-bone-is-in",
+    "num": 239,
+    "category": "Human Body",
+    "title": "Your smallest bone is in your ear.",
+    "explain": "The stapes is about 3 mm long and helps carry sound to your inner ear."
+  },
+  {
+    "id": "bone-handles-more-pressure-than",
+    "num": 240,
+    "category": "Human Body",
+    "title": "Bone handles more pressure than concrete.",
+    "explain": "It can withstand higher compression than regular concrete while staying much lighter."
+  },
+  {
+    "id": "your-eyes-see-the-world",
+    "num": 241,
+    "category": "Human Body",
+    "title": "Your eyes see the world upside down.",
+    "explain": "The lens flips the image on your retina, and your brain turns it right side up."
+  },
+  {
+    "id": "your-blood-vessels-could-wrap",
+    "num": 242,
+    "category": "Human Body",
+    "title": "Your blood vessels could wrap around Earth twice.",
+    "explain": "Laid end to end, an adult's vessels are estimated at around 100,000 km."
+  },
+  {
+    "id": "you-cant-tickle-yourself",
+    "num": 243,
+    "category": "Human Body",
+    "title": "You can't tickle yourself.",
+    "explain": "Your brain predicts the sensation of your own movements and dulls the response."
+  },
+  {
+    "id": "fingernails-grow-faster-than-toenails",
+    "num": 244,
+    "category": "Human Body",
+    "title": "Fingernails grow faster than toenails.",
+    "explain": "Fingernails grow about 3 mm a month, roughly three times faster than toenails."
+  },
+  {
+    "id": "your-heart-beats-about-100000",
+    "num": 245,
+    "category": "Human Body",
+    "title": "Your heart beats about 100,000 times a day.",
+    "explain": "That's around 35 million beats a year."
+  },
+  {
+    "id": "goosebumps-are-left-over-from",
+    "num": 246,
+    "category": "Human Body",
+    "title": "Goosebumps are left over from our furry ancestors.",
+    "explain": "The muscles that make your hairs stand up once fluffed out fur for warmth or to look bigger."
+  },
+  {
+    "id": "you-shed-tens-of-thousands",
+    "num": 247,
+    "category": "Human Body",
+    "title": "You shed tens of thousands of skin cells every minute.",
+    "explain": "Your outer layer of skin is replaced continuously, roughly every month."
+  },
+  {
+    "id": "tooth-enamel-is-the-hardest",
+    "num": 248,
+    "category": "Human Body",
+    "title": "Tooth enamel is the hardest thing in your body.",
+    "explain": "It's even harder than bone, but it can't repair itself."
+  },
+  {
+    "id": "your-taste-buds-are-replaced",
+    "num": 249,
+    "category": "Human Body",
+    "title": "Your taste buds are replaced every week or two.",
+    "explain": "Taste receptor cells live around 10 days before new ones take over."
+  },
+  {
+    "id": "your-lungs-arent-the-same",
+    "num": 250,
+    "category": "Human Body",
+    "title": "Your lungs aren't the same size.",
+    "explain": "The left lung is smaller to make room for your heart, with two lobes instead of three."
+  },
+  {
+    "id": "you-dont-sneeze-in-your",
+    "num": 251,
+    "category": "Human Body",
+    "title": "You don't sneeze in your sleep.",
+    "explain": "The reflex is suppressed while you sleep. A strong enough irritant wakes you up first."
+  },
+  {
+    "id": "your-corneas-have-no-blood",
+    "num": 252,
+    "category": "Human Body",
+    "title": "Your corneas have no blood vessels.",
+    "explain": "They get oxygen directly from the air instead."
+  },
+  {
+    "id": "muscles-can-only-pull",
+    "num": 253,
+    "category": "Human Body",
+    "title": "Muscles can only pull.",
+    "explain": "They never push, which is why they work in pairs, like biceps and triceps."
+  },
+  {
+    "id": "your-liver-can-grow-back",
+    "num": 254,
+    "category": "Human Body",
+    "title": "Your liver can grow back.",
+    "explain": "It can regenerate to full size even after a large part of it is removed."
+  },
+  {
+    "id": "your-red-blood-cells-have",
+    "num": 255,
+    "category": "Human Body",
+    "title": "Your red blood cells have no nucleus.",
+    "explain": "They lose it as they mature, making more room for oxygen-carrying hemoglobin."
+  },
+  {
+    "id": "you-make-about-2-million",
+    "num": 256,
+    "category": "Human Body",
+    "title": "You make about 2 million red blood cells every second.",
+    "explain": "Your bone marrow keeps up with cells that wear out after around 120 days."
+  },
+  {
+    "id": "you-have-about-as-many",
+    "num": 257,
+    "category": "Human Body",
+    "title": "You have about as many hair follicles as a chimpanzee.",
+    "explain": "Most of your hairs are just very fine and short."
+  },
+  {
+    "id": "your-small-intestine-is-about",
+    "num": 258,
+    "category": "Human Body",
+    "title": "Your small intestine is about 6 meters long.",
+    "explain": "It's folded up to fit inside your abdomen."
+  },
+  {
+    "id": "identical-twins-have-different-fingerprints",
+    "num": 259,
+    "category": "Human Body",
+    "title": "Identical twins have different fingerprints.",
+    "explain": "Fingerprints form in the womb and are shaped by tiny differences in position and pressure."
+  },
+  {
+    "id": "your-gut-has-its-own",
+    "num": 260,
+    "category": "Human Body",
+    "title": "Your gut has its own nervous system.",
+    "explain": "The enteric nervous system has hundreds of millions of neurons and can work largely on its own."
+  },
+  {
+    "id": "your-ears-get-longer-as",
+    "num": 261,
+    "category": "Human Body",
+    "title": "Your ears get longer as you age.",
+    "explain": "Studies show ears slowly lengthen throughout adulthood."
+  },
+  {
+    "id": "you-carry-about-as-many",
+    "num": 262,
+    "category": "Human Body",
+    "title": "You carry about as many bacteria as human cells.",
+    "explain": "A 2016 estimate put it at roughly 38 trillion bacteria to 30 trillion human cells."
+  },
+  {
+    "id": "each-eye-has-a-blind",
+    "num": 263,
+    "category": "Human Body",
+    "title": "Each eye has a blind spot.",
+    "explain": "Where the optic nerve leaves the eye there are no light receptors. Your brain fills in the gap."
+  },
+  {
+    "id": "a-hiccup-is-your-vocal",
+    "num": 264,
+    "category": "Human Body",
+    "title": "A hiccup is your vocal cords snapping shut.",
+    "explain": "Your diaphragm spasms, and the 'hic' is the sound of your vocal cords closing suddenly."
+  },
+  {
+    "id": "yawning-is-contagious",
+    "num": 265,
+    "category": "Human Body",
+    "title": "Yawning is contagious.",
+    "explain": "Seeing, hearing or even reading about yawning can make you yawn."
+  },
+  {
+    "id": "one-bone-in-your-body",
+    "num": 266,
+    "category": "Human Body",
+    "title": "One bone in your body isn't connected to any other bone.",
+    "explain": "The hyoid bone in your throat is held in place only by muscles and ligaments."
+  },
+  {
+    "id": "you-dont-lose-most-heat",
+    "num": 267,
+    "category": "Human Body",
+    "title": "You don't lose most heat through your head.",
+    "explain": "Your head loses heat about as fast as any other uncovered part of your body."
+  },
+  {
+    "id": "most-people-can-tell-apart",
+    "num": 268,
+    "category": "Human Body",
+    "title": "Most people can tell apart around a million colors.",
+    "explain": "Some estimates go even higher."
+  },
+  {
+    "id": "your-skeleton-renews-itself-about",
+    "num": 269,
+    "category": "Human Body",
+    "title": "Your skeleton renews itself about every 10 years.",
+    "explain": "Bone is constantly broken down and rebuilt throughout your life."
+  },
+  {
+    "id": "your-stomach-growls-even-when",
+    "num": 270,
+    "category": "Human Body",
+    "title": "Your stomach growls even when you're not hungry.",
+    "explain": "It's just gas and fluid moving through your gut. It's louder when your stomach is empty."
+  },
+  {
+    "id": "your-pupils-widen-when-you",
+    "num": 271,
+    "category": "Human Body",
+    "title": "Your pupils widen when you think hard.",
+    "explain": "They dilate with mental effort and interest, not just in darker light."
+  },
+  {
+    "id": "you-make-up-to-15",
+    "num": 272,
+    "category": "Human Body",
+    "title": "You make up to 1.5 liters of saliva a day.",
+    "explain": "It helps you digest food and protects your teeth."
+  },
+  {
+    "id": "fresh-sweat-has-no-smell",
+    "num": 273,
+    "category": "Human Body",
+    "title": "Fresh sweat has no smell.",
+    "explain": "Body odor comes from bacteria breaking down sweat on your skin."
+  },
+  {
+    "id": "your-brain-cant-feel-pain",
+    "num": 274,
+    "category": "Human Body",
+    "title": "Your brain can't feel pain.",
+    "explain": "Brain tissue has no pain receptors, which is why some brain surgery is done with patients awake."
+  },
+  {
+    "id": "nerve-signals-can-travel-at",
+    "num": 275,
+    "category": "Human Body",
+    "title": "Nerve signals can travel at over 400 km/h.",
+    "explain": "The fastest nerve fibers carry signals at around 120 meters per second."
+  },
+  {
+    "id": "your-heart-has-its-own",
+    "num": 276,
+    "category": "Human Body",
+    "title": "Your heart has its own electrical system.",
+    "explain": "It generates its own beat, which is why a transplanted heart can keep beating without being connected to nerves."
+  },
+  {
+    "id": "your-appendix-may-not-be",
+    "num": 277,
+    "category": "Human Body",
+    "title": "Your appendix may not be useless.",
+    "explain": "Scientists think it may store good gut bacteria to help restock your gut after illness."
+  },
+  {
+    "id": "babies-are-born-without-bony",
+    "num": 278,
+    "category": "Human Body",
+    "title": "Babies are born without bony kneecaps.",
+    "explain": "Their kneecaps are made of cartilage and only turn to bone between the ages of about 3 and 5."
+  },
+  {
+    "id": "earth-isnt-a-perfect-sphere",
+    "num": 279,
+    "category": "Earth",
+    "title": "Earth isn't a perfect sphere.",
+    "explain": "It bulges at the equator, so its equatorial diameter is about 43 km wider than from pole to pole."
+  },
+  {
+    "id": "everest-isnt-the-farthest-point",
+    "num": 280,
+    "category": "Earth",
+    "title": "Everest isn't the farthest point from Earth's center.",
+    "explain": "Because of the equatorial bulge, Ecuador's Chimborazo peak sticks out farther into space."
+  },
+  {
+    "id": "mauna-kea-is-taller-than",
+    "num": 281,
+    "category": "Earth",
+    "title": "Mauna Kea is taller than Everest.",
+    "explain": "Measured from its base on the seafloor, the Hawaiian volcano is over 10,000 meters tall."
+  },
+  {
+    "id": "the-dead-sea-shore-is",
+    "num": 282,
+    "category": "Earth",
+    "title": "The Dead Sea shore is the lowest land on Earth.",
+    "explain": "It sits about 430 meters below sea level and keeps getting lower as the sea shrinks."
+  },
+  {
+    "id": "the-pacific-is-bigger-than",
+    "num": 283,
+    "category": "Earth",
+    "title": "The Pacific is bigger than all land combined.",
+    "explain": "It covers about a third of Earth's surface."
+  },
+  {
+    "id": "antarctica-is-the-worlds-largest",
+    "num": 284,
+    "category": "Earth",
+    "title": "Antarctica is the world's largest desert.",
+    "explain": "A desert is defined by low rainfall, not heat, and Antarctica gets very little."
+  },
+  {
+    "id": "days-are-getting-longer",
+    "num": 285,
+    "category": "Earth",
+    "title": "Days are getting longer.",
+    "explain": "Tides slow Earth's rotation, adding about 2 milliseconds to the day every century."
+  },
+  {
+    "id": "lightning-strikes-earth-about-44",
+    "num": 286,
+    "category": "Earth",
+    "title": "Lightning strikes Earth about 44 times a second.",
+    "explain": "That's roughly 1.4 billion flashes a year."
+  },
+  {
+    "id": "about-half-of-earths-oxygen",
+    "num": 287,
+    "category": "Earth",
+    "title": "About half of Earth's oxygen comes from the ocean.",
+    "explain": "Tiny ocean plankton produce it through photosynthesis."
+  },
+  {
+    "id": "the-sahara-used-to-be",
+    "num": 288,
+    "category": "Earth",
+    "title": "The Sahara used to be green.",
+    "explain": "Between about 11,000 and 5,000 years ago, it had lakes, grasslands and hippos."
+  },
+  {
+    "id": "earths-magnetic-poles-swap-places",
+    "num": 289,
+    "category": "Earth",
+    "title": "Earth's magnetic poles swap places.",
+    "explain": "North and south have flipped many times. The last full reversal was about 780,000 years ago."
+  },
+  {
+    "id": "the-magnetic-north-pole-is",
+    "num": 290,
+    "category": "Earth",
+    "title": "The magnetic north pole is moving.",
+    "explain": "It has been drifting from Canada toward Siberia, at times by around 50 km a year."
+  },
+  {
+    "id": "theres-more-water-in-the",
+    "num": 291,
+    "category": "Earth",
+    "title": "There's more water in the air than in all rivers.",
+    "explain": "At any moment, the atmosphere holds several times more water than every river on Earth."
+  },
+  {
+    "id": "you-can-swim-between-two",
+    "num": 292,
+    "category": "Earth",
+    "title": "You can swim between two continents in Iceland.",
+    "explain": "The Silfra fissure lies between the North American and Eurasian tectonic plates."
+  },
+  {
+    "id": "the-atlantic-ocean-gets-wider",
+    "num": 293,
+    "category": "Earth",
+    "title": "The Atlantic Ocean gets wider every year.",
+    "explain": "The plates on either side move apart about 2.5 cm a year, roughly as fast as nails grow."
+  },
+  {
+    "id": "everest-is-still-growing",
+    "num": 294,
+    "category": "Earth",
+    "title": "Everest is still growing.",
+    "explain": "The collision of India and Asia pushes it up by a few millimeters a year."
+  },
+  {
+    "id": "antarctica-holds-most-of-the",
+    "num": 295,
+    "category": "Earth",
+    "title": "Antarctica holds most of the world's fresh water.",
+    "explain": "Its ice sheet contains about 70% of Earth's fresh water."
+  },
+  {
+    "id": "everest-would-disappear-in-the",
+    "num": 296,
+    "category": "Earth",
+    "title": "Everest would disappear in the Mariana Trench.",
+    "explain": "The Challenger Deep is about 10,900 meters deep, over 2 km more than Everest is tall."
+  },
+  {
+    "id": "earth-has-44billionyearold-crystals",
+    "num": 297,
+    "category": "Earth",
+    "title": "Earth has 4.4-billion-year-old crystals.",
+    "explain": "Tiny zircon crystals from Western Australia are the oldest known pieces of Earth."
+  },
+  {
+    "id": "the-biggest-waterfall-is-underwater",
+    "num": 298,
+    "category": "Earth",
+    "title": "The biggest waterfall is underwater.",
+    "explain": "The Denmark Strait cataract drops about 3.5 km beneath the ocean between Greenland and Iceland."
+  },
+  {
+    "id": "no-bridge-crosses-the-amazon",
+    "num": 299,
+    "category": "Earth",
+    "title": "No bridge crosses the Amazon.",
+    "explain": "Along its main stretch, the river has no bridges. Ferries do the job."
+  },
+  {
+    "id": "lake-baikal-holds-about-20",
+    "num": 300,
+    "category": "Earth",
+    "title": "Lake Baikal holds about 20% of Earth's unfrozen surface fresh water.",
+    "explain": "It's the deepest lake in the world at over 1,600 meters."
+  },
+  {
+    "id": "earth-is-closest-to-the",
+    "num": 301,
+    "category": "Earth",
+    "title": "Earth is closest to the Sun in January.",
+    "explain": "Seasons come from Earth's tilt, not its distance from the Sun."
+  },
+  {
+    "id": "the-great-barrier-reef-is",
+    "num": 302,
+    "category": "Earth",
+    "title": "The Great Barrier Reef is visible from orbit.",
+    "explain": "It's the largest structure made by living things."
+  },
+  {
+    "id": "volcanoes-can-make-their-own",
+    "num": 303,
+    "category": "Earth",
+    "title": "Volcanoes can make their own lightning.",
+    "explain": "Colliding ash particles in an eruption build up electric charge."
+  },
+  {
+    "id": "some-rocks-float",
+    "num": 304,
+    "category": "Earth",
+    "title": "Some rocks float.",
+    "explain": "Pumice is so full of gas bubbles that it floats on water."
+  },
+  {
+    "id": "some-sand-dunes-sing",
+    "num": 305,
+    "category": "Earth",
+    "title": "Some sand dunes sing.",
+    "explain": "Avalanching sand on certain dunes makes a low booming hum that can last minutes."
+  },
+  {
+    "id": "earths-crust-is-thinner-than",
+    "num": 306,
+    "category": "Earth",
+    "title": "Earth's crust is thinner than an apple skin, in scale.",
+    "explain": "Relative to Earth's size, the rocky crust is extremely thin."
+  },
+  {
+    "id": "the-hottest-air-temperature-ever",
+    "num": 307,
+    "category": "Earth",
+    "title": "The hottest air temperature ever recorded was 56.7°C.",
+    "explain": "It was measured in Death Valley, California, in 1913."
+  },
+  {
+    "id": "the-coldest-recorded-temperature-was",
+    "num": 308,
+    "category": "Earth",
+    "title": "The coldest recorded temperature was −89.2°C.",
+    "explain": "It was measured at Vostok Station in Antarctica in 1983."
+  },
+  {
+    "id": "at-the-equator-youre-spinning",
+    "num": 309,
+    "category": "Earth",
+    "title": "At the equator, you're spinning at about 1,670 km/h.",
+    "explain": "You don't feel it because everything around you moves too."
+  },
+  {
+    "id": "around-500000-earthquakes-are-detected",
+    "num": 310,
+    "category": "Earth",
+    "title": "Around 500,000 earthquakes are detected each year.",
+    "explain": "About 100,000 are strong enough to be felt."
+  },
+  {
+    "id": "the-2011-japan-earthquake-shortened",
+    "num": 311,
+    "category": "Earth",
+    "title": "The 2011 Japan earthquake shortened the day.",
+    "explain": "It shifted Earth's mass enough to make days about 1.8 microseconds shorter."
+  },
+  {
+    "id": "most-volcanic-activity-is-underwater",
+    "num": 312,
+    "category": "Earth",
+    "title": "Most volcanic activity is underwater.",
+    "explain": "The majority of Earth's eruptions happen along ocean ridges, unseen."
+  },
+  {
+    "id": "most-of-the-seafloor-hasnt",
+    "num": 313,
+    "category": "Earth",
+    "title": "Most of the seafloor hasn't been mapped in detail.",
+    "explain": "We have better maps of the surface of Mars than of much of our own ocean floor."
+  },
+  {
+    "id": "the-pacific-is-higher-than",
+    "num": 314,
+    "category": "Earth",
+    "title": "The Pacific is higher than the Atlantic at Panama.",
+    "explain": "Sea level on the Pacific side is about 20 cm higher."
+  },
+  {
+    "id": "hawaii-is-moving-toward-japan",
+    "num": 315,
+    "category": "Earth",
+    "title": "Hawaii is moving toward Japan.",
+    "explain": "The Pacific plate carries it northwest by several centimeters a year."
+  },
+  {
+    "id": "a-lake-in-cameroon-once",
+    "num": 316,
+    "category": "Earth",
+    "title": "A lake in Cameroon once exploded.",
+    "explain": "In 1986, Lake Nyos released a huge cloud of carbon dioxide that killed about 1,700 people."
+  },
+  {
+    "id": "icicles-can-form-underwater",
+    "num": 317,
+    "category": "Earth",
+    "title": "Icicles can form underwater.",
+    "explain": "Brinicles grow down from sea ice and freeze anything they touch on the seafloor."
+  },
+  {
+    "id": "the-moon-pulls-on-the",
+    "num": 318,
+    "category": "Earth",
+    "title": "The Moon pulls on the ground too.",
+    "explain": "The solid ground rises and falls with the tides by up to tens of centimeters."
+  },
+  {
+    "id": "rainbows-are-actually-full-circles",
+    "num": 319,
+    "category": "Earth",
+    "title": "Rainbows are actually full circles.",
+    "explain": "From the ground, the horizon hides the bottom half. From a plane, you can sometimes see the whole ring."
+  },
+  {
+    "id": "the-oceans-hold-about-97",
+    "num": 320,
+    "category": "Earth",
+    "title": "The oceans hold about 97% of Earth's water.",
+    "explain": "Most of the rest is frozen in ice caps and glaciers."
+  },
+  {
+    "id": "dust-from-the-sahara-fertilizes",
+    "num": 321,
+    "category": "Earth",
+    "title": "Dust from the Sahara fertilizes the Amazon.",
+    "explain": "Winds carry mineral-rich dust across the Atlantic to the rainforest."
+  },
+  {
+    "id": "earth-gains-tonnes-of-space",
+    "num": 322,
+    "category": "Earth",
+    "title": "Earth gains tonnes of space dust every year.",
+    "explain": "Thousands of tonnes of tiny particles from space fall on Earth every year."
+  },
+  {
+    "id": "the-top-of-everest-was",
+    "num": 323,
+    "category": "Earth",
+    "title": "The top of Everest was once under the sea.",
+    "explain": "Its summit rock is marine limestone containing fossils of sea creatures."
+  },
+  {
+    "id": "there-are-hundreds-of-lakes",
+    "num": 324,
+    "category": "Earth",
+    "title": "There are hundreds of lakes under Antarctica.",
+    "explain": "Liquid water lies beneath the ice, including Lake Vostok, buried under nearly 4 km of ice."
+  },
+  {
+    "id": "the-sea-is-salty-because",
+    "num": 325,
+    "category": "Earth",
+    "title": "The sea is salty because of rocks.",
+    "explain": "Rain slowly dissolves minerals from rocks, and rivers carry them to the ocean."
+  },
+  {
+    "id": "russia-spans-11-time-zones",
+    "num": 326,
+    "category": "Earth",
+    "title": "Russia spans 11 time zones.",
+    "explain": "When it's morning in the west, it's already evening on the Pacific coast."
+  },
+  {
+    "id": "the-word-run-has-over",
+    "num": 327,
+    "category": "Language",
+    "title": "The word 'run' has over 600 meanings.",
+    "explain": "It has one of the largest entries in the Oxford English Dictionary."
+  },
+  {
+    "id": "the-dot-on-an-i",
+    "num": 328,
+    "category": "Language",
+    "title": "The dot on an 'i' has a name.",
+    "explain": "It's called a tittle."
+  },
+  {
+    "id": "goodbye-comes-from-god-be",
+    "num": 329,
+    "category": "Language",
+    "title": "'Goodbye' comes from 'God be with ye'.",
+    "explain": "Over time, the phrase was shortened and blended into one word."
+  },
+  {
+    "id": "rhythms-has-no-standard-vowels",
+    "num": 330,
+    "category": "Language",
+    "title": "'Rhythms' has no standard vowels.",
+    "explain": "It's one of the longest English words without a, e, i, o or u."
+  },
+  {
+    "id": "nice-used-to-mean-foolish",
+    "num": 331,
+    "category": "Language",
+    "title": "'Nice' used to mean foolish.",
+    "explain": "It comes from Latin 'nescius', meaning ignorant, and took centuries to become a compliment."
+  },
+  {
+    "id": "most-languages-call-a-pineapple",
+    "num": 332,
+    "category": "Language",
+    "title": "Most languages call a pineapple 'ananas'.",
+    "explain": "English is one of the few that doesn't."
+  },
+  {
+    "id": "an-island-in-spain-has",
+    "num": 333,
+    "category": "Language",
+    "title": "An island in Spain has a whistled language.",
+    "explain": "On La Gomera, Silbo Gomero turns Spanish into whistles that carry for kilometers."
+  },
+  {
+    "id": "papua-new-guinea-has-over",
+    "num": 334,
+    "category": "Language",
+    "title": "Papua New Guinea has over 800 languages.",
+    "explain": "It's the most linguistically diverse country on Earth."
+  },
+  {
+    "id": "many-languages-are-disappearing",
+    "num": 335,
+    "category": "Language",
+    "title": "Many languages are disappearing.",
+    "explain": "Linguists estimate a large share of the world's 7,000 languages could vanish this century."
+  },
+  {
+    "id": "alphabet-comes-from-its-first",
+    "num": 336,
+    "category": "Language",
+    "title": "'Alphabet' comes from its first two letters.",
+    "explain": "Alpha and beta, the first letters of the Greek alphabet."
+  },
+  {
+    "id": "ampersand-comes-from-a-schoolroom",
+    "num": 337,
+    "category": "Language",
+    "title": "'Ampersand' comes from a schoolroom chant.",
+    "explain": "Children recited '& per se and' at the end of the alphabet, which blurred into one word."
+  },
+  {
+    "id": "english-has-no-official-regulator",
+    "num": 338,
+    "category": "Language",
+    "title": "English has no official regulator.",
+    "explain": "Unlike French or Spanish, no official academy decides what's correct."
+  },
+  {
+    "id": "some-languages-dont-use-left",
+    "num": 339,
+    "category": "Language",
+    "title": "Some languages don't use left and right.",
+    "explain": "Speakers of Guugu Yimithirr in Australia use north, south, east and west instead."
+  },
+  {
+    "id": "buffalo-buffalo-buffalo-buffalo-buffalo",
+    "num": 340,
+    "category": "Language",
+    "title": "'Buffalo buffalo Buffalo buffalo buffalo buffalo Buffalo buffalo' is a real sentence.",
+    "explain": "It uses buffalo as a city, an animal and a verb meaning to bully."
+  },
+  {
+    "id": "salary-is-linked-to-salt",
+    "num": 341,
+    "category": "Language",
+    "title": "'Salary' is linked to salt.",
+    "explain": "It comes from Latin 'salarium'. The story that soldiers were paid in salt is probably a myth."
+  },
+  {
+    "id": "muscle-means-little-mouse",
+    "num": 342,
+    "category": "Language",
+    "title": "'Muscle' means 'little mouse'.",
+    "explain": "It comes from Latin 'musculus', perhaps because a flexing muscle looks like a mouse moving under skin."
+  },
+  {
+    "id": "clue-comes-from-a-ball",
+    "num": 343,
+    "category": "Language",
+    "title": "'Clue' comes from a ball of thread.",
+    "explain": "A 'clew' was yarn, like the thread Theseus used to find his way out of the labyrinth."
+  },
+  {
+    "id": "hawaiian-has-only-13-letters",
+    "num": 344,
+    "category": "Language",
+    "title": "Hawaiian has only 13 letters.",
+    "explain": "Five vowels, seven consonants and a glottal stop called the ʻokina."
+  },
+  {
+    "id": "one-language-has-just-12",
+    "num": 345,
+    "category": "Language",
+    "title": "One language has just 12 letters.",
+    "explain": "Rotokas, spoken in Papua New Guinea, has one of the smallest alphabets in the world."
+  },
+  {
+    "id": "khmer-has-the-longest-alphabet",
+    "num": 346,
+    "category": "Language",
+    "title": "Khmer has the longest alphabet.",
+    "explain": "The Cambodian script has 74 letters."
+  },
+  {
+    "id": "ok-started-as-a-joke",
+    "num": 347,
+    "category": "Language",
+    "title": "'OK' started as a joke.",
+    "explain": "It came from 'oll korrect', a deliberate misspelling in an 1839 Boston newspaper."
+  },
+  {
+    "id": "japanese-uses-three-writing-systems",
+    "num": 348,
+    "category": "Language",
+    "title": "Japanese uses three writing systems.",
+    "explain": "Kanji, hiragana and katakana are often mixed within a single sentence."
+  },
+  {
+    "id": "emoji-has-nothing-to-do",
+    "num": 349,
+    "category": "Language",
+    "title": "'Emoji' has nothing to do with 'emotion'.",
+    "explain": "It's Japanese: 'e' means picture and 'moji' means character."
+  },
+  {
+    "id": "shakespeare-is-the-first-recorded",
+    "num": 350,
+    "category": "Language",
+    "title": "Shakespeare is the first recorded source of many words.",
+    "explain": "Words like 'lonely' and 'eyeball' first appear in writing in his works."
+  },
+  {
+    "id": "a-welsh-village-has-a",
+    "num": 351,
+    "category": "Language",
+    "title": "A Welsh village has a 58-letter name.",
+    "explain": "Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch is often shortened to Llanfair PG."
+  },
+  {
+    "id": "j-was-one-of-the",
+    "num": 352,
+    "category": "Language",
+    "title": "J was one of the last letters added to the alphabet.",
+    "explain": "For centuries, I and J were treated as the same letter."
+  },
+  {
+    "id": "gaslighting-comes-from-a-play",
+    "num": 353,
+    "category": "Language",
+    "title": "'Gaslighting' comes from a play.",
+    "explain": "The 1938 play Gas Light is about a husband who manipulates his wife into doubting reality."
+  },
+  {
+    "id": "robot-comes-from-czech",
+    "num": 354,
+    "category": "Language",
+    "title": "'Robot' comes from Czech.",
+    "explain": "It comes from 'robota', meaning forced labor, first used in a 1920 play."
+  },
+  {
+    "id": "quarantine-means-forty-days",
+    "num": 355,
+    "category": "Language",
+    "title": "'Quarantine' means forty days.",
+    "explain": "It comes from Italian 'quaranta giorni', the time ships waited in Venice during plague outbreaks."
+  },
+  {
+    "id": "disaster-means-bad-star",
+    "num": 356,
+    "category": "Language",
+    "title": "'Disaster' means 'bad star'.",
+    "explain": "It comes from Italian, reflecting an old belief that the stars controlled fate."
+  },
+  {
+    "id": "in-mandarin-ma-can-mean",
+    "num": 357,
+    "category": "Language",
+    "title": "In Mandarin, 'ma' can mean mother or horse.",
+    "explain": "It depends on the tone. Mandarin has four main tones, plus a neutral one."
+  },
+  {
+    "id": "uncopyrightable-doesnt-repeat-any-letter",
+    "num": 358,
+    "category": "Language",
+    "title": "'Uncopyrightable' doesn't repeat any letter.",
+    "explain": "It's one of the longest English words where every letter is different."
+  },
+  {
+    "id": "huh-exists-in-almost-every",
+    "num": 359,
+    "category": "Language",
+    "title": "'Huh?' exists in almost every language.",
+    "explain": "A 2013 study found a word like 'huh' in all of the 31 languages it examined."
+  },
+  {
+    "id": "esperanto-has-native-speakers",
+    "num": 360,
+    "category": "Language",
+    "title": "Esperanto has native speakers.",
+    "explain": "It was invented in 1887, and some children grow up speaking it at home."
+  },
+  {
+    "id": "hamlet-has-been-translated-into",
+    "num": 361,
+    "category": "Language",
+    "title": "Hamlet has been translated into Klingon.",
+    "explain": "The fictional Star Trek language has a full grammar and dictionary."
+  },
+  {
+    "id": "sign-languages-arent-universal",
+    "num": 362,
+    "category": "Language",
+    "title": "Sign languages aren't universal.",
+    "explain": "American Sign Language is closer to French Sign Language than to British Sign Language."
+  },
+  {
+    "id": "hello-became-popular-because-of",
+    "num": 363,
+    "category": "Language",
+    "title": "'Hello' became popular because of the telephone.",
+    "explain": "Thomas Edison pushed it as the standard way to answer the phone."
+  },
+  {
+    "id": "checkmate-comes-from-persian",
+    "num": 364,
+    "category": "Language",
+    "title": "'Checkmate' comes from Persian.",
+    "explain": "'Shāh māt' roughly means 'the king is helpless'."
+  },
+  {
+    "id": "jumbo-was-an-elephant",
+    "num": 365,
+    "category": "Language",
+    "title": "'Jumbo' was an elephant.",
+    "explain": "A famous circus elephant named Jumbo made the word mean 'huge'."
+  },
+  {
+    "id": "john-milton-invented-pandemonium",
+    "num": 366,
+    "category": "Language",
+    "title": "John Milton invented 'pandemonium'.",
+    "explain": "In Paradise Lost, it's the capital of hell, meaning 'all demons'."
+  },
+  {
+    "id": "nerd-first-appeared-in-a",
+    "num": 367,
+    "category": "Language",
+    "title": "'Nerd' first appeared in a Dr. Seuss book.",
+    "explain": "It showed up in If I Ran the Zoo in 1950 as the name of a creature."
+  },
+  {
+    "id": "serendipity-was-coined-in-1754",
+    "num": 368,
+    "category": "Language",
+    "title": "'Serendipity' was coined in 1754.",
+    "explain": "Horace Walpole made it up after a fairy tale called The Three Princes of Serendip."
+  },
+  {
+    "id": "many-languages-dont-separate-blue",
+    "num": 369,
+    "category": "Language",
+    "title": "Many languages don't separate blue and green.",
+    "explain": "They use one word for both, and linguists call the combined color 'grue'."
+  },
+  {
+    "id": "russian-has-two-words-for",
+    "num": 370,
+    "category": "Language",
+    "title": "Russian has two words for blue.",
+    "explain": "'Goluboy' is light blue and 'siniy' is dark blue, treated as different colors."
+  },
+  {
+    "id": "german-can-build-extremely-long",
+    "num": 371,
+    "category": "Language",
+    "title": "German can build extremely long words.",
+    "explain": "Donaudampfschifffahrtsgesellschaftskapitän means 'Danube steamship company captain'."
+  },
+  {
+    "id": "japanese-has-a-word-for",
+    "num": 372,
+    "category": "Language",
+    "title": "Japanese has a word for unread books.",
+    "explain": "'Tsundoku' means buying books and letting them pile up without reading them."
+  },
+  {
+    "id": "the-word-for-mother-often",
+    "num": 373,
+    "category": "Language",
+    "title": "The word for 'mother' often starts with M.",
+    "explain": "From 'mama' to 'mère' to 'mā', it may be because 'm' is one of the first sounds babies make."
+  },
+  {
+    "id": "you-can-type-typewriter-on",
+    "num": 374,
+    "category": "Language",
+    "title": "You can type 'typewriter' on one row.",
+    "explain": "All its letters are on the top row of a QWERTY keyboard."
+  },
+  {
+    "id": "bookkeeper-has-three-double-letters",
+    "num": 375,
+    "category": "Language",
+    "title": "'Bookkeeper' has three double letters in a row.",
+    "explain": "oo, kk and ee, one after another."
+  },
+  {
+    "id": "some-languages-have-no-fixed",
+    "num": 376,
+    "category": "Language",
+    "title": "Some languages have no fixed words for numbers.",
+    "explain": "The Pirahã language in the Amazon reportedly uses words closer to 'few' and 'many'."
+  },
+  {
+    "id": "the-first-computer-bug-was",
+    "num": 377,
+    "category": "Technology",
+    "title": "The first computer bug was a real bug.",
+    "explain": "In 1947, engineers found a moth stuck in the Harvard Mark II computer and taped it into their logbook."
+  },
+  {
+    "id": "the-first-webcam-watched-a",
+    "num": 378,
+    "category": "Technology",
+    "title": "The first webcam watched a coffee pot.",
+    "explain": "Cambridge researchers set it up in 1991 so they could see if the pot was empty."
+  },
+  {
+    "id": "qwerty-was-designed-for-typewriters",
+    "num": 379,
+    "category": "Technology",
+    "title": "QWERTY was designed for typewriters.",
+    "explain": "The layout came from 1870s typewriters. Whether it was meant to slow typists down is debated."
+  },
+  {
+    "id": "an-early-1-gb-hard",
+    "num": 380,
+    "category": "Technology",
+    "title": "An early 1 GB hard drive weighed around 250 kg.",
+    "explain": "IBM's 3380 from 1980 was the size of a fridge and cost tens of thousands of dollars."
+  },
+  {
+    "id": "apollo-11s-computer-had-about",
+    "num": 381,
+    "category": "Technology",
+    "title": "Apollo 11's computer had about 4 KB of RAM.",
+    "explain": "It guided astronauts to the Moon with less memory than a simple modern calculator."
+  },
+  {
+    "id": "the-first-text-message-said",
+    "num": 382,
+    "category": "Technology",
+    "title": "The first text message said 'Merry Christmas'.",
+    "explain": "It was sent from a computer to a phone in 1992."
+  },
+  {
+    "id": "the-first-com-domain-was",
+    "num": 383,
+    "category": "Technology",
+    "title": "The first .com domain was registered in 1985.",
+    "explain": "It was symbolics.com, and it's still around."
+  },
+  {
+    "id": "email-is-older-than-the",
+    "num": 384,
+    "category": "Technology",
+    "title": "Email is older than the web.",
+    "explain": "Ray Tomlinson sent the first networked email in 1971, about 20 years before the web."
+  },
+  {
+    "id": "the-first-youtube-video-is",
+    "num": 385,
+    "category": "Technology",
+    "title": "The first YouTube video is about elephants.",
+    "explain": "'Me at the zoo' was uploaded in 2005 by a co-founder and is only 19 seconds long."
+  },
+  {
+    "id": "captcha-is-an-acronym",
+    "num": 386,
+    "category": "Technology",
+    "title": "CAPTCHA is an acronym.",
+    "explain": "It stands for Completely Automated Public Turing test to tell Computers and Humans Apart."
+  },
+  {
+    "id": "wifi-doesnt-stand-for-anything",
+    "num": 387,
+    "category": "Technology",
+    "title": "Wi-Fi doesn't stand for anything.",
+    "explain": "The name was chosen by a branding firm because it sounded catchy."
+  },
+  {
+    "id": "bluetooth-is-named-after-a",
+    "num": 388,
+    "category": "Technology",
+    "title": "Bluetooth is named after a Viking king.",
+    "explain": "Harald Bluetooth united Danish tribes, and the logo combines his runic initials."
+  },
+  {
+    "id": "the-firefox-logo-isnt-a",
+    "num": 389,
+    "category": "Technology",
+    "title": "The Firefox logo isn't a fox.",
+    "explain": "The animal is a red panda, which is sometimes called a firefox."
+  },
+  {
+    "id": "the-first-computer-mouse-was",
+    "num": 390,
+    "category": "Technology",
+    "title": "The first computer mouse was made of wood.",
+    "explain": "Douglas Engelbart's 1964 prototype had a wooden shell and two metal wheels."
+  },
+  {
+    "id": "the-first-photo-on-the",
+    "num": 391,
+    "category": "Technology",
+    "title": "The first photo on the web was a band.",
+    "explain": "In 1992, a CERN scientist uploaded a picture of a comedy band called Les Horribles Cernettes."
+  },
+  {
+    "id": "space-invaders-sped-up-by",
+    "num": 392,
+    "category": "Technology",
+    "title": "Space Invaders sped up by accident.",
+    "explain": "The aliens moved faster as they were destroyed because the hardware had fewer to draw."
+  },
+  {
+    "id": "most-internet-traffic-crosses-the",
+    "num": 393,
+    "category": "Technology",
+    "title": "Most internet traffic crosses the ocean through cables.",
+    "explain": "Undersea cables carry almost all data between continents, not satellites."
+  },
+  {
+    "id": "sharks-have-bitten-undersea-cables",
+    "num": 394,
+    "category": "Technology",
+    "title": "Sharks have bitten undersea cables.",
+    "explain": "Cable companies have added protective layers partly because of it."
+  },
+  {
+    "id": "the-first-iphone-had-no",
+    "num": 395,
+    "category": "Technology",
+    "title": "The first iPhone had no App Store.",
+    "explain": "It came a year later, in 2008."
+  },
+  {
+    "id": "spam-email-is-named-after",
+    "num": 396,
+    "category": "Technology",
+    "title": "Spam email is named after a comedy sketch.",
+    "explain": "In a Monty Python sketch, a group repeats 'Spam' until nothing else can be heard."
+  },
+  {
+    "id": "the-word-bit-was-coined",
+    "num": 397,
+    "category": "Technology",
+    "title": "The word 'bit' was coined in 1947.",
+    "explain": "Statistician John Tukey shortened 'binary digit'."
+  },
+  {
+    "id": "the-first-computer-program-was",
+    "num": 398,
+    "category": "Technology",
+    "title": "The first computer program was written in the 1840s.",
+    "explain": "Ada Lovelace wrote an algorithm for Charles Babbage's Analytical Engine, which was never finished."
+  },
+  {
+    "id": "the-first-hard-drive-stored",
+    "num": 399,
+    "category": "Technology",
+    "title": "The first hard drive stored about 3.75 MB.",
+    "explain": "IBM's 1956 RAMAC used 50 platters, each about 60 cm wide."
+  },
+  {
+    "id": "javascript-was-created-in-10",
+    "num": 400,
+    "category": "Technology",
+    "title": "JavaScript was created in 10 days.",
+    "explain": "Brendan Eich wrote the first version in May 1995."
+  },
+  {
+    "id": "python-is-named-after-monty",
+    "num": 401,
+    "category": "Technology",
+    "title": "Python is named after Monty Python.",
+    "explain": "Its creator, Guido van Rossum, was a fan of the comedy group."
+  },
+  {
+    "id": "many-computers-have-a-2038",
+    "num": 402,
+    "category": "Technology",
+    "title": "Many computers have a 2038 problem.",
+    "explain": "Systems storing time as a 32-bit number will overflow on January 19, 2038."
+  },
+  {
+    "id": "google-comes-from-a-misspelled",
+    "num": 403,
+    "category": "Technology",
+    "title": "Google comes from a misspelled number.",
+    "explain": "A googol is 1 followed by 100 zeros."
+  },
+  {
+    "id": "amazon-was-almost-called-cadabra",
+    "num": 404,
+    "category": "Technology",
+    "title": "Amazon was almost called Cadabra.",
+    "explain": "Jeff Bezos changed it after someone misheard it as 'cadaver'."
+  },
+  {
+    "id": "the-first-website-is-still",
+    "num": 405,
+    "category": "Technology",
+    "title": "The first website is still online.",
+    "explain": "CERN restored it at info.cern.ch."
+  },
+  {
+    "id": "gps-has-to-correct-for",
+    "num": 406,
+    "category": "Technology",
+    "title": "GPS has to correct for Einstein's relativity.",
+    "explain": "Satellite clocks run about 38 microseconds a day fast compared with clocks on the ground."
+  },
+  {
+    "id": "the-save-icon-is-a",
+    "num": 407,
+    "category": "Technology",
+    "title": "The save icon is a floppy disk.",
+    "explain": "Many people using it today have never seen a real floppy disk."
+  },
+  {
+    "id": "the-apple-i-sold-for",
+    "num": 408,
+    "category": "Technology",
+    "title": "The Apple I sold for $666.66.",
+    "explain": "Steve Wozniak liked repeating digits, not the number's meaning."
+  },
+  {
+    "id": "the-first-mobile-phone-call",
+    "num": 409,
+    "category": "Technology",
+    "title": "The first mobile phone call was a brag.",
+    "explain": "In 1973, Motorola's Martin Cooper called a rival at Bell Labs from a New York street."
+  },
+  {
+    "id": "eniac-weighed-about-27-tonnes",
+    "num": 410,
+    "category": "Technology",
+    "title": "ENIAC weighed about 27 tonnes.",
+    "explain": "The 1945 computer used around 17,500 vacuum tubes and filled a large room."
+  },
+  {
+    "id": "sos-doesnt-stand-for-anything",
+    "num": 411,
+    "category": "Technology",
+    "title": "SOS doesn't stand for anything.",
+    "explain": "It was chosen because three dots, three dashes and three dots are easy to send and recognize."
+  },
+  {
+    "id": "one-of-the-first-video",
+    "num": 412,
+    "category": "Technology",
+    "title": "One of the first video games was tennis.",
+    "explain": "Tennis for Two ran on an oscilloscope in 1958."
+  },
+  {
+    "id": "pacman-was-inspired-by-a",
+    "num": 413,
+    "category": "Technology",
+    "title": "Pac-Man was inspired by a pizza.",
+    "explain": "Designer Toru Iwatani says a pizza with a missing slice gave him the idea."
+  },
+  {
+    "id": "the-bumps-on-f-and",
+    "num": 414,
+    "category": "Technology",
+    "title": "The bumps on F and J have a purpose.",
+    "explain": "They help you find the home row without looking."
+  },
+  {
+    "id": "the-hashtag-was-proposed-in",
+    "num": 415,
+    "category": "Technology",
+    "title": "The hashtag was proposed in a tweet.",
+    "explain": "Chris Messina suggested using # to group topics in 2007."
+  },
+  {
+    "id": "the-first-tweet-was-just",
+    "num": 416,
+    "category": "Technology",
+    "title": "The first tweet was 'just setting up my twttr'.",
+    "explain": "Jack Dorsey posted it in March 2006."
+  },
+  {
+    "id": "the-first-emoji-set-had",
+    "num": 417,
+    "category": "Technology",
+    "title": "The first emoji set had 176 icons.",
+    "explain": "Shigetaka Kurita designed them in 1999 for a Japanese phone service."
+  },
+  {
+    "id": "an-early-pc-virus-included",
+    "num": 418,
+    "category": "Technology",
+    "title": "An early PC virus included its authors' address.",
+    "explain": "The Brain virus from 1986 was written by two brothers in Pakistan, who included their contact details."
+  },
+  {
+    "id": "a-kodak-engineer-invented-the",
+    "num": 419,
+    "category": "Technology",
+    "title": "A Kodak engineer invented the digital camera.",
+    "explain": "Steven Sasson's 1975 prototype took 23 seconds to record one 0.01-megapixel image."
+  },
+  {
+    "id": "velcro-was-inspired-by-burrs",
+    "num": 420,
+    "category": "Technology",
+    "title": "Velcro was inspired by burrs.",
+    "explain": "George de Mestral studied the burrs stuck to his dog's fur after a walk."
+  },
+  {
+    "id": "qr-codes-were-invented-for",
+    "num": 421,
+    "category": "Technology",
+    "title": "QR codes were invented for car parts.",
+    "explain": "A Japanese company created them in 1994 to track parts in factories."
+  },
+  {
+    "id": "the-first-barcode-scan-was",
+    "num": 422,
+    "category": "Technology",
+    "title": "The first barcode scan was a pack of gum.",
+    "explain": "In 1974, a pack of Wrigley's gum was scanned in an Ohio supermarket."
+  },
+  {
+    "id": "programmers-debug-by-talking-to",
+    "num": 423,
+    "category": "Technology",
+    "title": "Programmers debug by talking to rubber ducks.",
+    "explain": "Explaining code line by line to a toy duck often reveals the bug."
+  },
+  {
+    "id": "hard-drive-heads-fly-just",
+    "num": 424,
+    "category": "Technology",
+    "title": "Hard drive heads fly just nanometers above the disk.",
+    "explain": "The gap is far smaller than a speck of dust."
   }
 ]
