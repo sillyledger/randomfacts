@@ -6,6 +6,7 @@ import type { Category, Fact } from '@/types/fact';
 import { FactCard } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
 import { shuffle } from '@/lib/shuffle';
+import { recordSeenInCookie } from '@/lib/seen';
 
 function ShuffleIcon() {
   return (
@@ -76,6 +77,11 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
       return { order: reshuffle(current.order, current.order[current.position].id), position: 0 };
     });
   }, []);
+
+  const factId = fact?.id;
+  useEffect(() => {
+    if (factId) recordSeenInCookie(factId, facts.map((scopeFact) => scopeFact.id));
+  }, [factId, facts]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
