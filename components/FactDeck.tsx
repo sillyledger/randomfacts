@@ -1,10 +1,11 @@
 'use client';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import type { Category, Fact } from '@/types/fact';
 import { FactCard } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
+import { shuffle } from '@/lib/shuffle';
 
 function ShuffleIcon() {
   return (
@@ -33,9 +34,14 @@ function FilterChip({ category }: { category: Category }) {
   );
 }
 
-function pickRandom(facts: Fact[], excludeId?: string): Fact | undefined {
-  const candidates = facts.filter((fact) => fact.id !== excludeId);
-  return candidates[Math.floor(Math.random() * candidates.length)];
+// A fresh order for the next pass, never starting on the card just shown.
+function reshuffle(facts: Fact[], lastId: string): Fact[] {
+  const order = shuffle(facts);
+  if (order.length > 1 && order[0].id === lastId) {
+    const swapWith = 1 + Math.floor(Math.random() * (order.length - 1));
+    [order[0], order[swapWith]] = [order[swapWith], order[0]];
+  }
+  return order;
 }
 
 function isTypingTarget(target: EventTarget | null) {
@@ -43,24 +49,23 @@ function isTypingTarget(target: EventTarget | null) {
 }
 
 export function FactDeck({ facts, category }: { facts: Fact[]; category?: Category }) {
-  // Card ids seen this session; `position` points at the one on screen.
-  const [history, setHistory] = useState(() => ({ ids: facts[0] ? [facts[0].id] : [], position: 0 }));
-  const factsById = useMemo(() => new Map(facts.map((fact) => [fact.id, fact])), [facts]);
-  const fact = factsById.get(history.ids[history.position]);
-  const total = facts.length;
-  const index = fact ? facts.indexOf(fact) : 0;
-  const canGoBack = history.position > 0;
+  // `facts` arrives already shuffled; the position in this order doubles as the history.
+  const [deck, setDeck] = useState(() => ({ order: facts, position: 0 }));
+  const fact = deck.order[deck.position];
+  const total = deck.order.length;
+  const canGoBack = deck.position > 0;
 
   const goBack = useCallback(() => {
-    setHistory((current) => (current.position > 0 ? { ...current, position: current.position - 1 } : current));
+    setDeck((current) => (current.position > 0 ? { ...current, position: current.position - 1 } : current));
   }, []);
 
-  const shuffle = useCallback(() => {
-    const next = pickRandom(facts, fact?.id);
-    if (!next) return;
-    // Moving forward after going back drops the cards ahead of this one, like browser history.
-    setHistory({ ids: [...history.ids.slice(0, history.position + 1), next.id], position: history.position + 1 });
-  }, [facts, fact, history]);
+  const goForward = useCallback(() => {
+    setDeck((current) => {
+      if (current.order.length <= 1) return current;
+      if (current.position < current.order.length - 1) return { ...current, position: current.position + 1 };
+      return { order: reshuffle(current.order, current.order[current.position].id), position: 0 };
+    });
+  }, []);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
@@ -71,10 +76,10 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
         // Let Space activate a focused button or link as usual.
         if (event.target instanceof HTMLElement && event.target.closest('button, a, [role="button"]')) return;
         event.preventDefault();
-        shuffle();
+        goForward();
       } else if (event.key === 'ArrowRight') {
         event.preventDefault();
-        shuffle();
+        goForward();
       } else if (event.key === 'ArrowLeft') {
         event.preventDefault();
         goBack();
@@ -83,7 +88,7 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [shuffle, goBack]);
+  }, [goForward, goBack]);
 
   if (!fact) {
     return (
@@ -99,9 +104,9 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
   return (
     <>
       <div className={`${category ? 'mb-4' : 'mb-8'} flex h-10 items-center gap-2`}>
-        <ProgressRing progress={(index + 1) / total} />
+        <ProgressRing progress={(deck.position + 1) / total} />
         <span className="text-sm font-semibold text-chromeText">
-          {String(index + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
+          {String(deck.position + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
         </span>
       </div>
 
@@ -122,7 +127,7 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
         </button>
         <button
           type="button"
-          onClick={shuffle}
+          onClick={goForward}
           disabled={total <= 1}
           className="flex flex-1 items-center justify-center gap-2 rounded-full bg-brand py-3.5 text-sm font-semibold text-white transition hover:bg-brand/90 disabled:cursor-not-allowed disabled:opacity-40"
         >
