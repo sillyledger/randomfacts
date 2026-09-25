@@ -36,7 +36,7 @@ export default function CategoriesPage() {
   return (
     <PageShell>
       <h1 className="mb-5 text-[27px] font-extrabold leading-tight text-ink">Categories</h1>
-      <ul className="grid grid-cols-2 gap-3">
+      <ul className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
         {categories.map((category) => {
           const count = facts.filter((fact) => fact.category === category).length;
           const style = { backgroundColor: categoryTokens[category].bg };

@@ -9,7 +9,7 @@ export default function Home({ searchParams }: { searchParams: { category?: stri
   const facts = getFacts().filter((fact) => !category || fact.category === category);
 
   return (
-    <PageShell>
+    <PageShell width="deck">
       <FactDeck key={category ?? 'all'} facts={facts} category={category} />
     </PageShell>
   );
