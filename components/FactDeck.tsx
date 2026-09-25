@@ -1,12 +1,12 @@
 'use client';
 
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Category, Fact } from '@/types/fact';
 import { FactCard } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
 import { shuffle } from '@/lib/shuffle';
-import { recordSeenInCookie } from '@/lib/seen';
+import { decodeSeen, recordSeenInCookie } from '@/lib/seen';
 
 function ShuffleIcon() {
   return (
@@ -59,7 +59,15 @@ function isTypingTarget(target: EventTarget | null) {
   return target instanceof HTMLElement && !!target.closest('input, textarea, select, [contenteditable="true"], #site-menu');
 }
 
-export function FactDeck({ facts, category }: { facts: Fact[]; category?: Category }) {
+export function FactDeck({
+  facts,
+  category,
+  initialSeen,
+}: {
+  facts: Fact[];
+  category?: Category;
+  initialSeen: string;
+}) {
   // `facts` arrives already shuffled; the position in this order doubles as the history.
   const [deck, setDeck] = useState(() => ({ order: facts, position: 0 }));
   const fact = deck.order[deck.position];
@@ -78,10 +86,11 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
     });
   }, []);
 
-  const factId = fact?.id;
+  const serverSeen = useMemo(() => decodeSeen(initialSeen), [initialSeen]);
+  const factNum = fact?.num;
   useEffect(() => {
-    if (factId) recordSeenInCookie(factId, facts.map((scopeFact) => scopeFact.id));
-  }, [factId, facts]);
+    if (factNum !== undefined) recordSeenInCookie(factNum, facts.map((scopeFact) => scopeFact.num), serverSeen);
+  }, [factNum, facts, serverSeen]);
 
   useEffect(() => {
     const handleKeyDown = (event: KeyboardEvent) => {
