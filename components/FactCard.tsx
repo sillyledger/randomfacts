@@ -2,6 +2,7 @@ import Image from 'next/image';
 import type { Fact } from '@/types/fact';
 import { categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from './CategoryIcon';
+import { ShareButton } from './ShareButton';
 
 export function FactCard({ fact }: { fact: Fact }) {
   const tokens = categoryTokens[fact.category];
@@ -48,6 +49,10 @@ export function FactCard({ fact }: { fact: Fact }) {
         >
           <path d="M9 6l6 6-6 6" />
         </svg>
+
+        <div className="absolute bottom-6 right-6">
+          <ShareButton fact={fact} accent={tokens.accent} />
+        </div>
       </div>
     </div>
   );
