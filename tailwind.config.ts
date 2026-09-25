@@ -20,7 +20,6 @@ const config: Config = {
         ringTrack: "#CFD0D3",
         category: {
           science: { bg: "#DDD6FE", accent: "#8B5CF6" },
-          nature: { bg: "#BBF7D0", accent: "#22C55E" },
           space: { bg: "#BFDBFE", accent: "#3B82F6" },
           history: { bg: "#FDE68A", accent: "#D97706" },
           food: { bg: "#FECACA", accent: "#EF4444" },
