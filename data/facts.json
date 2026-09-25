@@ -3470,5 +3470,33 @@
     "category": "Technology",
     "title": "One of the first things bought online was a CD.",
     "explain": "In 1994, a Sting album was sold through a website using encryption to protect the card details."
+  },
+  {
+    "id": "pisa-leaned-during-construction",
+    "num": 497,
+    "category": "History",
+    "title": "The Leaning Tower of Pisa leaned before it was finished.",
+    "explain": "It started tilting in 1178, only five years into construction, because the soft ground couldn't hold it. Builders tried to correct for it as they went."
+  },
+  {
+    "id": "pepper-same-plant",
+    "num": 498,
+    "category": "Food",
+    "title": "Black, white and green pepper come from the same plant.",
+    "explain": "They're all berries of the same vine, just picked at different ripeness and processed differently."
+  },
+  {
+    "id": "tea-same-plant",
+    "num": 499,
+    "category": "Food",
+    "title": "Green tea and black tea come from the same plant.",
+    "explain": "Both are made from the leaves of Camellia sinensis. The difference is how long the leaves are left to oxidize."
+  },
+  {
+    "id": "corn-silk-kernels",
+    "num": 500,
+    "category": "Food",
+    "title": "Every kernel of corn has its own strand of silk.",
+    "explain": "Each silk strand pollinates one kernel, which is why ears with patchy silk end up with gaps."
   }
 ]
