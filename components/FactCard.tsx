@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import type { Fact } from '@/types/fact';
 import { categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from './CategoryIcon';
@@ -21,9 +22,7 @@ export function FactCard({ fact }: { fact: Fact }) {
         style={{ backgroundColor: tokens.bg }}
       >
         <div className="flex items-start justify-between">
-          <div className="flex h-[34px] w-[34px] items-center justify-center rounded-lg bg-brand text-sm font-extrabold text-white">
-            RF
-          </div>
+          <Image src="/logo.svg" alt="Random Facts" width={34} height={34} className="h-[34px] w-[34px]" />
           <div
             className="flex h-14 w-14 items-center justify-center rounded-full"
             style={{ backgroundColor: tokens.accent }}
