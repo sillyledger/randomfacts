@@ -19,6 +19,16 @@ function ShuffleIcon() {
   );
 }
 
+// lucide "arrow-left"
+function ArrowLeftIcon() {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-[18px] w-[18px]" aria-hidden>
+      <path d="m12 19-7-7 7-7" />
+      <path d="M19 12H5" />
+    </svg>
+  );
+}
+
 function FilterChip({ category }: { category: Category }) {
   return (
     <Link
@@ -121,9 +131,10 @@ export function FactDeck({ facts, category }: { facts: Fact[]; category?: Catego
           type="button"
           onClick={goBack}
           disabled={!canGoBack}
-          className="flex-1 rounded-full border border-chromeBorder py-3.5 text-sm font-semibold text-chromeText transition hover:bg-black/5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
+          className="flex flex-1 items-center justify-center gap-2 rounded-full border border-chromeBorder py-3.5 text-sm font-semibold text-chromeText transition hover:bg-black/5 disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-transparent"
         >
-          ← Back
+          <ArrowLeftIcon />
+          Back
         </button>
         <button
           type="button"
