@@ -33,8 +33,8 @@ export function FactCard({ fact }: { fact: Fact }) {
         </div>
 
         <div className="flex flex-1 flex-col justify-center gap-3">
-          <h2 className="text-[27px] font-extrabold leading-tight text-ink">{fact.title}</h2>
-          <p className="text-[15.5px] leading-[1.55] text-muted">{fact.explain}</p>
+          <h2 className="text-[27px] font-extrabold max-[359px]:text-[23px] leading-tight text-ink break-words">{fact.title}</h2>
+          <p className="text-[15.5px] leading-[1.55] text-muted break-words">{fact.explain}</p>
         </div>
 
         <svg

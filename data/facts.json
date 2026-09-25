@@ -2966,5 +2966,509 @@
     "category": "Technology",
     "title": "Hard drive heads fly just nanometers above the disk.",
     "explain": "The gap is far smaller than a speck of dust."
+  },
+  {
+    "id": "glass-is-made-from-sand",
+    "num": 425,
+    "category": "Science",
+    "title": "Glass is made from sand.",
+    "explain": "Melt quartz sand at around 1,700°C, add a few other minerals, and it cools into glass."
+  },
+  {
+    "id": "lightning-can-make-glass",
+    "num": 426,
+    "category": "Science",
+    "title": "Lightning can make glass.",
+    "explain": "When lightning hits sand, it can fuse it into hollow glass tubes called fulgurites."
+  },
+  {
+    "id": "ice-comes-in-many-different",
+    "num": 427,
+    "category": "Science",
+    "title": "Ice comes in many different forms.",
+    "explain": "Scientists have found about 20 kinds of ice, depending on temperature and pressure. Only one forms naturally on Earth's surface."
+  },
+  {
+    "id": "salt-water-freezes-at-a",
+    "num": 428,
+    "category": "Science",
+    "title": "Salt water freezes at a lower temperature.",
+    "explain": "Dissolved salt gets in the way of ice crystals forming, which is why roads are salted in winter."
+  },
+  {
+    "id": "heat-can-destroy-a-magnet",
+    "num": 429,
+    "category": "Science",
+    "title": "Heat can destroy a magnet.",
+    "explain": "Above a certain temperature, called the Curie point, a magnet loses its magnetism."
+  },
+  {
+    "id": "sound-can-make-objects-float",
+    "num": 430,
+    "category": "Science",
+    "title": "Sound can make objects float.",
+    "explain": "In acoustic levitation, powerful sound waves hold small beads and droplets in mid-air."
+  },
+  {
+    "id": "soap-grabs-dirt-with-two",
+    "num": 431,
+    "category": "Science",
+    "title": "Soap grabs dirt with two different ends.",
+    "explain": "One end of a soap molecule sticks to oil and the other to water, so grease gets carried away when you rinse."
+  },
+  {
+    "id": "only-red-neon-signs-use",
+    "num": 432,
+    "category": "Science",
+    "title": "Only red neon signs use pure neon.",
+    "explain": "Other colors come from different gases, like argon, or from colored coatings on the glass."
+  },
+  {
+    "id": "bubbles-are-round-because-of",
+    "num": 433,
+    "category": "Science",
+    "title": "Bubbles are round because of surface tension.",
+    "explain": "A sphere is the shape that holds the most air with the least surface."
+  },
+  {
+    "id": "cats-cant-taste-sweetness",
+    "num": 434,
+    "category": "Animals",
+    "title": "Cats can't taste sweetness.",
+    "explain": "They lack a working gene for sweet taste receptors, which makes sense for strict meat-eaters."
+  },
+  {
+    "id": "crocodiles-cant-stick-out-their",
+    "num": 435,
+    "category": "Animals",
+    "title": "Crocodiles can't stick out their tongues.",
+    "explain": "Their tongue is held in place by a membrane attached to the roof of their mouth."
+  },
+  {
+    "id": "snails-have-thousands-of-teeth",
+    "num": 436,
+    "category": "Animals",
+    "title": "Snails have thousands of teeth.",
+    "explain": "Their tongue-like radula is covered in tiny teeth that scrape up food."
+  },
+  {
+    "id": "squirrels-plant-trees-by-forgetting",
+    "num": 437,
+    "category": "Animals",
+    "title": "Squirrels plant trees by forgetting.",
+    "explain": "They bury far more nuts than they dig up, and the forgotten ones can grow into new trees."
+  },
+  {
+    "id": "some-penguins-give-pebbles-as",
+    "num": 438,
+    "category": "Animals",
+    "title": "Some penguins give pebbles as gifts.",
+    "explain": "Male gentoo penguins search for the perfect pebble to offer a potential mate for her nest."
+  },
+  {
+    "id": "wood-frogs-freeze-solid-and",
+    "num": 439,
+    "category": "Animals",
+    "title": "Wood frogs freeze solid and survive.",
+    "explain": "Their heart stops over winter, then they thaw and hop away in spring."
+  },
+  {
+    "id": "horses-cant-throw-up",
+    "num": 440,
+    "category": "Animals",
+    "title": "Horses can't throw up.",
+    "explain": "A strong valve and the shape of their stomach make vomiting almost impossible."
+  },
+  {
+    "id": "every-dogs-nose-print-is",
+    "num": 441,
+    "category": "Animals",
+    "title": "Every dog's nose print is unique.",
+    "explain": "Like fingerprints, the pattern of ridges on a dog's nose is one of a kind."
+  },
+  {
+    "id": "bats-are-the-only-mammals",
+    "num": 442,
+    "category": "Animals",
+    "title": "Bats are the only mammals that truly fly.",
+    "explain": "Flying squirrels and others only glide. Bats flap and power their flight."
+  },
+  {
+    "id": "cheetahs-cant-roar",
+    "num": 443,
+    "category": "Animals",
+    "title": "Cheetahs can't roar.",
+    "explain": "They chirp, purr and meow instead, more like house cats than lions."
+  },
+  {
+    "id": "kangaroos-cant-easily-walk-backwards",
+    "num": 444,
+    "category": "Animals",
+    "title": "Kangaroos can't easily walk backwards.",
+    "explain": "Their big tail and long feet make moving in reverse very awkward."
+  },
+  {
+    "id": "male-emperor-penguins-fast-for",
+    "num": 445,
+    "category": "Animals",
+    "title": "Male emperor penguins fast for months.",
+    "explain": "They keep the egg warm through the Antarctic winter and go without food for around four months."
+  },
+  {
+    "id": "electric-eels-can-produce-about",
+    "num": 446,
+    "category": "Animals",
+    "title": "Electric eels can produce about 860 volts.",
+    "explain": "That's enough to stun prey or a predator many times their size."
+  },
+  {
+    "id": "pandas-spend-over-half-their",
+    "num": 447,
+    "category": "Animals",
+    "title": "Pandas spend over half their day eating.",
+    "explain": "Bamboo isn't very nutritious, so they eat for 10 to 16 hours a day."
+  },
+  {
+    "id": "a-year-on-jupiter-lasts",
+    "num": 448,
+    "category": "Space",
+    "title": "A year on Jupiter lasts about 12 Earth years.",
+    "explain": "It takes that long to circle the Sun once."
+  },
+  {
+    "id": "a-day-on-jupiter-is",
+    "num": 449,
+    "category": "Space",
+    "title": "A day on Jupiter is less than 10 hours.",
+    "explain": "It spins faster than any other planet in the solar system."
+  },
+  {
+    "id": "earth-has-a-quasimoon",
+    "num": 450,
+    "category": "Space",
+    "title": "Earth has a quasi-moon.",
+    "explain": "A small asteroid called Kamoʻoalewa travels alongside Earth and seems to loop around it."
+  },
+  {
+    "id": "the-sun-is-actually-white",
+    "num": 451,
+    "category": "Space",
+    "title": "The Sun is actually white.",
+    "explain": "It looks yellow from the ground because our atmosphere scatters blue light."
+  },
+  {
+    "id": "mars-is-red-because-of",
+    "num": 452,
+    "category": "Space",
+    "title": "Mars is red because of rust.",
+    "explain": "Iron oxide in its dust and rocks gives the planet its color."
+  },
+  {
+    "id": "youd-weigh-much-less-on",
+    "num": 453,
+    "category": "Space",
+    "title": "You'd weigh much less on Mars.",
+    "explain": "Mars has about 38% of Earth's gravity."
+  },
+  {
+    "id": "the-moon-is-slowly-shrinking",
+    "num": 454,
+    "category": "Space",
+    "title": "The Moon is slowly shrinking.",
+    "explain": "As its interior cools, the Moon contracts, and it has shrunk around 50 meters over hundreds of millions of years."
+  },
+  {
+    "id": "saturns-rings-are-extremely-thin",
+    "num": 455,
+    "category": "Space",
+    "title": "Saturn's rings are extremely thin.",
+    "explain": "They're hundreds of thousands of km wide but often only about 10 meters thick."
+  },
+  {
+    "id": "saturn-has-the-most-known",
+    "num": 456,
+    "category": "Space",
+    "title": "Saturn has the most known moons.",
+    "explain": "Astronomers have confirmed over 270 of them."
+  },
+  {
+    "id": "jupiters-moon-europa-has-a",
+    "num": 457,
+    "category": "Space",
+    "title": "Jupiter's moon Europa has a hidden ocean.",
+    "explain": "Under its icy crust lies a salty ocean that may hold more water than Earth's."
+  },
+  {
+    "id": "titan-has-lakes-of-liquid",
+    "num": 458,
+    "category": "Space",
+    "title": "Titan has lakes of liquid methane.",
+    "explain": "Saturn's largest moon has rain, rivers and seas, but they're made of methane and ethane."
+  },
+  {
+    "id": "sunlight-takes-thousands-of-years",
+    "num": 459,
+    "category": "Space",
+    "title": "Sunlight takes thousands of years to leave the Sun.",
+    "explain": "Energy from the core bounces around inside the Sun for a very long time before escaping."
+  },
+  {
+    "id": "halleys-comet-returns-about-every",
+    "num": 460,
+    "category": "Space",
+    "title": "Halley's Comet returns about every 76 years.",
+    "explain": "It was last seen in 1986 and should come back in 2061."
+  },
+  {
+    "id": "dust-storms-on-mars-can",
+    "num": 461,
+    "category": "Space",
+    "title": "Dust storms on Mars can cover the whole planet.",
+    "explain": "Some last for months and block out sunlight almost completely."
+  },
+  {
+    "id": "stars-twinkle-but-planets-usually",
+    "num": 462,
+    "category": "Space",
+    "title": "Stars twinkle but planets usually don't.",
+    "explain": "Stars are tiny points of light that our atmosphere bends around. Planets are small disks, so the effect evens out."
+  },
+  {
+    "id": "one-of-saturns-moons-sprays",
+    "num": 463,
+    "category": "Space",
+    "title": "One of Saturn's moons sprays water into space.",
+    "explain": "Enceladus shoots jets of water ice from cracks near its south pole."
+  },
+  {
+    "id": "mercury-has-ice",
+    "num": 464,
+    "category": "Space",
+    "title": "Mercury has ice.",
+    "explain": "Despite being closest to the Sun, it has ice in craters near its poles that never see sunlight."
+  },
+  {
+    "id": "ancient-egyptians-had-toothpaste",
+    "num": 465,
+    "category": "History",
+    "title": "Ancient Egyptians had toothpaste.",
+    "explain": "They used powders made from things like ground ox hooves, ash and eggshells."
+  },
+  {
+    "id": "julius-caesar-was-kidnapped-by",
+    "num": 466,
+    "category": "History",
+    "title": "Julius Caesar was kidnapped by pirates.",
+    "explain": "He reportedly demanded they raise his ransom, then later came back and had them captured."
+  },
+  {
+    "id": "the-great-wall-of-china",
+    "num": 467,
+    "category": "History",
+    "title": "The Great Wall of China isn't one wall.",
+    "explain": "It's many walls built by different dynasties over about 2,000 years."
+  },
+  {
+    "id": "vikings-reached-america-1000-years",
+    "num": 468,
+    "category": "History",
+    "title": "Vikings reached America 1,000 years ago.",
+    "explain": "Tree-ring dating shows Norse people were in Newfoundland in 1021."
+  },
+  {
+    "id": "the-library-of-alexandria-wasnt",
+    "num": 469,
+    "category": "History",
+    "title": "The Library of Alexandria wasn't destroyed in one fire.",
+    "explain": "It declined over centuries through budget cuts, politics and several separate disasters."
+  },
+  {
+    "id": "the-mongols-built-the-largest",
+    "num": 470,
+    "category": "History",
+    "title": "The Mongols built the largest connected land empire.",
+    "explain": "At its peak in the 1200s, it stretched from Korea to Eastern Europe."
+  },
+  {
+    "id": "medieval-people-knew-the-earth",
+    "num": 471,
+    "category": "History",
+    "title": "Medieval people knew the Earth was round.",
+    "explain": "The flat-Earth Middle Ages story was mostly invented in the 1800s."
+  },
+  {
+    "id": "an-ancient-greek-measured-earths",
+    "num": 472,
+    "category": "History",
+    "title": "An ancient Greek measured Earth's size with shadows.",
+    "explain": "Around 240 BC, Eratosthenes compared shadows in two cities and got surprisingly close."
+  },
+  {
+    "id": "raspberries-are-in-the-rose",
+    "num": 473,
+    "category": "Food",
+    "title": "Raspberries are in the rose family.",
+    "explain": "So are apples, pears, strawberries and cherries."
+  },
+  {
+    "id": "cucumbers-are-fruits",
+    "num": 474,
+    "category": "Food",
+    "title": "Cucumbers are fruits.",
+    "explain": "Botanically, any part of a plant that holds seeds and grows from a flower is a fruit."
+  },
+  {
+    "id": "rhubarb-leaves-are-poisonous",
+    "num": 475,
+    "category": "Food",
+    "title": "Rhubarb leaves are poisonous.",
+    "explain": "The stalks are fine to eat, but the leaves contain high levels of oxalic acid."
+  },
+  {
+    "id": "sushi-started-as-a-way",
+    "num": 476,
+    "category": "Food",
+    "title": "Sushi started as a way to preserve fish.",
+    "explain": "Fish was packed in fermented rice to keep it, and the rice was originally thrown away."
+  },
+  {
+    "id": "the-ice-cream-cone-took",
+    "num": 477,
+    "category": "Food",
+    "title": "The ice cream cone took off at a World's Fair.",
+    "explain": "It became popular at the 1904 St. Louis World's Fair."
+  },
+  {
+    "id": "the-holes-in-crackers-have",
+    "num": 478,
+    "category": "Food",
+    "title": "The holes in crackers have a job.",
+    "explain": "They let steam escape during baking so the crackers don't puff up and crack."
+  },
+  {
+    "id": "people-have-chewed-gum-for",
+    "num": 479,
+    "category": "Food",
+    "title": "People have chewed gum for thousands of years.",
+    "explain": "The Maya and Aztecs chewed chicle, a tree sap later used in modern gum."
+  },
+  {
+    "id": "saffron-comes-from-flowers-picked",
+    "num": 480,
+    "category": "Food",
+    "title": "Saffron comes from flowers picked by hand.",
+    "explain": "It takes around 150 crocus flowers to make a single gram."
+  },
+  {
+    "id": "oranges-arent-always-orange",
+    "num": 481,
+    "category": "Food",
+    "title": "Oranges aren't always orange.",
+    "explain": "In warm tropical countries, ripe oranges often stay green."
+  },
+  {
+    "id": "most-bananas-are-clones",
+    "num": 482,
+    "category": "Food",
+    "title": "Most bananas are clones.",
+    "explain": "The Cavendish bananas in stores come from cuttings, so they're genetically almost identical."
+  },
+  {
+    "id": "coconut-water-has-been-used",
+    "num": 483,
+    "category": "Food",
+    "title": "Coconut water has been used as an IV drip.",
+    "explain": "In emergencies during World War II, doctors used it when saline wasn't available."
+  },
+  {
+    "id": "the-eiffel-towers-night-lights",
+    "num": 484,
+    "category": "Culture",
+    "title": "The Eiffel Tower's night lights are copyrighted.",
+    "explain": "The tower itself is public domain, but its light show counts as an artwork."
+  },
+  {
+    "id": "leonardo-da-vinci-wrote-backwards",
+    "num": 485,
+    "category": "Culture",
+    "title": "Leonardo da Vinci wrote backwards.",
+    "explain": "Much of his notebooks are in mirror writing, going from right to left."
+  },
+  {
+    "id": "the-little-prince-is-one",
+    "num": 486,
+    "category": "Culture",
+    "title": "The Little Prince is one of the most translated books ever.",
+    "explain": "It's been translated into hundreds of languages and dialects."
+  },
+  {
+    "id": "legos-name-means-play-well",
+    "num": 487,
+    "category": "Culture",
+    "title": "Lego's name means 'play well'.",
+    "explain": "It comes from the Danish words 'leg godt'."
+  },
+  {
+    "id": "blue-jeans-got-their-rivets",
+    "num": 488,
+    "category": "Culture",
+    "title": "Blue jeans got their rivets in 1873.",
+    "explain": "Levi Strauss and tailor Jacob Davis patented metal rivets to make work pants stronger."
+  },
+  {
+    "id": "the-dutch-are-the-tallest",
+    "num": 489,
+    "category": "Culture",
+    "title": "The Dutch are the tallest people on average.",
+    "explain": "Dutch men average around 1.83 meters."
+  },
+  {
+    "id": "an-adult-has-about-5",
+    "num": 490,
+    "category": "Human Body",
+    "title": "An adult has about 5 liters of blood.",
+    "explain": "It makes up around 7% to 8% of your body weight."
+  },
+  {
+    "id": "you-blink-around-15-to",
+    "num": 491,
+    "category": "Human Body",
+    "title": "You blink around 15 to 20 times a minute.",
+    "explain": "That's thousands of times a day, keeping your eyes clean and moist."
+  },
+  {
+    "id": "you-still-have-a-tailbone",
+    "num": 492,
+    "category": "Human Body",
+    "title": "You still have a tailbone.",
+    "explain": "The coccyx is what's left of a tail from our distant ancestors."
+  },
+  {
+    "id": "the-sahara-is-about-the",
+    "num": 493,
+    "category": "Earth",
+    "title": "The Sahara is about the size of the United States.",
+    "explain": "It covers around 9 million square kilometers."
+  },
+  {
+    "id": "canada-has-the-worlds-longest",
+    "num": 494,
+    "category": "Earth",
+    "title": "Canada has the world's longest coastline.",
+    "explain": "It stretches over 200,000 km, thanks to thousands of islands."
+  },
+  {
+    "id": "googles-first-storage-was-built",
+    "num": 495,
+    "category": "Technology",
+    "title": "Google's first storage was built out of Lego.",
+    "explain": "In 1996, its founders housed hard drives in a case made of Lego bricks."
+  },
+  {
+    "id": "one-of-the-first-things",
+    "num": 496,
+    "category": "Technology",
+    "title": "One of the first things bought online was a CD.",
+    "explain": "In 1994, a Sting album was sold through a website using encryption to protect the card details."
   }
 ]
