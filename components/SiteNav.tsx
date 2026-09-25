@@ -9,6 +9,7 @@ const links = [
   { href: '/', label: 'Home' },
   { href: '/categories', label: 'Categories' },
   { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
 ];
 
 function MenuIcon({ open }: { open: boolean }) {
@@ -60,6 +61,7 @@ export function SiteNav() {
           <div className="hidden items-center gap-7 md:flex">
             <NavLink href="/categories">Categories</NavLink>
             <NavLink href="/about">About</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </div>
           <button
             ref={buttonRef}

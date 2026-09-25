@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { Toast, useToast } from '@/components/Toast';
 import type { Fact } from '@/types/fact';
 
 function ShareIcon() {
@@ -13,16 +13,7 @@ function ShareIcon() {
 }
 
 export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
-  const [toast, setToast] = useState<string | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
-
-  useEffect(() => () => clearTimeout(timeoutRef.current), []);
-
-  const showToast = (message: string) => {
-    clearTimeout(timeoutRef.current);
-    setToast(message);
-    timeoutRef.current = setTimeout(() => setToast(null), 2000);
-  };
+  const { toast, showToast } = useToast();
 
   const copyToClipboard = async (url: string) => {
     try {
@@ -62,15 +53,7 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
       >
         <ShareIcon />
       </button>
-      <div
-        role="status"
-        aria-live="polite"
-        className={`pointer-events-none fixed inset-x-0 bottom-8 z-30 flex justify-center transition-opacity duration-200 ${toast ? 'opacity-100' : 'opacity-0'}`}
-      >
-        {toast && (
-          <span className="rounded-full bg-ink px-4 py-2 text-[13px] font-semibold text-white shadow-lg">{toast}</span>
-        )}
-      </div>
+      <Toast message={toast} />
     </>
   );
 }

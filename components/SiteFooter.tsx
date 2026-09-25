@@ -23,6 +23,7 @@ export function SiteFooter() {
           <nav aria-label="Footer" className="flex items-center gap-7">
             <NavLink href="/categories">Categories</NavLink>
             <NavLink href="/about">About</NavLink>
+            <NavLink href="/contact">Contact</NavLink>
           </nav>
         </div>
         <div className="mt-6 flex flex-col items-start gap-2 text-[13px] text-[#6B6E76] sm:flex-row sm:items-center sm:justify-between">
