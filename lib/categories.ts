@@ -12,3 +12,13 @@ export const categoryTokens: Record<Category, { bg: string; accent: string }> = 
   Language: { bg: '#D9F99D', accent: '#65A30D' },
   Technology: { bg: '#F5D0FE', accent: '#C026D3' },
 };
+
+export const categories = Object.keys(categoryTokens) as Category[];
+
+export function categorySlug(category: Category): string {
+  return category.toLowerCase().replace(/\s+/g, '-');
+}
+
+export function categoryFromSlug(slug: string | undefined): Category | undefined {
+  return categories.find((category) => categorySlug(category) === slug);
+}
