@@ -4,21 +4,21 @@
     "num": 1,
     "category": "Science",
     "title": "Honey never spoils.",
-    "explain": "Sealed jars found in 3,000-year-old Egyptian tombs were still perfectly edible — its low moisture and acidity keep bacteria from surviving."
+    "explain": "Sealed jars found in 3,000-year-old Egyptian tombs were still perfectly edible. Honey's low moisture and acidity keep bacteria from surviving."
   },
   {
     "id": "cards",
     "num": 2,
     "category": "Science",
     "title": "A shuffled deck is one of a kind.",
-    "explain": "Fifty-two cards can be arranged in 52 factorial ways — a number vastly larger than the atoms estimated on Earth."
+    "explain": "Fifty-two cards can be arranged in 52 factorial ways, a number vastly larger than the atoms estimated on Earth."
   },
   {
     "id": "water-triple-point",
     "num": 3,
     "category": "Science",
     "title": "Water can be boiling and freezing at once.",
-    "explain": "At its exact 'triple point' — one specific temperature and pressure — water exists as solid ice, liquid, and vapor all at the same time."
+    "explain": "At its exact 'triple point', one specific temperature and pressure, water exists as solid ice, liquid, and vapor all at the same time."
   },
   {
     "id": "gallium",
@@ -32,13 +32,13 @@
     "num": 5,
     "category": "Science",
     "title": "Hot water can freeze faster than cold water.",
-    "explain": "Known as the Mpemba effect, it's been observed for centuries under the right conditions — and scientists still don't fully agree on why it happens."
+    "explain": "Known as the Mpemba effect, it's been observed for centuries under the right conditions, and scientists still don't fully agree on why it happens."
   },
   {
     "id": "diamond-rain",
     "num": 6,
     "category": "Science",
-    "title": "Diamonds may rain from the sky — on other planets.",
+    "title": "Diamonds may rain from the sky on other planets.",
     "explain": "Scientists believe the extreme pressure inside Neptune and Uranus can crush carbon into diamonds, which then sink slowly through the planets' interiors."
   },
   {
@@ -46,14 +46,14 @@
     "num": 7,
     "category": "Science",
     "title": "A neutron star is unimaginably dense.",
-    "explain": "A sugar-cube-sized piece would weigh about as much as a small mountain — the result of a collapsed star crushed under its own gravity."
+    "explain": "A sugar-cube-sized piece would weigh about as much as a small mountain, the result of a collapsed star crushed under its own gravity."
   },
   {
     "id": "sound-vacuum",
     "num": 8,
     "category": "Science",
     "title": "Sound can't travel through space.",
-    "explain": "Space is a near-total vacuum, and sound needs molecules to vibrate through — without air, dust, or gas nearby, there's nothing for it to move across."
+    "explain": "Space is a near-total vacuum, and sound needs molecules to vibrate through. Without air, dust, or gas nearby, there's nothing for it to move across."
   },
   {
     "id": "bananas-radioactive",
@@ -116,7 +116,7 @@
     "num": 17,
     "category": "Animals",
     "title": "Octopuses have three hearts.",
-    "explain": "Two pump blood to the gills, one to the rest of the body — and that third heart stops beating when the octopus swims."
+    "explain": "Two pump blood to the gills, one to the rest of the body. That third heart stops beating when the octopus swims."
   },
   {
     "id": "wombat",
@@ -130,7 +130,7 @@
     "num": 19,
     "category": "Animals",
     "title": "Sharks are older than trees.",
-    "explain": "Sharks have existed for over 400 million years — roughly 50 million years before the first trees appeared."
+    "explain": "Sharks have existed for over 400 million years, roughly 50 million years before the first trees appeared."
   },
   {
     "id": "sea-otters",
@@ -151,7 +151,7 @@
     "num": 22,
     "category": "Animals",
     "title": "Flamingos are born gray, not pink.",
-    "explain": "Their signature color comes from pigments in the shrimp and algae they eat — without that diet, they'd stay a dull gray-white."
+    "explain": "Their signature color comes from pigments in the shrimp and algae they eat. Without that diet, they'd stay a dull gray-white."
   },
   {
     "id": "bees-faces",
@@ -256,7 +256,7 @@
     "num": 37,
     "category": "Space",
     "title": "Lightning is hotter than the surface of the sun.",
-    "explain": "A single bolt reaches roughly 30,000 Kelvin — about five times hotter than the sun's surface temperature."
+    "explain": "A single bolt reaches roughly 30,000 Kelvin, about five times hotter than the sun's surface temperature."
   },
   {
     "id": "venus-spin",
@@ -277,21 +277,21 @@
     "num": 40,
     "category": "Space",
     "title": "There are more stars than grains of sand on Earth.",
-    "explain": "Astronomers estimate roughly a septillion stars in the observable universe — far more than the sand on every beach and desert combined."
+    "explain": "Astronomers estimate roughly a septillion stars in the observable universe, far more than the sand on every beach and desert combined."
   },
   {
     "id": "pulsar-spin",
     "num": 41,
     "category": "Space",
     "title": "Some dead stars spin 600 times a second.",
-    "explain": "The fastest known pulsars — collapsed cores of exploded stars — rotate several hundred times per second, fast enough to blur past comprehension."
+    "explain": "The fastest known pulsars, collapsed cores of exploded stars, rotate several hundred times per second, fast enough to blur past comprehension."
   },
   {
     "id": "saturn-float",
     "num": 42,
     "category": "Space",
     "title": "Saturn would float in water.",
-    "explain": "It's the only planet in the solar system less dense than water — with a bathtub big enough, the whole planet would float."
+    "explain": "It's the only planet in the solar system less dense than water. With a bathtub big enough, the whole planet would float."
   },
   {
     "id": "moon-footprints",
@@ -319,7 +319,7 @@
     "num": 46,
     "category": "Space",
     "title": "Uranus rotates on its side.",
-    "explain": "Its axis is tilted about 98 degrees, likely from an ancient collision — so unlike every other planet, it essentially rolls around the sun."
+    "explain": "Its axis is tilted about 98 degrees, likely from an ancient collision. Unlike every other planet, it essentially rolls around the sun."
   },
   {
     "id": "iss-sunrises",
@@ -410,14 +410,14 @@
     "num": 59,
     "category": "History",
     "title": "Cleopatra lived closer to the Moon landing than to the pyramids.",
-    "explain": "The Great Pyramid was built around 2560 BC; Cleopatra ruled around 30 BC — closer in time to Apollo 11 in 1969 than to the pyramid's construction."
+    "explain": "The Great Pyramid was built around 2560 BC. Cleopatra ruled around 30 BC, closer in time to Apollo 11 in 1969 than to the pyramid's construction."
   },
   {
     "id": "oxford-aztec",
     "num": 60,
     "category": "History",
     "title": "Oxford University is older than the Aztec Empire.",
-    "explain": "Teaching at Oxford began around 1096, while the Aztec civilization wasn't founded until 1325 — over two centuries later."
+    "explain": "Teaching at Oxford began around 1096, while the Aztec civilization wasn't founded until 1325, over two centuries later."
   },
   {
     "id": "last-mammoths",
@@ -431,14 +431,14 @@
     "num": 62,
     "category": "History",
     "title": "France used the guillotine the same year Star Wars came out.",
-    "explain": "France's last execution by guillotine took place in 1977 — the same year the original 'Star Wars' premiered in theaters."
+    "explain": "France's last execution by guillotine took place in 1977, the same year the original 'Star Wars' premiered in theaters."
   },
   {
     "id": "oldest-recipe",
     "num": 63,
     "category": "History",
     "title": "The first known recipe is nearly 4,000 years old.",
-    "explain": "Clay tablets from ancient Mesopotamia, dated to around 1730 BC, record cooking instructions for stews — the oldest written recipes known."
+    "explain": "Clay tablets from ancient Mesopotamia, dated to around 1730 BC, record cooking instructions for stews. They're the oldest written recipes known."
   },
   {
     "id": "napoleon-rabbits",
@@ -459,7 +459,7 @@
     "num": 66,
     "category": "History",
     "title": "Vikings never actually wore horned helmets.",
-    "explain": "No genuine Viking-era helmet with horns has ever been found — the image comes from 19th-century opera costumes, centuries after the Viking age ended."
+    "explain": "No genuine Viking-era helmet with horns has ever been found. The image comes from 19th-century opera costumes, centuries after the Viking age ended."
   },
   {
     "id": "roman-urine",
@@ -536,7 +536,7 @@
     "num": 77,
     "category": "Food",
     "title": "Bananas are berries. Strawberries aren't.",
-    "explain": "Botanically, a berry develops from one ovary with seeds inside the flesh — bananas qualify, strawberries don't."
+    "explain": "Botanically, a berry develops from one ovary with seeds inside the flesh. Bananas qualify, strawberries don't."
   },
   {
     "id": "purple-carrots",
@@ -564,7 +564,7 @@
     "num": 81,
     "category": "Food",
     "title": "White chocolate isn't technically chocolate.",
-    "explain": "It contains cocoa butter but no cocoa solids — the part that gives chocolate its color and much of its flavor — so many definitions exclude it."
+    "explain": "It contains cocoa butter but no cocoa solids, the part that gives chocolate its color and much of its flavor, so many definitions exclude it."
   },
   {
     "id": "apples-float",
@@ -585,7 +585,7 @@
     "num": 84,
     "category": "Food",
     "title": "Almonds are technically a seed, not a nut.",
-    "explain": "An almond is the seed found inside the pit of a fruit closely related to peaches and plums — botanically closer to a stone fruit seed than a true nut."
+    "explain": "An almond is the seed found inside the pit of a fruit closely related to peaches and plums. Botanically, it's closer to a stone fruit seed than a true nut."
   },
   {
     "id": "fake-wasabi",
@@ -690,7 +690,7 @@
     "num": 99,
     "category": "Culture",
     "title": "Denmark has a word for cozy contentment.",
-    "explain": "'Hygge' describes a feeling of warm, comfortable togetherness — there's no direct English translation, and the concept has become a lifestyle export."
+    "explain": "'Hygge' describes a feeling of warm, comfortable togetherness. There's no direct English translation, and the concept has become a lifestyle export."
   },
   {
     "id": "japan-vending",
@@ -711,7 +711,7 @@
     "num": 102,
     "category": "Culture",
     "title": "The shortest place name in the world is one letter.",
-    "explain": "Several villages — including ones in Norway and Sweden — are officially named just 'Å,' a single Scandinavian letter."
+    "explain": "Several villages, including ones in Norway and Sweden, are officially named just 'Å,' a single Scandinavian letter."
   },
   {
     "id": "handshake-origin",
@@ -725,7 +725,7 @@
     "num": 104,
     "category": "Culture",
     "title": "The depth of a bow changes its meaning in Japan.",
-    "explain": "A quick nod signals something very different from a deep, held bow — the angle and duration communicate the level of respect or apology intended."
+    "explain": "A quick nod signals something very different from a deep, held bow. The angle and duration communicate the level of respect or apology intended."
   },
   {
     "id": "vatican-smallest",

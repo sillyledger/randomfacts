@@ -120,7 +120,7 @@ export function FactDeck({
       <>
         {category && <FilterChip category={category} />}
         <div className="rounded-[28px] bg-white/60 p-6 text-center text-[15.5px] font-semibold text-chromeText">
-          No facts here yet — check back soon.
+          No facts here yet. Check back soon.
         </div>
       </>
     );
