@@ -11,7 +11,7 @@
     "num": 2,
     "category": "Science",
     "title": "A shuffled deck is one of a kind.",
-    "explain": "Fifty-two cards can be arranged in 52 factorial ways, a number vastly larger than the atoms estimated on Earth."
+    "explain": "52 cards can be arranged in 52 factorial ways, a number vastly larger than the atoms estimated on Earth."
   },
   {
     "id": "water-triple-point",
@@ -171,7 +171,7 @@
     "id": "snail-sleep",
     "num": 25,
     "category": "Animals",
-    "title": "A snail can sleep for up to three years.",
+    "title": "A snail can sleep for up to 3 years.",
     "explain": "When conditions turn too hot, cold, or dry, snails seal themselves into their shells and enter a dormant state to wait it out."
   },
   {
@@ -256,7 +256,7 @@
     "num": 37,
     "category": "Space",
     "title": "Lightning is hotter than the surface of the sun.",
-    "explain": "A single bolt reaches roughly 30,000 Kelvin, about five times hotter than the sun's surface temperature."
+    "explain": "A single bolt reaches roughly 30,000 Kelvin, about 5 times hotter than the sun's surface temperature."
   },
   {
     "id": "venus-spin",
@@ -284,7 +284,7 @@
     "num": 41,
     "category": "Space",
     "title": "Some dead stars spin 600 times a second.",
-    "explain": "The fastest known pulsars, collapsed cores of exploded stars, rotate several hundred times per second, fast enough to blur past comprehension."
+    "explain": "The fastest known pulsars, collapsed cores of exploded stars, rotate several hundred times per second."
   },
   {
     "id": "saturn-float",
@@ -312,7 +312,7 @@
     "num": 45,
     "category": "Space",
     "title": "A year on Mercury is just 88 Earth days.",
-    "explain": "Mercury's tight, fast orbit around the sun means it completes a full year in less time than it takes Earth to finish three months."
+    "explain": "Mercury's tight, fast orbit around the sun means it completes a full year in less time than it takes Earth to finish 3 months."
   },
   {
     "id": "uranus-tilt",
@@ -417,7 +417,7 @@
     "num": 60,
     "category": "History",
     "title": "Oxford University is older than the Aztec Empire.",
-    "explain": "Teaching at Oxford began around 1096, while the Aztec civilization wasn't founded until 1325, over two centuries later."
+    "explain": "Teaching at Oxford began around 1096, while the Aztec civilization wasn't founded until 1325, over 200 years later."
   },
   {
     "id": "last-mammoths",
@@ -565,7 +565,7 @@
     "category": "Food",
     "title": "White chocolate isn't technically chocolate.",
     "explain": "It contains cocoa butter but no cocoa solids, the part that gives chocolate its color and much of its flavor, so many definitions exclude it.",
-    "story": "In the US, white chocolate has had its own official definition since 2004. To carry the name, it needs at least 20% cocoa butter and 14% milk solids, and no more than 55% sugar. Cocoa butter is the pale fat pressed out of cocoa beans, so white chocolate does come from the cocoa plant. It just leaves out the dark, bitter solids that give regular chocolate its color and most of its flavor.",
+    "story": "In the US, white chocolate has had its own official definition since 2004. To carry the name, it needs at least 20% cocoa butter and 14% milk solids, and no more than 55% sugar. Cocoa butter is the pale fat pressed out of cocoa beans, so white chocolate does come from the cocoa plant. But it leaves out the cocoa solids, which is why many definitions don't count it as chocolate.",
     "source": {
       "name": "U.S. FDA, 21 CFR 163.124",
       "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163/subpart-B/section-163.124"
@@ -610,7 +610,7 @@
     "id": "pineapple-growth",
     "num": 87,
     "category": "Food",
-    "title": "A pineapple takes about two years to grow.",
+    "title": "A pineapple takes about 2 years to grow.",
     "explain": "Each plant typically produces just one pineapple at a time, after around 18 to 24 months."
   },
   {
@@ -771,7 +771,7 @@
     "id": "korea-age",
     "num": 110,
     "category": "Culture",
-    "title": "South Koreans used to be one year old at birth.",
+    "title": "South Koreans used to be 1 year old at birth.",
     "explain": "The traditional counting age added a year at birth and every New Year, until the country officially switched in 2023."
   },
   {
@@ -862,7 +862,7 @@
     "id": "sound-travels-about-four-times",
     "num": 123,
     "category": "Science",
-    "title": "Sound travels about four times faster in water.",
+    "title": "Sound travels about 4 times faster in water.",
     "explain": "Around 1,480 m/s in water versus about 343 m/s in air, because water molecules are packed closer together."
   },
   {
@@ -989,7 +989,7 @@
     "num": 141,
     "category": "Science",
     "title": "Atomic clocks barely ever drift.",
-    "explain": "The best cesium clocks would lose about one second in 100 million years, and newer optical clocks are even better."
+    "explain": "The best cesium clocks would lose about 1 second in 100 million years, and newer optical clocks are even better."
   },
   {
     "id": "superfluid-helium-can-climb-walls",
@@ -1261,7 +1261,7 @@
     "id": "ten-days-vanished-in-1582",
     "num": 180,
     "category": "History",
-    "title": "Ten days vanished in 1582.",
+    "title": "10 days vanished in 1582.",
     "explain": "To fix the calendar, the Gregorian switch jumped straight from October 4 to October 15 in several countries."
   },
   {
@@ -1381,7 +1381,7 @@
     "num": 197,
     "category": "Food",
     "title": "Sliced bread was banned in the US.",
-    "explain": "In 1943, the government briefly banned it to save resources during the war. It lasted about two months."
+    "explain": "In 1943, the government briefly banned it to save resources during the war. It lasted about 2 months."
   },
   {
     "id": "ripe-cranberries-bounce",
@@ -1710,7 +1710,7 @@
     "num": 244,
     "category": "Human Body",
     "title": "Fingernails grow faster than toenails.",
-    "explain": "Fingernails grow about 3 mm a month, roughly three times faster than toenails."
+    "explain": "Fingernails grow about 3 mm a month, roughly 3 times faster than toenails."
   },
   {
     "id": "your-heart-beats-about-100000",
@@ -2486,7 +2486,7 @@
     "id": "quarantine-means-forty-days",
     "num": 355,
     "category": "Language",
-    "title": "'Quarantine' means forty days.",
+    "title": "'Quarantine' means 40 days.",
     "explain": "It comes from Italian 'quaranta giorni', the time ships waited in Venice during plague outbreaks."
   },
   {
@@ -3117,7 +3117,7 @@
     "num": 445,
     "category": "Animals",
     "title": "Male emperor penguins fast for months.",
-    "explain": "They keep the egg warm through the Antarctic winter and go without food for around four months."
+    "explain": "They keep the egg warm through the Antarctic winter and go without food for around 4 months."
   },
   {
     "id": "electric-eels-can-produce-about",
@@ -3481,7 +3481,7 @@
     "num": 497,
     "category": "History",
     "title": "The Leaning Tower of Pisa leaned before it was finished.",
-    "explain": "It started tilting in 1178, only five years into construction, because the soft ground couldn't hold it. Builders tried to correct for it as they went."
+    "explain": "It started tilting in 1178, only 5 years into construction, because the soft ground couldn't hold it. Builders tried to correct for it as they went."
   },
   {
     "id": "pepper-same-plant",
