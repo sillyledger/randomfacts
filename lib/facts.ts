@@ -15,18 +15,3 @@ for (const fact of facts) {
 export function getFacts(): Fact[] {
   return facts;
 }
-
-export function getFact(id: string): Fact | undefined {
-  return facts.find((fact) => fact.id === id);
-}
-
-// The next `count` facts in the same category by num, wrapping around, so every build picks the same ones.
-export function getRelatedFacts(fact: Fact, count: number): Fact[] {
-  const sameCategory = facts.filter((other) => other.category === fact.category).sort((a, b) => a.num - b.num);
-  const start = sameCategory.findIndex((other) => other.id === fact.id);
-  const related: Fact[] = [];
-  for (let step = 1; step < sameCategory.length && related.length < count; step++) {
-    related.push(sameCategory[(start + step) % sameCategory.length]);
-  }
-  return related;
-}

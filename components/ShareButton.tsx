@@ -1,7 +1,6 @@
 'use client';
 
 import { Toast, useToast } from '@/components/Toast';
-import { factPath } from '@/lib/site';
 import type { Fact } from '@/types/fact';
 
 function ShareIcon() {
@@ -27,7 +26,7 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
 
   const share = async (event: React.MouseEvent) => {
     event.stopPropagation();
-    const url = `${window.location.origin}${factPath(fact.id)}`;
+    const url = `${window.location.origin}/`;
 
     if (typeof navigator.share === 'function') {
       try {

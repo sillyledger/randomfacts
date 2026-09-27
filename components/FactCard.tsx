@@ -4,16 +4,7 @@ import { categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from './CategoryIcon';
 import { ShareButton } from './ShareButton';
 
-// `swipeHint` shows the chevron that tells deck users there's a next card.
-export function FactCard({
-  fact,
-  swipeHint = true,
-  titleAs: Title = 'h2',
-}: {
-  fact: Fact;
-  swipeHint?: boolean;
-  titleAs?: 'h1' | 'h2';
-}) {
+export function FactCard({ fact }: { fact: Fact }) {
   const tokens = categoryTokens[fact.category];
 
   return (
@@ -42,24 +33,22 @@ export function FactCard({
         </div>
 
         <div className="flex flex-1 flex-col justify-center gap-3">
-          <Title className="text-[27px] font-extrabold max-[359px]:text-[23px] leading-tight text-ink break-words">{fact.title}</Title>
+          <h2 className="text-[27px] font-extrabold max-[359px]:text-[23px] leading-tight text-ink break-words">{fact.title}</h2>
           <p className="text-[15.5px] leading-[1.55] text-muted break-words">{fact.explain}</p>
         </div>
 
-        {swipeHint && (
-          <svg
-            className="pointer-events-none absolute right-3 top-1/2 h-8 w-8 -translate-y-1/2 text-black/20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth={2.5}
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            aria-hidden
-          >
-            <path d="M9 6l6 6-6 6" />
-          </svg>
-        )}
+        <svg
+          className="pointer-events-none absolute right-3 top-1/2 h-8 w-8 -translate-y-1/2 text-black/20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth={2.5}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden
+        >
+          <path d="M9 6l6 6-6 6" />
+        </svg>
 
         <div className="absolute bottom-6 right-6">
           <ShareButton fact={fact} accent={tokens.accent} />
