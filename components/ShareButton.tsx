@@ -17,7 +17,7 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
 
   const copyToClipboard = async (url: string) => {
     try {
-      await navigator.clipboard.writeText(`${fact.title} ${fact.explain}\n${url}`);
+      await navigator.clipboard.writeText(`${fact.title} — ${fact.explain}\n${url}`);
       showToast('Copied');
     } catch {
       showToast("Couldn't copy");
