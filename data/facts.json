@@ -564,7 +564,12 @@
     "num": 81,
     "category": "Food",
     "title": "White chocolate isn't technically chocolate.",
-    "explain": "It contains cocoa butter but no cocoa solids, the part that gives chocolate its color and much of its flavor, so many definitions exclude it."
+    "explain": "It contains cocoa butter but no cocoa solids, the part that gives chocolate its color and much of its flavor, so many definitions exclude it.",
+    "story": "In the US, white chocolate has had its own official definition since 2004. To carry the name, it needs at least 20% cocoa butter and 14% milk solids, and no more than 55% sugar. Cocoa butter is the pale fat pressed out of cocoa beans, so white chocolate does come from the cocoa plant. It just leaves out the dark, bitter solids that give regular chocolate its color and most of its flavor.",
+    "source": {
+      "name": "U.S. FDA, 21 CFR 163.124",
+      "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-B/part-163/subpart-B/section-163.124"
+    }
   },
   {
     "id": "apples-float",
