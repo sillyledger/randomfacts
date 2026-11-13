@@ -6,12 +6,14 @@ import { SEEN_COOKIE, decodeSeen, encodeSeen } from '@/lib/seen';
 import { FactDeck } from '@/components/FactDeck';
 import { PageShell } from '@/components/PageShell';
 
-export default function Home({ searchParams }: { searchParams: { category?: string | string[] } }) {
-  const slug = Array.isArray(searchParams.category) ? searchParams.category[0] : searchParams.category;
+export default async function Home({ searchParams }: { searchParams: Promise<{ category?: string | string[] }> }) {
+  const { category: categoryParam } = await searchParams;
+  const slug = Array.isArray(categoryParam) ? categoryParam[0] : categoryParam;
   const category = categoryFromSlug(slug);
   const allFacts = getFacts();
   const inScope = allFacts.filter((fact) => !category || fact.category === category);
-  const seen = decodeSeen(cookies().get(SEEN_COOKIE)?.value, new Map(allFacts.map((fact) => [fact.id, fact.num])));
+  const cookieStore = await cookies();
+  const seen = decodeSeen(cookieStore.get(SEEN_COOKIE)?.value, new Map(allFacts.map((fact) => [fact.id, fact.num])));
   // Unseen facts first, then ones seen on earlier visits, each group shuffled.
   const facts = [
     ...shuffle(inScope.filter((fact) => !seen.has(fact.num))),

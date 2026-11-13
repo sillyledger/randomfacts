@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 // Short-lived status message, e.g. "Copied". Render <Toast message={toast} /> once per component.
 export function useToast(durationMs = 2000) {
   const [toast, setToast] = useState<string | null>(null);
-  const timeoutRef = useRef<ReturnType<typeof setTimeout>>();
+  const timeoutRef = useRef<ReturnType<typeof setTimeout>>(undefined);
 
   useEffect(() => () => clearTimeout(timeoutRef.current), []);
 

@@ -1,3 +1,4 @@
+import type { JSX } from 'react';
 import type { Category } from '@/types/fact';
 
 type IconProps = {
