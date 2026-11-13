@@ -29,7 +29,7 @@ export function SiteFooter() {
         <div className="mt-6 flex flex-col items-start gap-2 text-[13px] text-[#6B6E76] sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Random Facts</p>
           <a
-            href="https://www.onpointvc.com/"
+            href="https://www.onpointvc.com/absurdity-projects"
             target="_blank"
             rel="noopener noreferrer"
             className="tracking-wide transition hover:text-[#31333A]"

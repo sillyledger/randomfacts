@@ -6,7 +6,7 @@ import { pageMetadata } from '@/lib/site';
 
 export const metadata: Metadata = pageMetadata('Contact · Random Facts', '/contact');
 
-const EMAIL = 'jm@onpointvc.com';
+const EMAIL = 'p@ryoka.xyz';
 
 // lucide "mail"
 function MailIcon({ className }: { className: string }) {
@@ -44,6 +44,17 @@ export default function ContactPage() {
           </a>
           <CopyEmailButton email={EMAIL} />
         </div>
+        <p className="mt-4 text-[15.5px] leading-[1.55] text-muted">
+          For all other contact info, visit{' '}
+          <a
+            href="https://www.onpointvc.com/contact"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-brand transition hover:text-brand/80"
+          >
+            onpointvc.com/contact
+          </a>
+        </p>
       </section>
     </PageShell>
   );
