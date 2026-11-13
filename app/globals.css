@@ -9,6 +9,14 @@ body {
   padding-right: env(safe-area-inset-right);
 }
 
+/* On touch screens a sideways card swipe must not overscroll into back/forward navigation. Desktop trackpads keep
+   their history swipe. */
+@media (pointer: coarse) {
+  html {
+    overscroll-behavior-x: none;
+  }
+}
+
 @layer utilities {
   /* The visible screen with mobile browser toolbars expanded; plain vh where svh isn't supported. */
   .min-h-visible-screen {

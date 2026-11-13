@@ -14,23 +14,38 @@ const entranceClass: Record<CardEntrance, string> = {
   back: 'animate-card-in-back motion-reduce:animate-card-fade',
 };
 
-// Swipe tuning. Distances in px, velocity in px/ms.
-const DRAG_SLOP = 10;
+// Swipe tuning. Distances in px, velocity in px/ms, durations in ms.
+const TAP_SLOP = 8; // total movement below this is a tap, not a drag
 const SWIPE_DISTANCE = 80;
 const FLICK_VELOCITY = 0.5;
 const FLICK_MIN_DISTANCE = 24;
 const VELOCITY_WINDOW_MS = 100;
 const MAX_ROTATION_DEG = 8;
-const EXIT_MS = 180;
-const SNAP_BACK = 'transform 200ms ease-out';
+const RESISTANCE = 0.25; // how far the card follows toward a fact that doesn't exist (e.g. back from the first)
+const EXIT_MIN_MS = 120;
+const EXIT_MAX_MS = 220;
+const SPRING_MS = 320;
+const SPRING_BACK = `transform ${SPRING_MS}ms cubic-bezier(0.3, 1.35, 0.5, 1)`;
+const SPRING_BACK_REDUCED = 'transform 150ms ease-out';
 
 type Gesture = {
   pointerId: number;
-  startX: number;
-  startY: number;
-  horizontal: boolean;
+  // Where the finger started, for telling taps from drags and horizontal from vertical.
+  originX: number;
+  originY: number;
+  // Finger x at which the card would sit at offset 0; differs from originX when grabbing a card mid-animation.
+  zeroX: number;
+  offset: number;
+  dragging: boolean;
   samples: { x: number; t: number }[];
 };
+
+const cardTransform = (offset: number) => {
+  const rotation = Math.max(-MAX_ROTATION_DEG, Math.min(MAX_ROTATION_DEG, offset * 0.04));
+  return `translate3d(${offset}px, 0, 0) rotate(${rotation}deg)`;
+};
+
+const prefersReducedMotion = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 export function FactCard({
   fact,
@@ -47,50 +62,87 @@ export function FactCard({
   const tokens = categoryTokens[fact.category];
   const cardRef = useRef<HTMLDivElement>(null);
   const gesture = useRef<Gesture | null>(null);
+  const frame = useRef<number | null>(null);
   const leaving = useRef(false);
   const exitTimer = useRef<ReturnType<typeof setTimeout>>();
+  const settleTimer = useRef<ReturnType<typeof setTimeout>>();
   // A drag must not end in a click on whatever is under the finger (e.g. the share button).
   const suppressClicksUntil = useRef(0);
 
-  useEffect(() => () => clearTimeout(exitTimer.current), []);
-
-  const moveCard = (offset: number, transition = 'none') => {
+  useEffect(() => {
     const card = cardRef.current;
-    if (!card) return;
-    const rotation = Math.max(-MAX_ROTATION_DEG, Math.min(MAX_ROTATION_DEG, offset * 0.04));
-    card.style.transition = transition;
-    card.style.transform = offset ? `translateX(${offset}px) rotate(${rotation}deg)` : '';
+    // touch-action: none already stops Safari scrolling from the card; this covers browsers that only honour
+    // a cancelled touchmove. Registered natively because React's touch listeners are passive.
+    const preventScroll = (event: TouchEvent) => {
+      if (gesture.current?.dragging) event.preventDefault();
+    };
+    card?.addEventListener('touchmove', preventScroll, { passive: false });
+    return () => {
+      card?.removeEventListener('touchmove', preventScroll);
+      clearTimeout(exitTimer.current);
+      clearTimeout(settleTimer.current);
+      if (frame.current !== null) cancelAnimationFrame(frame.current);
+    };
+  }, []);
+
+  // Offset for a finger at `dx` from zero: 1:1 toward a fact that exists, resisted toward one that doesn't.
+  const follow = (dx: number) => ((dx < 0 ? onSwipeLeft : onSwipeRight) ? dx : dx * RESISTANCE);
+
+  const render = () => {
+    frame.current = null;
+    const card = cardRef.current;
+    if (card && gesture.current) card.style.transform = cardTransform(gesture.current.offset);
+  };
+
+  const stopFrame = () => {
+    if (frame.current !== null) cancelAnimationFrame(frame.current);
+    frame.current = null;
+  };
+
+  const springBack = (card: HTMLDivElement) => {
+    card.style.transition = prefersReducedMotion() ? SPRING_BACK_REDUCED : SPRING_BACK;
+    card.style.transform = '';
+    settleTimer.current = setTimeout(() => {
+      card.style.transition = '';
+      card.style.willChange = '';
+    }, SPRING_MS);
   };
 
   const handlePointerDown = (event: React.PointerEvent<HTMLDivElement>) => {
     // Swipes are a touch gesture; a mouse drag keeps selecting text as before.
-    if (event.pointerType === 'mouse' || !event.isPrimary || leaving.current) return;
+    if (event.pointerType === 'mouse' || !event.isPrimary || leaving.current || gesture.current) return;
+    const card = event.currentTarget;
+
+    // Pick the card up where it is, even mid-entrance or mid-spring, so it never jumps under the finger.
+    const shownOffset = new DOMMatrixReadOnly(getComputedStyle(card).transform).m41;
+    card.getAnimations().forEach((animation) => animation.finish());
+    clearTimeout(settleTimer.current);
+    const shownFingerOffset = follow(shownOffset) === shownOffset ? shownOffset : shownOffset / RESISTANCE;
+
     gesture.current = {
       pointerId: event.pointerId,
-      startX: event.clientX,
-      startY: event.clientY,
-      horizontal: false,
+      originX: event.clientX,
+      originY: event.clientY,
+      zeroX: event.clientX - shownFingerOffset,
+      offset: shownOffset,
+      dragging: false,
       samples: [{ x: event.clientX, t: event.timeStamp }],
     };
+    card.style.transition = 'none';
+    card.style.willChange = 'transform';
+    card.style.transform = shownOffset ? cardTransform(shownOffset) : '';
+    // Capturing now would send a tap's click to the card instead of the share button, so a touch that starts on a
+    // control is captured once it turns into a drag.
+    if (!(event.target instanceof Element && event.target.closest('button, a'))) card.setPointerCapture(event.pointerId);
   };
 
   const handlePointerMove = (event: React.PointerEvent<HTMLDivElement>) => {
     const current = gesture.current;
     if (!current || current.pointerId !== event.pointerId) return;
-    const dx = event.clientX - current.startX;
-    const dy = event.clientY - current.startY;
 
-    if (!current.horizontal) {
-      if (Math.abs(dx) < DRAG_SLOP && Math.abs(dy) < DRAG_SLOP) return;
-      // Mostly vertical: leave it to page scrolling (touch-action: pan-y).
-      if (Math.abs(dx) <= Math.abs(dy)) {
-        gesture.current = null;
-        return;
-      }
-      current.horizontal = true;
-      event.currentTarget.setPointerCapture(event.pointerId);
-      // Grabbing the card mid-entrance: jump to its resting place so the drag starts from there.
-      event.currentTarget.getAnimations().forEach((animation) => animation.finish());
+    if (!current.dragging && Math.hypot(event.clientX - current.originX, event.clientY - current.originY) >= TAP_SLOP) {
+      current.dragging = true;
+      if (!event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.setPointerCapture(event.pointerId);
     }
 
     current.samples.push({ x: event.clientX, t: event.timeStamp });
@@ -98,43 +150,56 @@ export function FactCard({
       current.samples.shift();
     }
 
-    const allowed = dx < 0 ? onSwipeLeft : onSwipeRight;
-    moveCard(allowed ? dx : dx * 0.25);
+    // The card follows from the first pixel; the frame callback writes the latest position once per frame.
+    current.offset = follow(event.clientX - current.zeroX);
+    if (frame.current === null) frame.current = requestAnimationFrame(render);
   };
 
   const handlePointerUp = (event: React.PointerEvent<HTMLDivElement>) => {
     const current = gesture.current;
     if (!current || current.pointerId !== event.pointerId) return;
     gesture.current = null;
-    if (!current.horizontal) return;
+    stopFrame();
+    const card = event.currentTarget;
+    if (current.dragging) suppressClicksUntil.current = event.timeStamp + 400;
 
-    suppressClicksUntil.current = event.timeStamp + 400;
-    const dx = event.clientX - current.startX;
+    const dx = event.clientX - current.zeroX;
+    const dy = event.clientY - current.originY;
     const oldest = current.samples[0];
     const velocity = (event.clientX - oldest.x) / Math.max(1, event.timeStamp - oldest.t);
     const flick =
-      Math.abs(velocity) >= FLICK_VELOCITY && Math.abs(dx) >= FLICK_MIN_DISTANCE && Math.sign(velocity) === Math.sign(dx);
+      Math.abs(velocity) >= FLICK_VELOCITY &&
+      Math.abs(dx) >= FLICK_MIN_DISTANCE &&
+      Math.abs(dx) > Math.abs(dy) &&
+      Math.sign(velocity) === Math.sign(dx);
     const complete = dx < 0 ? onSwipeLeft : onSwipeRight;
 
-    if (!complete || (Math.abs(dx) < SWIPE_DISTANCE && !flick)) {
-      moveCard(0, SNAP_BACK);
+    if (!current.dragging || !complete || (Math.abs(dx) < SWIPE_DISTANCE && !flick)) {
+      springBack(card);
       return;
     }
 
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    if (prefersReducedMotion()) {
       complete();
       return;
     }
+    // Fling off screen at roughly the finger's speed, then the deck brings in the next card.
     leaving.current = true;
-    moveCard(Math.sign(dx) * window.innerWidth, `transform ${EXIT_MS}ms ease-in`);
-    exitTimer.current = setTimeout(complete, EXIT_MS);
+    const target = Math.sign(dx) * (window.innerWidth + card.offsetWidth / 2);
+    const duration = Math.round(
+      Math.max(EXIT_MIN_MS, Math.min(EXIT_MAX_MS, Math.abs(target - dx) / Math.max(Math.abs(velocity), 1.5))),
+    );
+    card.style.transition = `transform ${duration}ms cubic-bezier(0.2, 0.7, 0.4, 1)`;
+    card.style.transform = cardTransform(target);
+    exitTimer.current = setTimeout(complete, duration);
   };
 
   const handlePointerCancel = (event: React.PointerEvent<HTMLDivElement>) => {
     const current = gesture.current;
     if (!current || current.pointerId !== event.pointerId) return;
     gesture.current = null;
-    if (current.horizontal) moveCard(0, SNAP_BACK);
+    stopFrame();
+    springBack(event.currentTarget);
   };
 
   const handleClickCapture = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -165,7 +230,7 @@ export function FactCard({
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerCancel}
         onClickCapture={handleClickCapture}
-        className={`relative flex h-[460px] touch-pan-y flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] max-md:h-full [@container(max-height:419px)]:p-5 ${entrance ? entranceClass[entrance] : ''}`}
+        className={`relative flex h-[460px] touch-none flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] max-md:h-full [@container(max-height:419px)]:p-5 ${entrance ? entranceClass[entrance] : ''}`}
         style={{ backgroundColor: tokens.bg }}
       >
         <div className="flex items-start justify-between">
