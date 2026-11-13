@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 
 // The canonical public address. Shared and copied links always use it, never the host the page happens to be served from.
-export const SITE_URL = 'https://www.randomfacts.site';
+export const SITE_URL = 'https://randomfacts.site';
 export const SITE_NAME = 'Random Facts';
 export const SITE_DESCRIPTION = 'A daily dose of surprising facts.';
 
