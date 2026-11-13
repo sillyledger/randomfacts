@@ -56,6 +56,22 @@ function reshuffle(facts: Fact[], lastId: string): Fact[] {
   return order;
 }
 
+// `facts` arrives already shuffled; the position in this order doubles as the history. `step` keys the card, so each
+// move swaps in a new card. `direction` is where the old card leaves to: 1 = left, with the new one arriving from the
+// right; -1 = right, with the new one arriving from the left.
+type Deck = { order: Fact[]; position: number; step: number; direction: SwipeDirection };
+
+function stepBack(deck: Deck): Deck {
+  return deck.position > 0 ? { ...deck, position: deck.position - 1, step: deck.step + 1, direction: -1 } : deck;
+}
+
+function stepForward(deck: Deck, direction: SwipeDirection): Deck {
+  if (deck.order.length <= 1) return deck;
+  const moved = { step: deck.step + 1, direction };
+  if (deck.position < deck.order.length - 1) return { ...deck, ...moved, position: deck.position + 1 };
+  return { ...moved, order: reshuffle(deck.order, deck.order[deck.position].id), position: 0 };
+}
+
 function isTypingTarget(target: EventTarget | null) {
   return target instanceof HTMLElement && !!target.closest('input, textarea, select, [contenteditable="true"], #site-menu');
 }
@@ -69,31 +85,19 @@ export function FactDeck({
   category?: Category;
   initialSeen: string;
 }) {
-  // `facts` arrives already shuffled; the position in this order doubles as the history.
-  // `step` keys the card, so each move swaps in a new card that animates in from `direction`'s side.
-  const [deck, setDeck] = useState<{ order: Fact[]; position: number; step: number; direction: SwipeDirection }>(
-    () => ({ order: facts, position: 0, step: 0, direction: 1 }),
-  );
+  const [deck, setDeck] = useState<Deck>(() => ({ order: facts, position: 0, step: 0, direction: 1 }));
   const fact = deck.order[deck.position];
   const total = deck.order.length;
   const canGoBack = deck.position > 0;
 
-  const goBack = useCallback(() => {
-    setDeck((current) =>
-      current.position > 0
-        ? { ...current, position: current.position - 1, step: current.step + 1, direction: -1 }
-        : current,
-    );
-  }, []);
-
-  const goForward = useCallback(() => {
-    setDeck((current) => {
-      if (current.order.length <= 1) return current;
-      const next = { step: current.step + 1, direction: 1 as const };
-      if (current.position < current.order.length - 1) return { ...current, ...next, position: current.position + 1 };
-      return { ...next, order: reshuffle(current.order, current.order[current.position].id), position: 0 };
-    });
-  }, []);
+  const goBack = useCallback(() => setDeck(stepBack), []);
+  const goForward = useCallback(() => setDeck((current) => stepForward(current, 1)), []);
+  // A right swipe always moves: back when there is a previous fact, otherwise on to the next one. Either way the card
+  // flies off to the right, the way the finger went.
+  const swipeRight = useCallback(
+    () => setDeck((current) => (current.position > 0 ? stepBack(current) : stepForward(current, -1))),
+    [],
+  );
 
   const serverSeen = useMemo(() => decodeSeen(initialSeen), [initialSeen]);
   const factNum = fact?.num;
@@ -163,7 +167,7 @@ export function FactDeck({
               fact={fact}
               direction={deck.direction}
               onSwipeLeft={total > 1 ? goForward : undefined}
-              onSwipeRight={canGoBack ? goBack : undefined}
+              onSwipeRight={total > 1 ? swipeRight : undefined}
             />
           </AnimatePresence>
         </div>

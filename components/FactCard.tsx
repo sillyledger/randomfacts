@@ -25,7 +25,6 @@ const SWIPE_DISTANCE = 80; // px of finger travel that completes a swipe
 const SWIPE_VELOCITY = 500; // px/s, a flick that completes a swipe
 const FLY_DISTANCE = 360; // px a card travels when leaving or arriving; it fades on the way
 const MAX_ROTATION_DEG = 8; // reached 200px from centre
-const RUBBER_BAND = 0.3; // share of the finger's travel the card follows toward a fact that doesn't exist
 const SPRING = { type: 'spring', stiffness: 300, damping: 30 } as const;
 
 // The same spring moves the card for swipes, Back, Surprise me and the arrow keys, in both directions.
@@ -51,7 +50,8 @@ export function FactCard({
 }: {
   fact: Fact;
   direction: SwipeDirection;
-  // Omit a handler when there is no fact that way; the card then only rubber-bands and springs back.
+  // A completed swipe always calls its handler, and the card flies off the way the finger went. The handlers are only
+  // left out when the deck has a single fact, so there is nothing to move to.
   onSwipeLeft?: () => void;
   onSwipeRight?: () => void;
 }) {
@@ -79,7 +79,7 @@ export function FactCard({
         : offset.x > SWIPE_DISTANCE || velocity.x > SWIPE_VELOCITY
           ? onSwipeRight
           : undefined;
-    // Not far or fast enough, or nothing that way: dragConstraints and dragTransition spring the card back to 0.
+    // A short, slow drag (or a one-fact deck): dragConstraints and dragTransition spring the card back to 0.
     if (!navigate) return;
     // Cancel that spring-back so the exit continues from where the finger let go.
     x.stop();
@@ -105,7 +105,7 @@ export function FactCard({
       dragListener={false}
       dragControls={dragControls}
       dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={{ left: onSwipeLeft ? 1 : RUBBER_BAND, right: onSwipeRight ? 1 : RUBBER_BAND }}
+      dragElastic={1}
       dragMomentum={false}
       dragTransition={{ bounceStiffness: SPRING.stiffness, bounceDamping: SPRING.damping }}
       onPointerDown={startDrag}
