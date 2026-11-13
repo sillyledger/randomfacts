@@ -24,12 +24,9 @@ const config: Config = {
       },
       // No fill mode on purpose: a transform left on the card would anchor the share Toast's `fixed` to the card.
       keyframes: {
-        "card-in-forward": {
-          from: { opacity: "0", transform: "translateX(32px)" },
-          to: { opacity: "1", transform: "translateX(0)" },
-        },
-        "card-in-back": {
-          from: { opacity: "0", transform: "translateX(-32px)" },
+        // One entrance for both directions; the card sets --card-enter-from to +32px (from the right) or -32px.
+        "card-in": {
+          from: { opacity: "0", transform: "translateX(var(--card-enter-from))" },
           to: { opacity: "1", transform: "translateX(0)" },
         },
         "card-fade": {
@@ -38,8 +35,7 @@ const config: Config = {
         },
       },
       animation: {
-        "card-in-forward": "card-in-forward 220ms ease-out",
-        "card-in-back": "card-in-back 220ms ease-out",
+        "card-in": "card-in 220ms ease-out",
         "card-fade": "card-fade 150ms ease-out",
       },
     },

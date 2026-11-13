@@ -9,10 +9,12 @@ import { ShareButton } from './ShareButton';
 
 export type CardEntrance = 'forward' | 'back';
 
-const entranceClass: Record<CardEntrance, string> = {
-  forward: 'animate-card-in-forward motion-reduce:animate-card-fade',
-  back: 'animate-card-in-back motion-reduce:animate-card-fade',
-};
+// Both directions share one code path and differ only in sign: -1 is left (forward), 1 is right (back).
+type Direction = -1 | 1;
+
+// The side a new card slides in from: the opposite of where the previous card left.
+const ENTER_FROM_PX = 32;
+const entranceSide: Record<CardEntrance, Direction> = { forward: 1, back: -1 };
 
 // Swipe tuning. Distances in px, velocity in px/ms, durations in ms.
 const TAP_SLOP = 8; // total movement below this is a tap, not a drag
@@ -21,7 +23,7 @@ const FLICK_VELOCITY = 0.5;
 const FLICK_MIN_DISTANCE = 24;
 const VELOCITY_WINDOW_MS = 100;
 const MAX_ROTATION_DEG = 8;
-const RESISTANCE = 0.25; // how far the card follows toward a fact that doesn't exist (e.g. back from the first)
+const RESISTANCE = 0.3; // how far the card follows toward a fact that doesn't exist (e.g. back from the first)
 const EXIT_MIN_MS = 120;
 const EXIT_MAX_MS = 220;
 const SPRING_MS = 320;
@@ -85,8 +87,11 @@ export function FactCard({
     };
   }, []);
 
-  // Offset for a finger at `dx` from zero: 1:1 toward a fact that exists, resisted toward one that doesn't.
-  const follow = (dx: number) => ((dx < 0 ? onSwipeLeft : onSwipeRight) ? dx : dx * RESISTANCE);
+  const navigateFor = (direction: Direction) => (direction < 0 ? onSwipeLeft : onSwipeRight);
+  const directionOf = (dx: number): Direction => (dx < 0 ? -1 : 1);
+
+  // Offset for a finger at `dx` from zero: 1:1 toward a fact that exists, rubber-banded toward one that doesn't.
+  const follow = (dx: number) => (navigateFor(directionOf(dx)) ? dx : dx * RESISTANCE);
 
   const render = () => {
     frame.current = null;
@@ -165,15 +170,17 @@ export function FactCard({
 
     const dx = event.clientX - current.zeroX;
     const dy = event.clientY - current.originY;
+    const direction = directionOf(dx);
     const oldest = current.samples[0];
     const velocity = (event.clientX - oldest.x) / Math.max(1, event.timeStamp - oldest.t);
     const flick =
       Math.abs(velocity) >= FLICK_VELOCITY &&
       Math.abs(dx) >= FLICK_MIN_DISTANCE &&
       Math.abs(dx) > Math.abs(dy) &&
-      Math.sign(velocity) === Math.sign(dx);
-    const complete = dx < 0 ? onSwipeLeft : onSwipeRight;
+      Math.sign(velocity) === direction;
+    const complete = navigateFor(direction);
 
+    // Nothing that way (e.g. back from the first fact) or not far/fast enough: spring back, never fly off.
     if (!current.dragging || !complete || (Math.abs(dx) < SWIPE_DISTANCE && !flick)) {
       springBack(card);
       return;
@@ -185,7 +192,7 @@ export function FactCard({
     }
     // Fling off screen at roughly the finger's speed, then the deck brings in the next card.
     leaving.current = true;
-    const target = Math.sign(dx) * (window.innerWidth + card.offsetWidth / 2);
+    const target = direction * (window.innerWidth + card.offsetWidth / 2);
     const duration = Math.round(
       Math.max(EXIT_MIN_MS, Math.min(EXIT_MAX_MS, Math.abs(target - dx) / Math.max(Math.abs(velocity), 1.5))),
     );
@@ -230,8 +237,13 @@ export function FactCard({
         onPointerUp={handlePointerUp}
         onPointerCancel={handlePointerCancel}
         onClickCapture={handleClickCapture}
-        className={`relative flex h-[460px] touch-none flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] max-md:h-full [@container(max-height:419px)]:p-5 ${entrance ? entranceClass[entrance] : ''}`}
-        style={{ backgroundColor: tokens.bg }}
+        className={`relative flex h-[460px] touch-none flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] max-md:h-full [@container(max-height:419px)]:p-5 ${entrance ? 'animate-card-in motion-reduce:animate-card-fade' : ''}`}
+        style={
+          {
+            backgroundColor: tokens.bg,
+            ...(entrance && { '--card-enter-from': `${entranceSide[entrance] * ENTER_FROM_PX}px` }),
+          } as React.CSSProperties
+        }
       >
         <div className="flex items-start justify-between">
           <Image src="/logo.svg" alt="Random Facts" width={34} height={34} className="h-[34px] w-[34px]" />
