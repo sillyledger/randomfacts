@@ -2,8 +2,9 @@
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
+import { AnimatePresence } from 'framer-motion';
 import type { Category, Fact } from '@/types/fact';
-import { FactCard, type CardEntrance } from '@/components/FactCard';
+import { FactCard, type SwipeDirection } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
 import { shuffle } from '@/lib/shuffle';
 import { decodeSeen, recordSeenInCookie } from '@/lib/seen';
@@ -69,9 +70,9 @@ export function FactDeck({
   initialSeen: string;
 }) {
   // `facts` arrives already shuffled; the position in this order doubles as the history.
-  // `step` counts moves so each one remounts the card and replays its entrance from `entrance`'s side.
-  const [deck, setDeck] = useState<{ order: Fact[]; position: number; step: number; entrance: CardEntrance | null }>(
-    () => ({ order: facts, position: 0, step: 0, entrance: null }),
+  // `step` keys the card, so each move swaps in a new card that animates in from `direction`'s side.
+  const [deck, setDeck] = useState<{ order: Fact[]; position: number; step: number; direction: SwipeDirection }>(
+    () => ({ order: facts, position: 0, step: 0, direction: 1 }),
   );
   const fact = deck.order[deck.position];
   const total = deck.order.length;
@@ -80,7 +81,7 @@ export function FactDeck({
   const goBack = useCallback(() => {
     setDeck((current) =>
       current.position > 0
-        ? { ...current, position: current.position - 1, step: current.step + 1, entrance: 'back' }
+        ? { ...current, position: current.position - 1, step: current.step + 1, direction: -1 }
         : current,
     );
   }, []);
@@ -88,7 +89,7 @@ export function FactDeck({
   const goForward = useCallback(() => {
     setDeck((current) => {
       if (current.order.length <= 1) return current;
-      const next = { step: current.step + 1, entrance: 'forward' as const };
+      const next = { step: current.step + 1, direction: 1 as const };
       if (current.position < current.order.length - 1) return { ...current, ...next, position: current.position + 1 };
       return { ...next, order: reshuffle(current.order, current.order[current.position].id), position: 0 };
     });
@@ -150,13 +151,22 @@ export function FactDeck({
 
       {/* On phones the card takes the height left between the progress row and the buttons. */}
       <div className="mt-2 max-md:relative max-md:max-h-[460px] max-md:min-h-[340px] max-md:flex-1">
-        <FactCard
-          key={deck.step}
-          fact={fact}
-          entrance={deck.entrance}
-          onSwipeLeft={total > 1 ? goForward : undefined}
-          onSwipeRight={canGoBack ? goBack : undefined}
-        />
+        {/* The stage the cards animate on: 460px on desktop, the whole slot on phones. On phones it is also a size
+            container, so a short card tightens its padding, icons and type. (It's absolutely positioned because Chrome
+            evaluates container queries on a flex-grown container against the wrong size.) */}
+        <div className="relative h-[460px] max-md:absolute max-md:inset-0 max-md:h-auto max-md:[container-type:size]">
+          <div className="absolute inset-x-4 -top-4 h-full rounded-[28px] bg-ghostFar" aria-hidden />
+          <div className="absolute inset-x-2 -top-2 h-full rounded-[28px] bg-ghostNear" aria-hidden />
+          <AnimatePresence initial={false} custom={deck.direction}>
+            <FactCard
+              key={deck.step}
+              fact={fact}
+              direction={deck.direction}
+              onSwipeLeft={total > 1 ? goForward : undefined}
+              onSwipeRight={canGoBack ? goBack : undefined}
+            />
+          </AnimatePresence>
+        </div>
       </div>
 
       <div className="mt-4 flex gap-3 max-md:pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:mt-8">
