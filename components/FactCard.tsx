@@ -1,12 +1,12 @@
 'use client';
 
-import { useRef } from 'react';
+import { useRef, useSyncExternalStore } from 'react';
 import Image from 'next/image';
 import {
   motion,
-  useDragControls,
   useIsPresent,
   useMotionValue,
+  usePresenceData,
   useReducedMotion,
   useTransform,
   type PanInfo,
@@ -14,73 +14,73 @@ import {
   type Variants,
 } from 'framer-motion';
 import type { Fact } from '@/types/fact';
-import { swipeDirection } from '@/lib/swipe';
 import { categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from './CategoryIcon';
 import { ShareButton } from './ShareButton';
 
-// 1 = next: the card leaves to the left and the new one comes in from the right. -1 = back, mirrored.
-export type SwipeDirection = 1 | -1;
+// How the deck last moved: on to the next fact with the old card flying off left or right, or back one fact.
+export type CardMove = 'left' | 'right' | 'back';
 
-const FLY_DISTANCE = 360; // px a card travels when leaving or arriving; it fades on the way
+const SWIPE_DISTANCE = 50; // px the card must be dragged, either way, to go to the next fact
+const FLY_DISTANCE = 360; // px a card travels when flying off; it fades on the way
+const STACK_SCALE = 0.94; // a card rising from, or dropping back into, the stack behind
 const MAX_ROTATION_DEG = 8; // reached 200px from centre
 const SPRING = { type: 'spring', stiffness: 300, damping: 30 } as const;
 
-// The same spring moves the card for swipes, Back, Surprise me and the arrow keys, in both directions.
-const slide: Variants = {
-  enter: (direction: SwipeDirection) => ({ x: direction * FLY_DISTANCE, opacity: 0 }),
-  center: { x: 0, opacity: 1 },
-  exit: (direction: SwipeDirection) => ({ x: -direction * FLY_DISTANCE, opacity: 0 }),
+// Next: the old card flies off the way it was dragged and the new one rises from the stack behind it.
+// Back: the previous card returns from the left and the current one drops back into the stack.
+const cards: Variants = {
+  enter: (move: CardMove) => (move === 'back' ? { x: -FLY_DISTANCE, opacity: 0, scale: 1 } : { x: 0, opacity: 0, scale: STACK_SCALE }),
+  center: { x: 0, opacity: 1, scale: 1 },
+  exit: (move: CardMove) =>
+    move === 'back' ? { opacity: 0, scale: STACK_SCALE } : { x: move === 'left' ? -FLY_DISTANCE : FLY_DISTANCE, opacity: 0 },
 };
-const slideTransition: Transition = { x: SPRING, opacity: { duration: 0.2 } };
+const cardTransition: Transition = { x: SPRING, scale: SPRING, opacity: { duration: 0.2 } };
 const fade: Variants = { enter: { opacity: 0 }, center: { opacity: 1 }, exit: { opacity: 0 } };
 const fadeTransition: Transition = { duration: 0.15 };
 
 // A tap on the share button right after a drag is the end of that drag, not a share.
 const CLICK_GUARD_MS = 400;
 
-// Render inside <AnimatePresence custom={direction}> with a new key per fact, so the old card can leave as the new
-// one arrives. The card fills its positioned parent.
+// Swiping is for touch screens; with a mouse the card stays put and its text can be selected.
+const COARSE_POINTER = '(pointer: coarse)';
+function subscribeToPointer(onChange: () => void) {
+  const query = window.matchMedia(COARSE_POINTER);
+  query.addEventListener('change', onChange);
+  return () => query.removeEventListener('change', onChange);
+}
+function useTouchScreen() {
+  return useSyncExternalStore(subscribeToPointer, () => window.matchMedia(COARSE_POINTER).matches, () => false);
+}
+
+// Render inside <AnimatePresence custom={move}> with a new key per fact, so the old card can leave as the new one
+// arrives. The card fills its positioned parent.
 export function FactCard({
   fact,
-  direction,
-  onSwipeLeft,
-  onSwipeRight,
+  onSwipe,
 }: {
   fact: Fact;
-  direction: SwipeDirection;
-  // A completed swipe always calls its handler, and the card flies off the way the finger went. The handlers are only
-  // left out when the deck has a single fact, so there is nothing to move to.
-  onSwipeLeft?: () => void;
-  onSwipeRight?: () => void;
+  // Called when the card is dragged more than 50px to either side. Left out when the deck has a single fact.
+  onSwipe?: (side: 'left' | 'right') => void;
 }) {
   const tokens = categoryTokens[fact.category];
   const reduceMotion = useReducedMotion();
+  const touchScreen = useTouchScreen();
   const isPresent = useIsPresent();
-  const dragControls = useDragControls();
+  const move: CardMove = usePresenceData();
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 200], [-MAX_ROTATION_DEG, MAX_ROTATION_DEG]);
   const dragging = useRef(false);
   const dragEndedAt = useRef(-Infinity);
-  const touchedDownAt = useRef(0);
 
-  const startDrag = (event: React.PointerEvent) => {
-    // Swipes are a touch gesture; a mouse drag keeps selecting text as before. A leaving card can't be grabbed.
-    if (event.pointerType === 'mouse' || !event.isPrimary || !isPresent) return;
-    touchedDownAt.current = performance.now();
-    dragControls.start(event);
-  };
-
-  const handleDragEnd = (_event: unknown, { offset, velocity }: PanInfo) => {
+  const handleDragEnd = (_event: unknown, { offset }: PanInfo) => {
     dragging.current = false;
     dragEndedAt.current = performance.now();
-    const swiped = swipeDirection(offset.x, velocity.x, dragEndedAt.current - touchedDownAt.current);
-    const navigate = swiped === 'left' ? onSwipeLeft : swiped === 'right' ? onSwipeRight : undefined;
-    // A short, slow drag (or a one-fact deck): dragConstraints and dragTransition spring the card back to 0.
-    if (!navigate) return;
-    // Cancel that spring-back so the exit continues from where the finger let go.
+    // Not far enough (or a one-fact deck): dragConstraints and dragTransition spring the card back to 0.
+    if (!onSwipe || Math.abs(offset.x) <= SWIPE_DISTANCE) return;
+    // Cancel that spring-back so the card flies off from where the finger let go.
     x.stop();
-    navigate();
+    onSwipe(offset.x < 0 ? 'left' : 'right');
   };
 
   const guardClick = (event: React.MouseEvent) => {
@@ -90,28 +90,27 @@ export function FactCard({
     }
   };
 
+  // !touch-none: Framer sets touch-action: pan-y inline for an x drag; the card must own the whole touch so Safari
+  // never scrolls the page mid-swipe. A card flying off stays above the one rising behind it and can't be grabbed.
   return (
     <motion.div
-      custom={direction}
-      variants={reduceMotion ? fade : slide}
+      custom={move}
+      variants={reduceMotion ? fade : cards}
       initial="enter"
       animate="center"
       exit="exit"
-      transition={reduceMotion ? fadeTransition : slideTransition}
-      drag="x"
-      dragListener={false}
-      dragControls={dragControls}
+      transition={reduceMotion ? fadeTransition : cardTransition}
+      drag={touchScreen && isPresent ? 'x' : false}
       dragConstraints={{ left: 0, right: 0 }}
       dragElastic={1}
       dragMomentum={false}
       dragTransition={{ bounceStiffness: SPRING.stiffness, bounceDamping: SPRING.damping }}
-      onPointerDown={startDrag}
       onDragStart={() => {
         dragging.current = true;
       }}
       onDragEnd={handleDragEnd}
       onClickCapture={guardClick}
-      className={`absolute inset-0 flex touch-none flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] [@container(max-height:419px)]:p-5 ${isPresent ? '' : 'pointer-events-none'}`}
+      className={`absolute inset-0 flex !touch-none flex-col rounded-[28px] p-6 shadow-[0_20px_40px_rgba(0,0,0,0.35)] [@container(max-height:419px)]:p-5 ${isPresent ? '' : `pointer-events-none ${move === 'back' ? '' : 'z-10'}`}`}
       style={{ x, rotate, backgroundColor: tokens.bg }}
     >
       <div className="flex items-start justify-between">

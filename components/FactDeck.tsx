@@ -4,7 +4,7 @@ import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import { AnimatePresence } from 'framer-motion';
 import type { Category, Fact } from '@/types/fact';
-import { FactCard, type SwipeDirection } from '@/components/FactCard';
+import { FactCard, type CardMove } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
 import { shuffle } from '@/lib/shuffle';
 import { decodeSeen, recordSeenInCookie } from '@/lib/seen';
@@ -57,17 +57,16 @@ function reshuffle(facts: Fact[], lastId: string): Fact[] {
 }
 
 // `facts` arrives already shuffled; the position in this order doubles as the history. `step` keys the card, so each
-// move swaps in a new card. `direction` is where the old card leaves to: 1 = left, with the new one arriving from the
-// right; -1 = right, with the new one arriving from the left.
-type Deck = { order: Fact[]; position: number; step: number; direction: SwipeDirection };
+// move swaps in a new card, and `move` tells the cards how to animate it.
+type Deck = { order: Fact[]; position: number; step: number; move: CardMove };
 
 function stepBack(deck: Deck): Deck {
-  return deck.position > 0 ? { ...deck, position: deck.position - 1, step: deck.step + 1, direction: -1 } : deck;
+  return deck.position > 0 ? { ...deck, position: deck.position - 1, step: deck.step + 1, move: 'back' } : deck;
 }
 
-function stepForward(deck: Deck, direction: SwipeDirection): Deck {
+function stepForward(deck: Deck, side: 'left' | 'right'): Deck {
   if (deck.order.length <= 1) return deck;
-  const moved = { step: deck.step + 1, direction };
+  const moved = { step: deck.step + 1, move: side };
   if (deck.position < deck.order.length - 1) return { ...deck, ...moved, position: deck.position + 1 };
   return { ...moved, order: reshuffle(deck.order, deck.order[deck.position].id), position: 0 };
 }
@@ -85,19 +84,15 @@ export function FactDeck({
   category?: Category;
   initialSeen: string;
 }) {
-  const [deck, setDeck] = useState<Deck>(() => ({ order: facts, position: 0, step: 0, direction: 1 }));
+  const [deck, setDeck] = useState<Deck>(() => ({ order: facts, position: 0, step: 0, move: 'left' }));
   const fact = deck.order[deck.position];
   const total = deck.order.length;
   const canGoBack = deck.position > 0;
 
   const goBack = useCallback(() => setDeck(stepBack), []);
-  const goForward = useCallback(() => setDeck((current) => stepForward(current, 1)), []);
-  // A right swipe always moves: back when there is a previous fact, otherwise on to the next one. Either way the card
-  // flies off to the right, the way the finger went.
-  const swipeRight = useCallback(
-    () => setDeck((current) => (current.position > 0 ? stepBack(current) : stepForward(current, -1))),
-    [],
-  );
+  const goForward = useCallback(() => setDeck((current) => stepForward(current, 'left')), []);
+  // Any swipe goes on to the next fact; the old card flies off the side it was dragged to.
+  const swipe = useCallback((side: 'left' | 'right') => setDeck((current) => stepForward(current, side)), []);
 
   const serverSeen = useMemo(() => decodeSeen(initialSeen), [initialSeen]);
   const factNum = fact?.num;
@@ -161,14 +156,8 @@ export function FactDeck({
         <div className="relative h-[460px] max-md:absolute max-md:inset-0 max-md:h-auto max-md:[container-type:size]">
           <div className="absolute inset-x-4 -top-4 h-full rounded-[28px] bg-ghostFar" aria-hidden />
           <div className="absolute inset-x-2 -top-2 h-full rounded-[28px] bg-ghostNear" aria-hidden />
-          <AnimatePresence initial={false} custom={deck.direction}>
-            <FactCard
-              key={deck.step}
-              fact={fact}
-              direction={deck.direction}
-              onSwipeLeft={total > 1 ? goForward : undefined}
-              onSwipeRight={total > 1 ? swipeRight : undefined}
-            />
+          <AnimatePresence initial={false} custom={deck.move}>
+            <FactCard key={deck.step} fact={fact} onSwipe={total > 1 ? swipe : undefined} />
           </AnimatePresence>
         </div>
       </div>
