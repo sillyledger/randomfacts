@@ -53,7 +53,7 @@ export function SiteNav() {
   }, [open]);
 
   return (
-    <header className="w-full pb-6 pt-8">
+    <header className="w-full pb-3 pt-4 md:pb-6 md:pt-8">
       <div ref={containerRef} className="relative mx-auto max-w-[1100px] px-5">
         <nav className="flex items-center justify-between">
           <Link href="/" className="flex items-center gap-2">

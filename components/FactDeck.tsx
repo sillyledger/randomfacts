@@ -30,14 +30,14 @@ function ArrowLeftIcon() {
   );
 }
 
-function FilterChip({ category }: { category: Category }) {
+function FilterChip({ category, className = 'mb-6 self-start' }: { category: Category; className?: string }) {
   return (
     <Link
       href="/"
       aria-label={`Clear ${category} filter`}
-      className="mb-6 inline-flex items-center gap-1.5 self-start rounded-full border border-chromeBorder bg-white/60 py-1.5 pl-3 pr-2.5 text-[13px] font-semibold text-chromeText transition hover:bg-white"
+      className={`${className} inline-flex min-w-0 items-center gap-1.5 rounded-full border border-chromeBorder bg-white/60 py-1.5 pl-3 pr-2.5 text-[13px] font-semibold text-chromeText transition hover:bg-white`}
     >
-      Showing: {category}
+      <span className="truncate">Showing: {category}</span>
       <span aria-hidden className="text-base leading-none text-chromeText/60">
         ×
       </span>
@@ -136,16 +136,20 @@ export function FactDeck({
 
   return (
     <>
-      <div className={`${category ? 'mb-4' : 'mb-8'} flex h-10 items-center gap-2`}>
-        <ProgressRing progress={(deck.position + 1) / total} />
-        <span className="text-sm font-semibold text-chromeText">
-          {String(deck.position + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
-        </span>
+      {/* On phones the filter chip shares the progress row, leaving the card more height; desktop stacks them. */}
+      <div className="mb-3 flex items-center justify-between gap-3 md:contents">
+        <div className={`${category ? 'md:mb-4' : 'md:mb-8'} flex h-10 shrink-0 items-center gap-2`}>
+          <ProgressRing progress={(deck.position + 1) / total} />
+          <span className="text-sm font-semibold text-chromeText">
+            {String(deck.position + 1).padStart(2, '0')} / {String(total).padStart(2, '0')}
+          </span>
+        </div>
+
+        {category && <FilterChip category={category} className="md:mb-6 md:self-start" />}
       </div>
 
-      {category && <FilterChip category={category} />}
-
-      <div className="mt-2">
+      {/* On phones the card takes the height left between the progress row and the buttons. */}
+      <div className="mt-2 max-md:relative max-md:max-h-[460px] max-md:min-h-[340px] max-md:flex-1">
         <FactCard
           key={deck.step}
           fact={fact}
@@ -155,7 +159,7 @@ export function FactDeck({
         />
       </div>
 
-      <div className="mt-8 flex gap-3">
+      <div className="mt-4 flex gap-3 max-md:pb-[calc(0.75rem+env(safe-area-inset-bottom))] md:mt-8">
         <button
           type="button"
           onClick={goBack}

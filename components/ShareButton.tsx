@@ -13,7 +13,8 @@ function ShareIcon() {
   );
 }
 
-export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
+// `className` sets the button's size; it defaults to 56px.
+export function ShareButton({ fact, accent, className = 'h-14 w-14' }: { fact: Fact; accent: string; className?: string }) {
   const { toast, showToast } = useToast();
 
   const copyToClipboard = async (url: string) => {
@@ -48,7 +49,7 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
         type="button"
         onClick={share}
         aria-label="Share this fact"
-        className="flex h-14 w-14 items-center justify-center rounded-full text-ink transition hover:brightness-95"
+        className={`${className} flex items-center justify-center rounded-full text-ink transition hover:brightness-95`}
         style={{ backgroundColor: `${accent}26` }}
       >
         <ShareIcon />
