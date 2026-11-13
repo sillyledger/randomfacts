@@ -14,6 +14,7 @@ import {
   type Variants,
 } from 'framer-motion';
 import type { Fact } from '@/types/fact';
+import { swipeDirection } from '@/lib/swipe';
 import { categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from './CategoryIcon';
 import { ShareButton } from './ShareButton';
@@ -21,8 +22,6 @@ import { ShareButton } from './ShareButton';
 // 1 = next: the card leaves to the left and the new one comes in from the right. -1 = back, mirrored.
 export type SwipeDirection = 1 | -1;
 
-const SWIPE_DISTANCE = 80; // px of finger travel that completes a swipe
-const SWIPE_VELOCITY = 500; // px/s, a flick that completes a swipe
 const FLY_DISTANCE = 360; // px a card travels when leaving or arriving; it fades on the way
 const MAX_ROTATION_DEG = 8; // reached 200px from centre
 const SPRING = { type: 'spring', stiffness: 300, damping: 30 } as const;
@@ -63,22 +62,20 @@ export function FactCard({
   const rotate = useTransform(x, [-200, 200], [-MAX_ROTATION_DEG, MAX_ROTATION_DEG]);
   const dragging = useRef(false);
   const dragEndedAt = useRef(-Infinity);
+  const touchedDownAt = useRef(0);
 
   const startDrag = (event: React.PointerEvent) => {
     // Swipes are a touch gesture; a mouse drag keeps selecting text as before. A leaving card can't be grabbed.
     if (event.pointerType === 'mouse' || !event.isPrimary || !isPresent) return;
+    touchedDownAt.current = performance.now();
     dragControls.start(event);
   };
 
   const handleDragEnd = (_event: unknown, { offset, velocity }: PanInfo) => {
     dragging.current = false;
     dragEndedAt.current = performance.now();
-    const navigate =
-      offset.x < -SWIPE_DISTANCE || velocity.x < -SWIPE_VELOCITY
-        ? onSwipeLeft
-        : offset.x > SWIPE_DISTANCE || velocity.x > SWIPE_VELOCITY
-          ? onSwipeRight
-          : undefined;
+    const swiped = swipeDirection(offset.x, velocity.x, dragEndedAt.current - touchedDownAt.current);
+    const navigate = swiped === 'left' ? onSwipeLeft : swiped === 'right' ? onSwipeRight : undefined;
     // A short, slow drag (or a one-fact deck): dragConstraints and dragTransition spring the card back to 0.
     if (!navigate) return;
     // Cancel that spring-back so the exit continues from where the finger let go.
