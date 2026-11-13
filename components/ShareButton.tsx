@@ -1,6 +1,7 @@
 'use client';
 
 import { Toast, useToast } from '@/components/Toast';
+import { SITE_URL } from '@/lib/site';
 import type { Fact } from '@/types/fact';
 
 function ShareIcon() {
@@ -26,7 +27,7 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
 
   const share = async (event: React.MouseEvent) => {
     event.stopPropagation();
-    const url = `${window.location.origin}/`;
+    const url = `${SITE_URL}/`;
 
     if (typeof navigator.share === 'function') {
       try {
@@ -46,7 +47,6 @@ export function ShareButton({ fact, accent }: { fact: Fact; accent: string }) {
       <button
         type="button"
         onClick={share}
-        onPointerDown={(event) => event.stopPropagation()}
         aria-label="Share this fact"
         className="flex h-14 w-14 items-center justify-center rounded-full text-ink transition hover:brightness-95"
         style={{ backgroundColor: `${accent}26` }}

@@ -3,14 +3,14 @@
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
 import type { Category, Fact } from '@/types/fact';
-import { FactCard } from '@/components/FactCard';
+import { FactCard, type CardEntrance } from '@/components/FactCard';
 import { ProgressRing } from '@/components/ProgressRing';
 import { shuffle } from '@/lib/shuffle';
 import { decodeSeen, recordSeenInCookie } from '@/lib/seen';
 
 function ShuffleIcon() {
   return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-[18px] w-[18px]">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="h-[18px] w-[18px]" aria-hidden>
       <path d="M4 7h3.5c1.2 0 2.3.6 3 1.6l.6.9" />
       <path d="M4 17h3.5c1.2 0 2.3-.6 3-1.6l4-5.8c.7-1 1.8-1.6 3-1.6H20" />
       <path d="M17 4l3 3-3 3" />
@@ -69,20 +69,28 @@ export function FactDeck({
   initialSeen: string;
 }) {
   // `facts` arrives already shuffled; the position in this order doubles as the history.
-  const [deck, setDeck] = useState(() => ({ order: facts, position: 0 }));
+  // `step` counts moves so each one remounts the card and replays its entrance from `entrance`'s side.
+  const [deck, setDeck] = useState<{ order: Fact[]; position: number; step: number; entrance: CardEntrance | null }>(
+    () => ({ order: facts, position: 0, step: 0, entrance: null }),
+  );
   const fact = deck.order[deck.position];
   const total = deck.order.length;
   const canGoBack = deck.position > 0;
 
   const goBack = useCallback(() => {
-    setDeck((current) => (current.position > 0 ? { ...current, position: current.position - 1 } : current));
+    setDeck((current) =>
+      current.position > 0
+        ? { ...current, position: current.position - 1, step: current.step + 1, entrance: 'back' }
+        : current,
+    );
   }, []);
 
   const goForward = useCallback(() => {
     setDeck((current) => {
       if (current.order.length <= 1) return current;
-      if (current.position < current.order.length - 1) return { ...current, position: current.position + 1 };
-      return { order: reshuffle(current.order, current.order[current.position].id), position: 0 };
+      const next = { step: current.step + 1, entrance: 'forward' as const };
+      if (current.position < current.order.length - 1) return { ...current, ...next, position: current.position + 1 };
+      return { ...next, order: reshuffle(current.order, current.order[current.position].id), position: 0 };
     });
   }, []);
 
@@ -138,7 +146,13 @@ export function FactDeck({
       {category && <FilterChip category={category} />}
 
       <div className="mt-2">
-        <FactCard fact={fact} />
+        <FactCard
+          key={deck.step}
+          fact={fact}
+          entrance={deck.entrance}
+          onSwipeLeft={total > 1 ? goForward : undefined}
+          onSwipeRight={canGoBack ? goBack : undefined}
+        />
       </div>
 
       <div className="mt-8 flex gap-3">
@@ -158,7 +172,7 @@ export function FactDeck({
           className="flex flex-1 items-center justify-center gap-2 rounded-full bg-brand py-3.5 text-sm font-semibold text-white transition hover:bg-brand/90 disabled:cursor-not-allowed disabled:opacity-40"
         >
           <ShuffleIcon />
-          Shuffle
+          Surprise me
         </button>
       </div>
     </>

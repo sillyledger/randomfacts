@@ -3,10 +3,9 @@ import Image from 'next/image';
 import { PageShell } from '@/components/PageShell';
 import { categories } from '@/lib/categories';
 import { getFacts } from '@/lib/facts';
+import { pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: 'About · Random Facts',
-};
+export const metadata: Metadata = pageMetadata('About · Random Facts', '/about');
 
 // lucide "info"
 function InfoIcon() {

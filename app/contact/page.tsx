@@ -2,10 +2,9 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import { CopyEmailButton } from '@/components/CopyEmailButton';
 import { PageShell } from '@/components/PageShell';
+import { pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: 'Contact · Random Facts',
-};
+export const metadata: Metadata = pageMetadata('Contact · Random Facts', '/contact');
 
 const EMAIL = 'jm@onpointvc.com';
 

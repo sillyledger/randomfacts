@@ -13,8 +13,9 @@ export function PageShell({
   children: React.ReactNode;
   width?: keyof typeof widthClass;
 }) {
+  // overflow-x-clip: a fact card swiped off screen must not add horizontal scroll.
   return (
-    <div className="flex min-h-screen flex-col bg-pageBg">
+    <div className="flex min-h-screen flex-col overflow-x-clip bg-pageBg">
       <SiteNav />
       <main className={`mx-auto flex w-full flex-1 flex-col ${widthClass[width]}`}>{children}</main>
       <SiteFooter />

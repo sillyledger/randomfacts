@@ -22,6 +22,26 @@ const config: Config = {
       fontFamily: {
         sans: ["var(--font-plus-jakarta)", "sans-serif"],
       },
+      // No fill mode on purpose: a transform left on the card would anchor the share Toast's `fixed` to the card.
+      keyframes: {
+        "card-in-forward": {
+          from: { opacity: "0", transform: "translateX(32px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "card-in-back": {
+          from: { opacity: "0", transform: "translateX(-32px)" },
+          to: { opacity: "1", transform: "translateX(0)" },
+        },
+        "card-fade": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
+      },
+      animation: {
+        "card-in-forward": "card-in-forward 220ms ease-out",
+        "card-in-back": "card-in-back 220ms ease-out",
+        "card-fade": "card-fade 150ms ease-out",
+      },
     },
   },
   plugins: [],

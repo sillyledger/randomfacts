@@ -5,10 +5,9 @@ import { categories, categorySlug, categoryTokens } from '@/lib/categories';
 import { CategoryIcon } from '@/components/CategoryIcon';
 import { PageShell } from '@/components/PageShell';
 import type { Category } from '@/types/fact';
+import { pageMetadata } from '@/lib/site';
 
-export const metadata: Metadata = {
-  title: 'Categories · Random Facts',
-};
+export const metadata: Metadata = pageMetadata('Categories · Random Facts', '/categories');
 
 function CategoryTileContent({ category, count }: { category: Category; count: number }) {
   return (
